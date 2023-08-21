@@ -6,6 +6,7 @@
     include_once('../estructura/encabezado.php');
 ?>
             <!-- 
+                tp1 ejercicio 1
                 Confeccionar un formulario que solicite un número. Al pulsar el botón de enviar debe 
                 llamar a un script –vernumero.php- y visualizar un mensaje que indique si el número 
                 enviado fue: positivo, cero o negativo. Añadir un link, a la página que visualiza la 
@@ -14,8 +15,8 @@
 
             <div class="contenedorCentrado">
                 <form name="form_ejercicio1" method="post" action="vernumero.php">
-                    Ingrese un número: <input name="numero" type="number" id="numero" required><br>
-                    <input type="submit" name="Submit" value="Aceptar" class="botonFormulario">
+                    Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>
+                    <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
                 </form>
             </div>
 

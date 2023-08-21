@@ -26,11 +26,13 @@ body {
     color:white;
     text-align: center;
     margin-top: 10px;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
 }
 
 #banner p {
     color:white;
     text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
 }
 
 #contenedorGeneral {

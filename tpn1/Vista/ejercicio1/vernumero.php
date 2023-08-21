@@ -1,5 +1,5 @@
 <?php
-    include_once("../../Control/PositividadNumero.php");
+    include_once("../../Control/controlEjercicio1/PositividadNumero.php");
 
     $obj = new PositividadNumero();
 

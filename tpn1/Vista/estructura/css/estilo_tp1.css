@@ -26,11 +26,13 @@ body {
     color:white;
     text-align: center;
     margin-top: 10px;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
 }
 
 #banner p {
     color:white;
     text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
 }
 
 #contenedorGeneral {
@@ -92,6 +94,13 @@ body {
 
 .botonEjercicios:hover {
     color:rgb(100, 120, 198);
+}
+
+.contenedorEnunciado {
+    border:1px solid black;
+    padding: 10px;
+    background-color: lavender;
+    text-align: center;
 }
 
 .contenedorCentrado {

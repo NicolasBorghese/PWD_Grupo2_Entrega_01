@@ -1,5 +1,5 @@
 <?php
-class PositividadNumero {
+class CuentaHoras {
 
     //ATRIBUTOS
 
