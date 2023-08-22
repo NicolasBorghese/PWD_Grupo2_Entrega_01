@@ -22,7 +22,7 @@ class SaludoPersonalizado {
 
         $datosCorrectos = true;
 
-        if(preg_match('/^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ]+$/', $nombre) && preg_match('/^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ]+$/', $apellido) &&
+        if(preg_match('/^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/', $nombre) && preg_match('/^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/', $apellido) &&
         $nombre !="" && $apellido !=""){
 
 

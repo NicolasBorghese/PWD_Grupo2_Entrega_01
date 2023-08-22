@@ -30,11 +30,11 @@
                             <td><input type="text" name="apellidoForm" id="apellidoForm" required></td>
                         </tr>
                         <tr>
-                            <td>Edad</td>
+                            <td>Edad:</td>
                             <td><input type="number" name="edadForm" id="edadForm" required></td>
                         </tr>
                         <tr>
-                            <td>Dirección</td>
+                            <td>Dirección:</td>
                             <td><input type="text" name="direccionForm" id="direccionForm" required></td>
                         </tr>
                     </table>

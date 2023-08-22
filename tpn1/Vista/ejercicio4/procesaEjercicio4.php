@@ -1,29 +1,42 @@
-<html>
-    <head>
-        <title>ver numero</title>
-    </head>
-    <body>
-        <h1>Procesa</h1>
-        <?php
-            if ($_POST){
+<?php
+    include_once("../../Control/controlEjercicio3/SaludoPersonalizado.php");
+    include_once("../../Control/controlEjercicio4/VerificaMayoriaEdad.php");
 
-                $numero = $_POST['numero'] ;
+    $objSaludo = new SaludoPersonalizado();
+    $objEdad = new VerificaMayoriaEdad();
 
-                if ($numero == ""){
-                    echo "No se ingreso ningún número<br>";
-                } else if($numero > 0){
-                    echo "El número ingresado es positivo<br>";
-                } else if ($numero < 0){
-                    echo "El número ingresado es negativo<br>";
-                } else {
-                    echo "El número ingresado es cero<br>";
-                }
-                echo "El valor del número ingresado es: ".$numero."<br>";
+    if ($_GET){
+        $nombre = $_GET['nombreForm'];
+        $apellido = $_GET['apellidoForm'];
+        $edad = $_GET['edadForm'];
+        $direccion = $_GET['direccionForm'];
 
-            }else{
-                echo "No se recibieron datos<br>";
-            }
-        ?>
-        <a href="../vista/ejercicio1.php"> Volver <a>
-    </body>
-</html>
+        $respuesta1 = $objSaludo->crearSaludo($nombre, $apellido, $edad, $direccion);
+        $respuesta2 = $objEdad->indicaMayoriaEdad($edad);
+        $respuesta = $respuesta1."<br>".$respuesta2;
+
+    } else {
+        $respuesta = "No se recibieron datos";
+    }
+
+    $tituloPagina = "Ejericio 4 del TP1";
+    $tp = "botonTP1";
+    $ejercicio = "botonEjer4";
+    
+    include_once('../estructura/encabezado.php');
+?>
+     
+            <div class="contenedorCentrado">
+
+                <?php
+                    echo $respuesta;
+                ?>
+                
+                <div id="contieneLinkVolver">
+                    <a href="ejercicio4.php" id="linkVolver"><br> Volver <a>
+                </div>
+            </div>
+        
+<?php
+    include_once('../estructura/pie.php');
+?>

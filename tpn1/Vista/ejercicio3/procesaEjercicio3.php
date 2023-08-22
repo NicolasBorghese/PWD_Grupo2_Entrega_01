@@ -15,9 +15,9 @@
         $respuesta = "No se recibieron datos";
     }
 
-    $tituloPagina = "Ejericio 2 del TP1";
+    $tituloPagina = "Ejericio 3 del TP1";
     $tp = "botonTP1";
-    $ejercicio = "botonEjer2";
+    $ejercicio = "botonEjer3";
     
     include_once('../estructura/encabezado.php');
 ?>
