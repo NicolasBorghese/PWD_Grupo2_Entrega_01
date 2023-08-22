@@ -7,28 +7,40 @@ class CuentaHoras {
     public function __construct(){
     }
 
-    //METODOS PROPIOS
+    //MÉTODOS PROPIOS
 
     /**
-     * Lee un valor recibido, si es un número indica si es positivo, negativo o cero.
+     * Lee un arreglo que cada indice guarda las horas por día que tiene una materia.
+     * Si los datos son correctos se suman, retorna un número con el resultado.
      * 
-     * @param float $numero
-     * @return string
+     * @param array $arregloHoras
+     * @return float
      */
-    public function clasificarNumero($numero){
+    public function sumarHoras($arregloHoras){
+        $cantHoras = 0;
+        $iter = 0;
+        $error = false;
 
-        if (is_numeric($numero)){
+        do {
 
-            if ($numero > 0){
-                $respuesta = "El número ingresado es positivo<br>";
-            } else if ($numero < 0){
-                $respuesta = "El número ingresado es negativo<br>";
+            if(is_numeric($arregloHoras[$iter])){
+                $cantHoras += $arregloHoras[$iter];
+
+            } else if ($arregloHoras[$iter] == ""){
+                $cantHoras += 0;
+
             } else {
-                $respuesta = "El número ingresado es cero<br>";
+                $error = true;
+
             }
-            
+            $iter++;
+
+        } while ($iter < 5 && !$error);
+
+        if(!$error){
+            $respuesta = $cantHoras;
         } else {
-            $respuesta = "ERROR: el valor ingresado no es un número<br>";
+            $respuesta = -1;
         }
 
         return $respuesta;

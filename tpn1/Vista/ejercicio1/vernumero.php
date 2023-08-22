@@ -7,7 +7,7 @@
         $numero = $_POST['numero'] ;
         $respuesta = $obj->clasificarNumero($numero);
     } else {
-        echo "No se recibieron datos<br>";
+        $respuesta = "No se recibieron datos<br>";
     }
 
     $tituloPagina = "Ejericio 1 del TP1 ";

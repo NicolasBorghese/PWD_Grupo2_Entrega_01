@@ -6,11 +6,40 @@
     include_once('../estructura/encabezado.php');
 ?>
             <!-- 
-                tp1 ejercicio 2
+                tp1 ejercicio 3
+                Crear una página php que contenga un formulario HTML como el que se indica en la 
+                imagen (darle formato con CSS), enviar estos datos por el método Post a otra página php 
+                que los reciba y muestre por pantalla un mensaje como el siguiente: “Hola, yo soy 
+                nombre , apellido tengo edad años y vivo en dirección”, usando la información recibida.
+                Cambiar el método Post por Get y analizar las diferencias
             -->
 
-            <div class="contenedorCentrado">
+            <div class="contenedorEnunciado">
+                <p>Complete los datos para crear un saludo personalizado</p>
+            </div>
 
+            <div class="contenedorCentrado">
+                <form name="form_ejercicio3" method="get" action="procesaEjercicio3.php">
+                    <table>
+                        <tr>
+                            <td>Nombre:</td>
+                            <td><input type="text" name="nombreForm" id="nombreForm" required></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido:</td>
+                            <td><input type="text" name="apellidoForm" id="apellidoForm" required></td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td><input type="number" name="edadForm" id="edadForm" required></td>
+                        </tr>
+                        <tr>
+                            <td>Dirección</td>
+                            <td><input type="text" name="direccionForm" id="direccionForm" required></td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+                </form>
             </div>
 
 <?php

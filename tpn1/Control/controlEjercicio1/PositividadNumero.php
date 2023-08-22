@@ -7,7 +7,7 @@ class PositividadNumero {
     public function __construct(){
     }
 
-    //METODOS PROPIOS
+    //MÉTODOS PROPIOS
 
     /**
      * Lee un valor recibido, si es un número indica si es positivo, negativo o cero.
