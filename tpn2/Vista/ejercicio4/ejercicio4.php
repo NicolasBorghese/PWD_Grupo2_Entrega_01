@@ -14,7 +14,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 				
-					<form class="formulario needs-validation row g-3" id="formulario" method="post" action="procesaEjercicio4.php" novalidate>
+					<form class="formulario needs-validation row g-3" id="formulario" method="post" action="../Control/ejercicio4.php" novalidate>
 						<div class="titulo  pl-0 mt-4">
 							<h5 class="bg-gray text-blue p-2"><i class="bi bi-pencil-square"></i>Cinem@s</h5>
 						</div>	
@@ -66,13 +66,15 @@
 						<!--DURACION-->		
 							<div class="formulario_grupo col-4 mb-3" id="grupo_duracion">
 								<label class="formulario_label form-label mb-0">Duracion</label>
-								<div class="formulario_grupo-input d-flex align-items">
-									<input type="number" class="formulario_input form-control" id="duracion" name="duracion" placeholder="999" max="999" min="1" required><p class="py-0">(minutos)</p>
-								</div>
+								
+									<input type="number" class="formulario_input form-control" id="duracion" name="duracion" placeholder="999" max="999" min="1" required>
+									<p class="py-0">(minutos)</p>
+								
 								<div class="invalid-feedback">
-                  Porfavor ingrese un valor que no supere los 999 mins
+								maximo 3 numeros!
                 </div>
-							</div>
+								</div>
+							
 							
 						</div>
 
@@ -101,15 +103,18 @@
 							</div>
 							
 						<!--AÑO-->
-							<div class="formulario_grupo col-2 mb-3" id="grupo_anio">
+							<div class="formulario_grupo col-3 mb-3" id="grupo_anio">
 								<label  class="formulario_label form-label mb-0">Año</label>
 								<div class="formulario_grupo-input">
-									<input type="number" class="formulario_input form-control" id="anio" max="9999" min="1" name="anio" required>
-								</div>
+									<input type="number" class="form-control formulario_input" id="anio" pattern="[0-9]+" max="9999" min="1" name="anio" required>
+								
 								<div class="invalid-feedback">
-                Porfavor ingrese un valor de 4 digitos
+                Solo 4 digitos!
               </div>
 							</div>
+							</div>
+
+            
 						
 						<!--GENERO-->	
 							<div class="formulario_grupo col-3 mb-3" id="grupo_genero">
@@ -134,12 +139,13 @@
 	            		<input type="radio" name="edad" id="todolospublicos" value="Todo los publicos" class="formulario_input form-check-input" required><label class="formulario_label etiqueta form-check-label">Todo los publicos</label>
   	          		<input type="radio" name="edad" id="mayores7" value="Mayores a 7 años" class="formulario_input form-check-input" required><label class="formulario_label form-check-label"> Mayores a 7 años</label>
     	        		<input type="radio" name="edad" id="mayores18" value="Mayores a 18 años" class="formulario_input form-check-input" required><label class="formulario_label form-check-label"> Mayores a 18 años</label>
-								</div>
+								
 								<div class="invalid-feedback">
-								Es necesario ingresar el sexo
+								Es necesario ingresar el rango de edad
 								</div>
 							</div>
 						</div>
+					</div>
 
 						<!--SINOPSIS-->	
 						<div class="row">
@@ -169,8 +175,7 @@
 			</div>
 			
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
 
@@ -190,12 +195,9 @@
     })
       })()
       
-
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
-		
-
-            </div>
+		            </div>
 
 <?php
     include_once('../estructura/pie.php');

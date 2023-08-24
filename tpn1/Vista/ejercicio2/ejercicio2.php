@@ -23,6 +23,7 @@
                     <table>
                         <tr>
                             <td>Lunes</td>
+<<<<<<< HEAD
                             <td><input type="number" step="any" name="hsLunes" id="hsLunes" required></td>
                         </tr>
                         <tr>
@@ -40,6 +41,25 @@
                         <tr>
                             <td>Viernes</td>
                             <td><input type="number" step="any" name="hsViernes" id="hsViernes" required></td>
+=======
+                            <td><input type="number" step="any" name="hsLunes" id="hsLunes" min=0></td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td><input type="number" step="any" name="hsMartes" id="hsMartes" min=0></td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td><input type="number" step="any" name="hsMiercoles" id="hsMiercoles" min=0></td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td><input type="number" step="any" name="hsJueves" id="hsJueves" min=0></td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td><input type="number" step="any" name="hsViernes" id="hsViernes" min=0></td>
+>>>>>>> 2abc9a0ebb58c40c6c484f085bf24d70105700e2
                         </tr>
                     </table>
                     <input type="submit" name="Submit" value="Enviar" class="botonFormulario">

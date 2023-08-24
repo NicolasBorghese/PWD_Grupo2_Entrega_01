@@ -9,32 +9,82 @@
                 tp1 ejercicio 6
             -->
 
-        <div class="contenedorCentrado">
-            <form id="form1" name="form1" method="get" action="procesaEjercicio6.php" >
-                Nombre: <input name="Nombre" type="text" min=10 id="Nombre" /> <br />
-                Apellido: <input name="Apellido" type="text" id="Apellido" /> <br />
-                Edad: <input name="Edad" type="text" id="Edad"/> <br />
-                Direccion: <input name="Direccion" type="text" id="Direccion"/> <br />
-                Estudio Primarios:<input type="radio" name="estudio" id="estudio" value="primario"><br />
-                Estudios Secundarios:<input type="radio" name="estudio" id="estudio" value="secundario"><br />
-                No tiene estudios:<input type="radio" name="estudio" id="estudio" value="incompleto"><br /><br />
-                Sexo:<select id="sexo" name="sexo">
-                <option value=""></option>
-                <option value="masculino">masculino</option>
-                <option value="femenino">femenino</option>
-                <option value="otro">otro</option>
-                </select><br /><br />
-                ingrese los deportes que realiza: <br />
-                voley<input type="checkbox" name="voley" id="voley"><br />
-                basquet<input type="checkbox" name="basquet" id="basquet"><br />
-                futbol<input type="checkbox" name="futbol" id="futbol"><br />
-                tennis<input type="checkbox" name="tennis" id="tennis"><br />
-                <br />
-                <br />
-                <input type="submit" name="Submit" value="Aceptar" />
-            </form>
+            <div class="contenedorCentrado">
+                <form name="form_ejercicio6" method="get" action="procesaEjercicio6.php">
+                    <table>
+                        <tr>
+                            <td>Nombre:</td>
+                            <td><input type="text" name="nombreForm" id="nombreForm"  minlength="3" required></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido:</td>
+                            <td><input type="text" name="apellidoForm" id="apellidoForm"  minlength="3" required></td>
+                        </tr>
+                        <tr>
+                            <td>Edad:</td>
+                            <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
+                        </tr>
+                        <tr>
+                            <td>Dirección:</td>
+                            <td><input type="text" name="direccionForm" id="direccionForm" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Indique su nivel de estudios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="estudios" id="estudios1" value="noTiene" required> No tiene estudios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="estudios" id="estudios2" value="primarios"> Estudios primarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="estudios" id="estudios3" value="secundarios"> Estudios secundarios
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>Sexo:</td>
+                            <td>
+                                <select id="sexoForm" name="sexoForm">
+                                    <option value=""></option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Indique si practica alguno <br> de estos deportes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Voley</td>
+                            <td><input type="checkbox" name="deporte[]" id="deporte[]" value="voley"></td>
+                        </tr>
+                        <tr>
+                            <td>Basquet</td>
+                            <td> <input type="checkbox" name="deporte[]" id="deporte[]" value="basquet"></td>
+                        </tr>
+                        <tr>
+                            <td>Futbol</td>
+                            <td><input type="checkbox" name="deporte[]" id="deporte[]" value="futbol"></td> 
+                        </tr>
+                        <tr>
+                            <td>Tennis</td>
+                            <td><input type="checkbox" name="deporte[]" id="deporte[]" value="tennis"></td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+                </form>
+            </div>
 
-        </div>
 
 <?php
     include_once('../estructura/pie.php');

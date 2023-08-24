@@ -13,7 +13,7 @@
                 respuesta, que permita volver a la página anterior.
             -->
 
-            <div class="contenedorCentrado">
+            <div class="contenedorCentrado" class="contenedorCentradoChico">
                 <form name="form_ejercicio1" method="post" action="vernumero.php">
                     Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>
                     <input type="submit" name="Submit" value="Enviar" class="botonFormulario">

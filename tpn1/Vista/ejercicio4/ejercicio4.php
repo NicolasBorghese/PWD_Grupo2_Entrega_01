@@ -23,15 +23,15 @@
                     <table>
                         <tr>
                             <td>Nombre:</td>
-                            <td><input type="text" name="nombreForm" id="nombreForm" required></td>
+                            <td><input type="text" name="nombreForm" id="nombreForm" minlength="3" required></td>
                         </tr>
                         <tr>
                             <td>Apellido:</td>
-                            <td><input type="text" name="apellidoForm" id="apellidoForm" required></td>
+                            <td><input type="text" name="apellidoForm" id="apellidoForm" minlength="3" required></td>
                         </tr>
                         <tr>
                             <td>Edad:</td>
-                            <td><input type="number" name="edadForm" id="edadForm" required></td>
+                            <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
                         </tr>
                         <tr>
                             <td>Dirección:</td>
