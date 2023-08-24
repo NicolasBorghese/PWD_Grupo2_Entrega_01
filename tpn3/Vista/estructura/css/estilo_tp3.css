@@ -103,6 +103,13 @@ body {
     background-color: lavender;
     float:left;
 }
+.contenedorEnunciado {
+    border:1px solid black;
+    padding: 10px;
+    background-color: lavender;
+    text-align: center;
+}
+
 
 .botonFormulario {
     width: 100%;
@@ -138,4 +145,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.divArchivo{
+    background-color: rgb(116, 146, 129);
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+#tituloTp3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+#miArchivo{
+    padding: 10px;
+    
+}
+#submit{
+    background-color: rgb(146, 152, 156);
+    padding: 5px;
+    margin-top: 10px;
 }
