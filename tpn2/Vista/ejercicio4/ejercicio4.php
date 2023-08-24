@@ -142,7 +142,7 @@
 								</div>
 							</div>
 						</div>
-
+					</div>
 						<!--SINOPSIS-->	
 						<div class="row">
 							<div class="formulario_grupo mb-3" id="sinopsis">
