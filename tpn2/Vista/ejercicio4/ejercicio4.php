@@ -14,7 +14,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12">
 				
-					<form class="formulario needs-validation row g-3" id="formulario" method="post" action="procesaEjercicio4.php" novalidate>
+					<form class="formulario needs-validation row g-3" id="formulario" method="post" action="../Control/ejercicio4.php" novalidate>
 						<div class="titulo  pl-0 mt-4">
 							<h5 class="bg-gray text-blue p-2"><i class="bi bi-pencil-square"></i>Cinem@s</h5>
 						</div>	
@@ -72,9 +72,9 @@
 								
 								<div class="invalid-feedback">
 								maximo 3 numeros!
-                						</div>
+                </div>
 								</div>
-						
+							
 							
 						</div>
 
@@ -103,7 +103,7 @@
 							</div>
 							
 						<!--AÑO-->
-						<div class="formulario_grupo col-3 mb-3" id="grupo_anio">
+							<div class="formulario_grupo col-3 mb-3" id="grupo_anio">
 								<label  class="formulario_label form-label mb-0">Año</label>
 								<div class="formulario_grupo-input">
 									<input type="number" class="form-control formulario_input" id="anio" pattern="[0-9]+" max="9999" min="1" name="anio" required>
@@ -113,6 +113,9 @@
               </div>
 							</div>
 							</div>
+
+            
+						
 						<!--GENERO-->	
 							<div class="formulario_grupo col-3 mb-3" id="grupo_genero">
 								<label  class="formulario_label form-label mb-0">Genero</label>
@@ -143,6 +146,7 @@
 							</div>
 						</div>
 					</div>
+
 						<!--SINOPSIS-->	
 						<div class="row">
 							<div class="formulario_grupo mb-3" id="sinopsis">
@@ -171,8 +175,7 @@
 			</div>
 			
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
 
@@ -192,12 +195,9 @@
     })
       })()
       
-
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
-		
-
-            </div>
+		            </div>
 
 <?php
     include_once('../estructura/pie.php');
