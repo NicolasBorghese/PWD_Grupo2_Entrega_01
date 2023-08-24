@@ -13,7 +13,7 @@
                 
             <script src="../estructura/js/verificacio_jquery.js"></script>
 
-            <form action="../control/verificaPass.php" method="post" id="form">
+            <form action="verificaPass.php" method="post" id="form">
                 <div class="container d-flex justify-content-center">
                     <div class="bg-secondary m-4  d-flex justify-content-center align-items-center" style="height: 300px; width: 300px;">
                         <div class="bg-light position-relative " style="height: 270px; width: 270px;">
