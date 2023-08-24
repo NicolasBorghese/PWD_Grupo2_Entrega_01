@@ -1,29 +1,32 @@
-<html>
-    <head>
-        <title>ver numero</title>
-    </head>
-    <body>
-        <h1>Procesa</h1>
-        <?php
-            if ($_POST){
+<?php
+$tituloPagina = "Ejercicio 8 del TP1";
+$tp = "botonTP1";
+$ejercicio = "botonEjer8";
 
-                $numero = $_POST['numero'] ;
+include_once('../estructura/encabezado.php');
+?>
 
-                if ($numero == ""){
-                    echo "No se ingreso ningún número<br>";
-                } else if($numero > 0){
-                    echo "El número ingresado es positivo<br>";
-                } else if ($numero < 0){
-                    echo "El número ingresado es negativo<br>";
-                } else {
-                    echo "El número ingresado es cero<br>";
-                }
-                echo "El valor del número ingresado es: ".$numero."<br>";
+<div class="contenedorCentrado">
+    <?php
+    if ($_POST) {
+        $edad = $_POST['edad'];
+        $condicion = $_POST['condicion'];
+        $tarifa = 300;
 
-            }else{
-                echo "No se recibieron datos<br>";
-            }
-        ?>
-        <a href="../vista/ejercicio1.php"> Volver <a>
-    </body>
-</html>
+        if ($condicion == "si" || $edad < 12) {
+            $tarifa = 160;
+        } elseif ($condicion == "si" && $edad >= 12) {
+            $tarifa = 180;
+        }
+
+        echo "<h2>Total a pagar:</h2></br> $" . $tarifa;
+    }
+    ?>
+
+    </br>
+    <a href="ejercicio8.php"> Volver </a>
+</div>
+
+<?php
+include_once('../estructura/pie.php');
+?>
