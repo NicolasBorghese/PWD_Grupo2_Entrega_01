@@ -8,3 +8,6 @@
             <!-- 
                 tp2 ejercicio 1
             -->
+<?php
+    include_once('../estructura/pie.php');
+?>
