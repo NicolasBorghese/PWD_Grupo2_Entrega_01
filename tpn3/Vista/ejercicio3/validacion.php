@@ -4,9 +4,10 @@
     $ejercicio = "botonEjer2";
     
     include_once('../estructura/encabezado.php');
+    include_once('../../control/controlEjercio3/vArchivo.php');
 ?>
 
-    <div class="contenedorCentrado">
+    <div class="contenedorForCine">
 
     <?php
 if ($_POST){
@@ -51,48 +52,26 @@ if($opcionEdad== 1){
     $edad= "Mayores de 18 años";
    }
 
-
-/* archivo*/  
-
-$nombreArchivo= strtolower( $_FILES['imagenPeli']['name'] ); 
-$subirOk = true;
-//controlo que sea imagen
-
-$mystring = $nombreArchivo;
-$encontrar   = '.png';
-$encontrar2   = '.jpg';
-$pos1 = strpos($mystring, $encontrar);
-$pos2 = strpos($mystring, $encontrar2);
-
- //controar formatos
- if($pos1=== false || $pos1=== false) {
-    $mensaje= "Lo siento solo se permiten archivos png o jpg. \n";
-   $subirOk = false;
- }
-
-
-
-if ($subirOk == false) {
-
- $mensaje= "ERROR: no se pudo cargar el archivo";
-}else{
-  if (move_uploaded_file($_FILES['imagenPeli']['tmp_name'],'../../archivos/'.$nombreArchivo)){
-    $mensaje =" ";
+   // verifica que se puedan cargar el archivo
+   $nombreArchivo= strtolower( $_FILES['imagenPeli']['name'] ); 
+   $subirArchivo= new cargaArchivo();
+   $fueCargado= $subirArchivo->analizarArchivo($nombreArchivo);
    
-  }else{
-    $mensaje= "Lo siento, hubo un error al cargar su archivo.";
-  }
-}
+   if($fueCargado == false){
+     $mensaje='El archivo no puede ser cargado, revise que el formato sea PNG o JPG';
+   }else{
+     $mensaje= "";
+   } 
 /*descripcion Pantalla*/
 echo"
 <div class='container'>
   <div class='row'>
-    <div class='col-md-6'>
-    <h3>La pelìcula introducida es</h3>
+    <div class='col-md-12'>
+    <h4 id='textPeli'>La pelìcula introducida es</h4>
     <p><strong>$mensaje</strong></<p>
     <img src='../../archivos/$nombreArchivo' height='70px' width='70px' border='2px' alt='Pelicula'/>
     <br/>
-    <p><strong>Titulo:</strong> $titulo <br/>
+    <p ><strong>Titulo:</strong> $titulo <br/>
        <strong>Actores:</strong>$actores <br/>
        <strong>Director:</strong> $director <br/>
        <strong>Guiòn:</strong> $guion<br/>

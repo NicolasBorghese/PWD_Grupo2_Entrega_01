@@ -175,7 +175,19 @@
     margin-top: 10px;
 }
 
-i{
-    color:#0dcaf0;
- }
+.contenedorEj3{
+    background-color: rgb(255, 255, 255);
+}
 
+.contenedorForCine{    
+    background-color: #c6e7a7;
+    color: #0d4717;
+    margin:auto;
+    padding: 10px;
+    float:left;
+
+}
+#textPeli{
+    text-align:left;
+    color: rgb(18, 111, 161);
+}
