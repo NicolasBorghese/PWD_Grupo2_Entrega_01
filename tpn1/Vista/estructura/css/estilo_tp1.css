@@ -105,10 +105,18 @@ body {
 
 .contenedorCentrado {
     border:1px solid black;
-    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     background-color: lavender;
     float:left;
+}
+
+.contenedorCentrado table {
+    border-collapse: separate;
+    border-spacing: 10px 10px; /* Ajusta el primer valor para el espacio vertical y el segundo valor para el espacio horizontal */
 }
 
 .botonFormulario {
