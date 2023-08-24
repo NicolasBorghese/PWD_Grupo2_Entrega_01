@@ -17,9 +17,10 @@ class DatosPersonaE5 {
      * @param string $apellido
      * @param int $edad
      * @param string $direccion
+     * @param string $sexo
      * @return string
      */
-    public function verificarDatos($nombre, $apellido, $edad, $direccion){
+    public function verificarDatos($nombre, $apellido, $edad, $direccion, $sexo){
 
         $datosCorrectos = true;
 
@@ -36,6 +37,10 @@ class DatosPersonaE5 {
         }
 
         if ($direccion == ""){
+            $datosCorrectos = false;
+        }
+        
+        if ($sexo == ""){
             $datosCorrectos = false;
         }
 

@@ -1,5 +1,5 @@
 <?php
-    include_once("../../Control/controlEjercicio5/DatosPersonaE5.php.php");
+    include_once("../../Control/controlEjercicio5/DatosPersonaE5.php");
 
     $objDatos = new DatosPersonaE5();
 
@@ -8,10 +8,30 @@
         $apellido = $_GET['apellidoForm'];
         $edad = $_GET['edadForm'];
         $direccion = $_GET['direccionForm'];
+        $sexo =  $_GET['sexoForm'];
+        $estudios =  $_GET['estudios'];
 
-        $respuesta1 = $objSaludo->crearSaludo($nombre, $apellido, $edad, $direccion);
-        $respuesta2 = $objEdad->indicaMayoriaEdad($edad);
-        $respuesta = $respuesta1."<br>".$respuesta2;
+        $resultado = $objDatos->verificarDatos($nombre, $apellido, $edad, $direccion, $sexo);
+        
+
+        if($resultado){
+
+            $respuestaEdad = $objDatos->indicaMayoriaEdad($edad);
+
+            $respuesta =
+            "Nombre: ".$nombre."<br>
+            Apellido: ".$apellido."<br>
+            Edad: ".$edad."<br>
+            Dirección: ".$direccion."<br>
+            Sexo: ".$sexo."<br>
+            Estudios: ".$estudios."<br>
+            <br>".$respuestaEdad;
+
+        } else {
+
+            $respuesta = "Se ingresaron mal los datos";
+
+        }
 
     } else {
         $respuesta = "No se recibieron datos";
