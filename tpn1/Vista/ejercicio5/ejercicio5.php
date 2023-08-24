@@ -15,8 +15,7 @@
             -->
 
             <div class="contenedorEnunciado">
-                <p>Complete los datos para crear un saludo personalizado</p>
-                <p>e indicar si es mayor de edad o no</p>
+                <p>Complete los datos del formulario</p>
             </div>
 
             <div class="contenedorCentrado">

@@ -1,9 +1,7 @@
 <?php
-    include_once("../../Control/controlEjercicio3/SaludoPersonalizado.php");
-    include_once("../../Control/controlEjercicio4/VerificaMayoriaEdad.php");
+    include_once("../../Control/controlEjercicio4/DatosPersonaE4.php");
 
-    $objSaludo = new SaludoPersonalizado();
-    $objEdad = new VerificaMayoriaEdad();
+    $objDatos = new DatosPersonaE4();
 
     if ($_GET){
         $nombre = $_GET['nombreForm'];
@@ -11,9 +9,24 @@
         $edad = $_GET['edadForm'];
         $direccion = $_GET['direccionForm'];
 
-        $respuesta1 = $objSaludo->crearSaludo($nombre, $apellido, $edad, $direccion);
-        $respuesta2 = $objEdad->indicaMayoriaEdad($edad);
-        $respuesta = $respuesta1."<br>".$respuesta2;
+        $resultado = $objDatos->verificarDatos($nombre, $apellido, $edad, $direccion);
+
+        if($resultado){
+
+            $respuestaEdad = $objDatos->indicaMayoriaEdad($edad);
+
+            $respuesta =
+            "Nombre: ".$nombre."<br>
+            Apellido: ".$apellido."<br>
+            Edad: ".$edad."<br>
+            Dirección: ".$direccion."<br>
+            <br>".$respuestaEdad;
+
+        } else {
+
+            $respuesta = "Se ingresaron mal los datos";
+
+        }
 
     } else {
         $respuesta = "No se recibieron datos";

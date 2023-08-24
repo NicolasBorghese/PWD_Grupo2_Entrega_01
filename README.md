@@ -1,16 +1,20 @@
 <div align="center">
 Programación Web Dinámica 2023
 
-# <a href="https://nicolasborghese.github.io/PWD_Grupo2_Entrega_01/">Grupo 02 Entraga 01</a>
+# <a href="https://nicolasborghese.github.io/PWD_Grupo2_Entrega_01/">Grupo 02 Entrega 01</a>
 
 ## Integrantes
 
 <table>
     <tr>
-        <td>Borghese Nicolás</td><td>Irigoyen Joaquín</td><td>La Forgia Floriana</td>
+        <td>Borghese Nicolás</td>
+        <td>Irigoyen Joaquín</td>
+        <td>La Forgia Floriana</td>
     </tr>
     <tr>
-        <td>Moreno Gisella</td><td>Navarro Pablo</td><td>Paredes Paulina</td>
+        <td>Moreno Gisella</td>
+        <td>Navarro Pablo</td>
+        <td>Paredes Paulina</td>
     </tr>
 </table>
 
