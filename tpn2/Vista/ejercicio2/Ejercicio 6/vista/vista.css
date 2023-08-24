@@ -1,0 +1,14 @@
+.nom td{
+    padding: 5%;
+}
+#boton{
+    margin-left: 5%;
+}
+
+#texto{
+    border: 1px solid black;
+    margin: 5%;
+    padding: 5%;
+    padding-left: 27%;
+    font-size: larger;
+}
