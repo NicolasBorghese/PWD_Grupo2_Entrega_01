@@ -104,6 +104,11 @@
     background-color: lavender;
     float:left;
 }
+
+#fondoBlaco{
+    background-color: white;
+}
+
 .contenedorEnunciado {
     border:1px solid black;
     padding: 10px;

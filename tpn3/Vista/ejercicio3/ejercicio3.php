@@ -1,7 +1,7 @@
 <?php 
-    $tituloPagina = "Ejercicio 4 del TP2";
-    $tp = "botonTP2";
-    $ejercicio = "botonEjer4";
+    $tituloPagina = "Ejercicio 3 del TP3";
+    $tp = "botonTP3";
+    $ejercicio = "botonEjer3";
     
     include_once('../estructura/encabezado.php');
 ?>
@@ -9,7 +9,7 @@
                 tp2 ejercicio 4
             -->
 
-            <div class="contenedorCentrado">
+            <div class="contenedorCentrado" id="fondoBlanco">
             <div class="container border">
  <div class="bg-light">
    <i class="bi bi-box-arrow-in-down-left bg-gray text-blue p-2">Cinem@s</i> 
