@@ -6,13 +6,8 @@
     include_once('../estructura/encabezado.php');
 ?>
 
-<<<<<<< HEAD
-            <div class="contenedorCentrado" id="fondoBlanco">
-            <div class="container border">
-=======
 <div class="contenedorEj3">
  <div class="container border">
->>>>>>> 096b56a52018f059c2a9ded6b1a4e9505582e261
  <div class="bg-light">
    <i class="bi bi-box-arrow-in-down-left bg-gray text-blue p-2">Cinem@s</i> 
  </div>
