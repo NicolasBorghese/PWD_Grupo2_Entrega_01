@@ -1,29 +1,37 @@
-<html>
-    <head>
-        <title>ver numero</title>
-    </head>
-    <body>
-        <h1>Procesa</h1>
-        <?php
-            if ($_POST){
+<?php
+$tituloPagina = "Ejercicio 7 del TP1";
+$tp = "botonTP1";
+$ejercicio = "botonEjer7";
 
-                $numero = $_POST['numero'] ;
+include_once('../estructura/encabezado.php');
+?>
 
-                if ($numero == ""){
-                    echo "No se ingreso ningún número<br>";
-                } else if($numero > 0){
-                    echo "El número ingresado es positivo<br>";
-                } else if ($numero < 0){
-                    echo "El número ingresado es negativo<br>";
-                } else {
-                    echo "El número ingresado es cero<br>";
-                }
-                echo "El valor del número ingresado es: ".$numero."<br>";
+<div class="contenedorCentrado">
+    <?php
+    if ($_POST) {
+        $num1 = $_POST['num1'];
+        $num2 = $_POST['num2'];
+        $operacion = $_POST['operacion'];
 
-            }else{
-                echo "No se recibieron datos<br>";
-            }
-        ?>
-        <a href="../vista/ejercicio1.php"> Volver <a>
-    </body>
-</html>
+        switch ($operacion) {
+            case "suma":
+                $resultado = $num1 + $num2;
+                break;
+            case "resta":
+                $resultado = $num1 - $num2;
+                break;
+            case "multiplicacion":
+                $resultado = $num1 * $num2;
+                break;
+            case "division":
+                $resultado = $num1 / $num2;
+                break;
+        }
+        echo "El resultado es: " . $resultado . "</br>";
+    }
+    ?>
+    <a href="ejercicio7.php"> Volver </a>
+</div>
+<?php
+include_once('../estructura/pie.php');
+?>
