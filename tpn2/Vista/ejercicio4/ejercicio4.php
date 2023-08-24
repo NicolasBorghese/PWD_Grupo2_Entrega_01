@@ -66,13 +66,15 @@
 						<!--DURACION-->		
 							<div class="formulario_grupo col-4 mb-3" id="grupo_duracion">
 								<label class="formulario_label form-label mb-0">Duracion</label>
-								<div class="formulario_grupo-input d-flex align-items">
-									<input type="number" class="formulario_input form-control" id="duracion" name="duracion" placeholder="999" max="999" min="1" required><p class="py-0">(minutos)</p>
-								</div>
+								
+									<input type="number" class="formulario_input form-control" id="duracion" name="duracion" placeholder="999" max="999" min="1" required>
+									<p class="py-0">(minutos)</p>
+								
 								<div class="invalid-feedback">
-                  Porfavor ingrese un valor que no supere los 999 mins
-                </div>
-							</div>
+								maximo 3 numeros!
+                						</div>
+								</div>
+						
 							
 						</div>
 
@@ -101,16 +103,16 @@
 							</div>
 							
 						<!--AÑO-->
-							<div class="formulario_grupo col-2 mb-3" id="grupo_anio">
+						<div class="formulario_grupo col-3 mb-3" id="grupo_anio">
 								<label  class="formulario_label form-label mb-0">Año</label>
 								<div class="formulario_grupo-input">
-									<input type="number" class="formulario_input form-control" id="anio" max="9999" min="1" name="anio" required>
-								</div>
+									<input type="number" class="form-control formulario_input" id="anio" pattern="[0-9]+" max="9999" min="1" name="anio" required>
+								
 								<div class="invalid-feedback">
-                Porfavor ingrese un valor de 4 digitos
+                Solo 4 digitos!
               </div>
 							</div>
-						
+							</div>
 						<!--GENERO-->	
 							<div class="formulario_grupo col-3 mb-3" id="grupo_genero">
 								<label  class="formulario_label form-label mb-0">Genero</label>
@@ -134,9 +136,9 @@
 	            		<input type="radio" name="edad" id="todolospublicos" value="Todo los publicos" class="formulario_input form-check-input" required><label class="formulario_label etiqueta form-check-label">Todo los publicos</label>
   	          		<input type="radio" name="edad" id="mayores7" value="Mayores a 7 años" class="formulario_input form-check-input" required><label class="formulario_label form-check-label"> Mayores a 7 años</label>
     	        		<input type="radio" name="edad" id="mayores18" value="Mayores a 18 años" class="formulario_input form-check-input" required><label class="formulario_label form-check-label"> Mayores a 18 años</label>
-								</div>
+								
 								<div class="invalid-feedback">
-								Es necesario ingresar el sexo
+								Es necesario ingresar el rango de edad
 								</div>
 							</div>
 						</div>
