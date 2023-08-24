@@ -12,7 +12,7 @@
 <div class='content rounded-1 shadow'>
                 <div class="header border-bottom-0 d-flex align-items-right">
                     <h1>La pelicula introducida es</h1>
-                    <a href='../Vista/ejercicio4.php'><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button></a>
+                    <a href='ejercicio4.php'><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button></a>
                 </div>
                 <div class='body py-0'>
                     <span class='texto'>Titulo: </span><span class='descripcion'><?php echo $titulo = $_POST['titulo']; ?></span></br>
