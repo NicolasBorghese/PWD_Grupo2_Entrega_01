@@ -1,9 +1,7 @@
 <?php
-    include_once("../../Control/controlEjercicio3/SaludoPersonalizado.php");
-    include_once("../../Control/controlEjercicio4/VerificaMayoriaEdad.php");
+    include_once("../../Control/controlEjercicio5/DatosPersonaE5.php.php");
 
-    $objSaludo = new SaludoPersonalizado();
-    $objEdad = new VerificaMayoriaEdad();
+    $objDatos = new DatosPersonaE5();
 
     if ($_GET){
         $nombre = $_GET['nombreForm'];
@@ -19,9 +17,9 @@
         $respuesta = "No se recibieron datos";
     }
 
-    $tituloPagina = "Ejericio 4 del TP1";
+    $tituloPagina = "Ejericio 5 del TP1";
     $tp = "botonTP1";
-    $ejercicio = "botonEjer4";
+    $ejercicio = "botonEjer5";
     
     include_once('../estructura/encabezado.php');
 ?>
@@ -33,7 +31,7 @@
                 ?>
                 
                 <div id="contieneLinkVolver">
-                    <a href="ejercicio4.php" id="linkVolver"><br> Volver <a>
+                    <a href="ejercicio5.php" id="linkVolver"><br> Volver <a>
                 </div>
             </div>
         

@@ -44,24 +44,24 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="radio" name="estudios" id="estudios1"> No tiene estudios
+                                <input type="radio" name="estudios" id="estudios1" value="noTiene" required> No tiene estudios
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="radio" name="estudios" id="estudios2"> Estudios primarios
+                                <input type="radio" name="estudios" id="estudios2" value="primarios"> Estudios primarios
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="radio" name="estudios" id="estudios3"> Estudios secundarios
+                                <input type="radio" name="estudios" id="estudios3" value="secundarios"> Estudios secundarios
                             </td>
                         </tr>
                         <tr>
                         <td>Sexo:</td>
                             <td>
                                 <select>
-                                    <option selected>Masculino</option>
+                                    <option selected >Masculino</option>
                                     <option>Femenino</option>
                                     <option>Otro</option>
                                 </select>

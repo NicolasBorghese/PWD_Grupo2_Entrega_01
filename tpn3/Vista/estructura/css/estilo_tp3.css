@@ -5,11 +5,12 @@
     font-family: 'Michroma', sans-serif;
 }
 
-html {
-    background-color: black;
+#contenedorCuerpo {
+    background-color:black;
+    width:100%;
 }
 
-body {
+#contenedorPagina {
     background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
