@@ -140,3 +140,38 @@
     justify-content: center;
     align-items: center;
 }
+.titulo{
+
+   color:blue;
+}
+.container{
+    border: 2px solid #035f22;
+    box-shadow: 0 2px 10px #035f22, 0 2px 10px #035f22;
+    background-color:whitesmoke;
+}
+
+.formulario_btn:hover {
+    background: #035f22;
+    transition: 1s;
+}
+
+
+.texto{
+    color: rgba(0, 80, 30, 0.7);
+    font-weight: bolder;
+  }
+  .descripcion{
+    color: rgba(0, 80, 30, 0.7);
+    font-weight: unset;
+  }
+  .content{
+    width: 80%;
+    left: 10%;
+    margin-top: 50px;
+  }
+  .body, .header{
+    background-color: rgba(50, 180, 30, 0.3);
+  }
+  h1{
+    color: rgb(20, 120, 150);
+  }
