@@ -13,14 +13,16 @@ include_once('../estructura/encabezado.php');
         $condicion = $_POST['condicion'];
         $tarifa = 300;
 
-        if ($condicion == "si" || $edad < 12) {
-            $tarifa = 160;
-        } elseif ($condicion == "si" && $edad >= 12) {
-            $tarifa = 180;
-        }
-
-        echo "<h2>Total a pagar:</h2></br> $" . $tarifa;
-    }
+        if ($edad < 12) {
+            echo "<h3>Precio de la entrada menores de 12 años: 160 Pesos.</h3><br/>";
+        } else {
+            if ($condicion == "si") {
+                echo "<h3>Precio para estudiantes mayores a 12 años: 180 Pesos.</h3><br/>";
+            } else if ($condicion == "no") {
+                echo "<h3>Precio para NO estudiantes: 300 Pesos.</h3><br/>";
+            }
+} 
+		}
     ?>
 
     </br>
