@@ -8,6 +8,7 @@ include_once('../estructura/encabezado.php');
 
 <div class="contenedorCentrado">
     <?php
+/*desca*/
     if ($_POST) {
         $edad = $_POST['edad'];
         $condicion = $_POST['condicion'];
