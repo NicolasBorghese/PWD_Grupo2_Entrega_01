@@ -12,7 +12,7 @@ include_once('../estructura/encabezado.php');
     if ($_POST) {
         $edad = $_POST['edad'];
         $condicion = $_POST['condicion'];
-        $tarifa = 3000;
+        $tarifa = 300;
 
         if ($edad < 12) {
             echo "<h3>Precio de la entrada menores de 12 años: 160 Pesos.</h3><br/>";
