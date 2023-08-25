@@ -48,12 +48,12 @@
                     </div>
 
                     <div id="menuEjerciciosTP2EJ2">
-                        <input type="button" name="TP2EJ2botonEjer1" id="TP2EJ2botonEjer1" value="TP2EJ2Ejercicio 1" class="botonEjercicios" onclick="irATP2EJ2Ejercicio1();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer2" id="TP2EJ2botonEjer2" value="TP2EJ2Ejercicio 2" class="botonEjercicios" onclick="irATP2EJ2Ejercicio2();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer3" id="TP2EJ2botonEjer3" value="TP2EJ2Ejercicio 3" class="botonEjercicios" onclick="irATP2EJ2Ejercicio3();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer4" id="TP2EJ2botonEjer4" value="TP2EJ2Ejercicio 4" class="botonEjercicios" onclick="irTP2EJ2Ejercicio4();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer5" id="TP2EJ2botonEjer5" value="TP2EJ2Ejercicio 5" class="botonEjercicios" onclick="irTP2EJ2Ejercicio5();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer6" id="TP2EJ2botonEjer6" value="TP2EJ2Ejercicio 6" class="botonEjercicios" onclick="irTP2EJ2Ejercicio6();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer7" id="TP2EJ2botonEjer7" value="TP2EJ2Ejercicio 7" class="botonEjercicios" onclick="irTP2EJ2Ejercicio7();"><!--
-                        --><input type="button" name="TP2EJ2botonEjer8" id="TP2EJ2botonEjer8" value="TP2EJ2Ejercicio 8" class="botonEjercicios" onclick="irTP2EJ2Ejercicio8();">
+                        <input type="button" name="TP2EJ2botonEjer1" id="TP2EJ2botonEjer1" value="Ejer. 2.1" class="botonEjercicios" onclick="irATP2EJ2Ejercicio1();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer2" id="TP2EJ2botonEjer2" value="Ejer. 2.2" class="botonEjercicios" onclick="irATP2EJ2Ejercicio2();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer3" id="TP2EJ2botonEjer3" value="Ejer. 2.3" class="botonEjercicios" onclick="irATP2EJ2Ejercicio3();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer4" id="TP2EJ2botonEjer4" value="Ejer. 2.4" class="botonEjercicios" onclick="irATP2EJ2Ejercicio4();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer5" id="TP2EJ2botonEjer5" value="Ejer. 2.5" class="botonEjercicios" onclick="irATP2EJ2Ejercicio5();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer6" id="TP2EJ2botonEjer6" value="Ejer. 2.6" class="botonEjercicios" onclick="irATP2EJ2Ejercicio6();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer7" id="TP2EJ2botonEjer7" value="Ejer. 2.7" class="botonEjercicios" onclick="irATP2EJ2Ejercicio7();"><!--
+                        --><input type="button" name="TP2EJ2botonEjer8" id="TP2EJ2botonEjer8" value="Ejer. 2.8" class="botonEjercicios" onclick="irATP2EJ2Ejercicio8();">
                     </div>

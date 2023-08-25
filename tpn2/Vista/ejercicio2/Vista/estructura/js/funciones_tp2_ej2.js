@@ -7,7 +7,7 @@ function actualizarCurrent(tp, ejercicio, tp2ej2Ejercicio){
 
     tp.classList.add("botonActual");
     ejercicio.classList.add("botonActual");
-    tp2ej2Ejercicio.add("botonActual");
+    tp2ej2Ejercicio.classList.add("botonActual");
 }
 
 /*/=======================================================================================\*\
@@ -50,18 +50,22 @@ function irATP2EJ2Ejercicio8(){
 
 /*/=======================================================================================/*/
 
+function irATP2Ejercicio1(){
+    window.location.href = "../../../ejercicio1/ejercicio1.php";
+}
+
 function irATP2Ejercicio3(){
-    window.location.href = "../ejercicio3/ejercicio3.php";
+    window.location.href = "../../../ejercicio3/ejercicio3.php";
 }
 
 function irATP2Ejercicio4(){
-    window.location.href = "../ejercicio4/ejercicio4.php";
+    window.location.href = "../../../ejercicio4/ejercicio4.php";
 }
 
 function irATP1Ejercicio1(){
-    window.location.href = "../../../tpn1/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../../../tpn1/Vista/ejercicio1/ejercicio1.php";
 }
 
 function irATP3Ejercicio1(){
-    window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../../../tpn3/Vista/ejercicio1/ejercicio1.php";
 }

@@ -95,6 +95,13 @@
     color:rgb(100, 120, 198);
 }
 
+#menuEjerciciosTP2EJ2 {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: black;
+}
+
 .botonActual {
     color:rgb(138, 230, 135);
     text-shadow: -5px 4px 4px rgb(21, 49, 27);

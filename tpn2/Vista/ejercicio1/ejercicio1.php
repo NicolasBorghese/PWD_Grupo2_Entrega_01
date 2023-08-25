@@ -10,7 +10,11 @@
                     -->
 
                     <div class="contenedorCentrado">
-                        
+                        <p>
+                            Investigar y probar la validación de formularios usando alguna librería o framework <br> 
+                            javaScript (JQuery, Mootools, Dojo, Prototype, etc).<br><br>
+                            Para este proyecto se decidió en conjunto por el uso de JQuery
+                        </p>
                     </div>
 
 <?php
