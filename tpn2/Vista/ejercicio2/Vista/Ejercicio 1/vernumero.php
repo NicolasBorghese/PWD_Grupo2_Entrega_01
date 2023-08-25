@@ -9,9 +9,10 @@
         $respuesta = "No se recibieron datos<br>";
     }
 
-    $tituloPagina = "Ejericio 1 del TP1 ";
-    $tp = "botonTP1";
-    $ejercicio = "botonEjer1";
+    $tituloPagina = "Ejercicio 2.1 del TP2";
+    $tp = "botonTP2";
+    $ejercicio = "botonEjer2";
+    $tp2ej2Ejercicio = "TP2EJ2botonEjer1";
     
     include_once('../estructura/encabezado.php');
 ?>

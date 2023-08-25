@@ -9,7 +9,7 @@
                         tp2 ejercicio 3
                     -->
 
-                    <div class="contenedorCentrado">
+                    <div class="contenedorCentrado2">
                         
                         <script src="../estructura/js/verificacio_jquery.js"></script>
 
