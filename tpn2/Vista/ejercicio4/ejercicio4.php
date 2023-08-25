@@ -69,8 +69,11 @@
 											<!--DURACION-->		
 											<div class="formulario_grupo col-4 mb-3" id="grupo_duracion">
 												<label class="formulario_label form-label mb-0">Duracion</label>
+                        
 												<input type="number" class="formulario_input form-control" id="duracion" name="duracion" placeholder="999" max="999" min="1" required>
 												<p class="py-0">(minutos)</p>
+                        
+                        
 												<div class="invalid-feedback">
 													maximo 3 numeros!
 												</div>
