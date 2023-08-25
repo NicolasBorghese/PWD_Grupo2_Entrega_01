@@ -15,11 +15,13 @@
             -->
 
             <div class="contenedorCentrado" class="contenedorCentradoChico">
-                <form name="form_ejercicio1" method="post" action="vernumero.php">
+                <form name="form_ejercicio1" method="post" action="vernumero.php" novalidate>
                     Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>
                     <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+                    
                 </form>
             </div>
+            
 
 <?php
     include_once('../estructura/pie.php');

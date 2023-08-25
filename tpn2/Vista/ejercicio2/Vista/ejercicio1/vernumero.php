@@ -1,5 +1,5 @@
 <?php
-    include_once("../../Control/controlEjercicio1/PositividadNumero.php");
+    include_once("Control/vernumero.php");
 
     if ($_POST){
         $numero = $_POST['numero'] ;

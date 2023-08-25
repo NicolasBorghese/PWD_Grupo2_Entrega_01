@@ -7,20 +7,23 @@
 <body>
 <?php
 //Programa que verifica si un numero es positivo, negativo o cero
-
+class PositividadNumero{
+  public function clasificarNumero($numero){
 if($_POST){
-    $numero=$_POST["numero"];
+    $numero=$_POST['numero'];
     if($numero<0){
-        echo "El numero es Negativo";
+        $respuesta = "El numero ".$numero." es Negativo";
     }elseif($numero==0){
-        echo "El numero es igual a cero";
+        $respuesta= "El numero ".$numero." es igual a cero";
     }elseif($numero>0){
-        echo "El numero es Positivo";
+        $respuesta= "El numero ".$numero." es Positivo";
     }
 }else{
-    echo "No se ingreso numeros";
+    $respuesta= "No se ingreso numeros";
 }
-
+    return $respuesta;
+}
+}
 ?>
 
 <a href="../vista/formularioUno.php">Volver</a>
