@@ -29,8 +29,8 @@
 
                     <!-- ____________________________________ BANNER ___________________________________ -->
                     <div id="banner">
-                        <p id="tituloMateria">Programación Web Dinámica</p>
-                        <p id="tituloGrupo">GRUPO 2: Entrega 01</p>
+                        <div id="tituloMateria">Programación Web Dinámica</div>
+                        <div id="tituloGrupo">GRUPO 2: Entrega 01</div>
                     </div>
 
                     <!-- ____________________________________ CABEZAL __________________________________ -->

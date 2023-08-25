@@ -1,18 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Michroma', sans-serif;
 }
 
-#tituloMateria {
-    color:white;
-    text-align: center;
-    text-shadow: -5px 4px 4px rgb(15, 27, 36);
-}
-
-
-
+/*-------------------------------------------- CONTENEDORES EXTERNOS -------------------------------*/
 #contenedorCuerpo {
     background-color:black;
     width:100%;
@@ -25,19 +18,7 @@
     width:80%;
 }
 
-#banner {
-    height: 120px;
-    background-color:  rgb(22, 48, 71);
-    padding: 20px;
-}
-
-#banner h1 {
-    color:white;
-    text-align: center;
-    margin-top: 10px;
-    text-shadow: -5px 4px 4px rgb(15, 27, 36);
-}
-
+/*-------------------------------------------- CONTENEDOR PRINCIPAL VS PIE -------------------------*/
 #contenedorGeneral {
     display:flex;
     flex-direction: column;
@@ -47,11 +28,31 @@
     background-color: rgb(233, 233, 233);
 }
 
-#contieneLinkVolver {
-    width: 100%;
-    text-align: center;
+/*-------------------------------------------- CONTENIDO BANNER ------------------------------------*/
+#banner {
+    height: 120px;
+    background-color:  rgb(22, 48, 71);
+    padding: 20px;
 }
 
+#tituloMateria {
+    color:white;
+    text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#tituloGrupo {
+    color:white;
+    text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------- MENU NAVEGACIÓN TPS ---------------------------------*/
 #menuTrabajos {
     width: 100%;
     display: flex;
@@ -73,6 +74,7 @@
     color:rgb(100, 120, 198);
 }
 
+/*-------------------------------------------- MENU NAVEGACIÓN EJERCICIOS --------------------------*/
 #menuEjercicios {
     width: 100%;
     display: flex;
@@ -89,16 +91,17 @@
     font-weight: bold;
 }
 
+.botonEjercicios:hover {
+    color:rgb(100, 120, 198);
+}
+
 .botonActual {
     color:rgb(138, 230, 135);
     text-shadow: -5px 4px 4px rgb(21, 49, 27);
     box-shadow: 0px 4px 4px rgb(21, 49, 27);
 }
 
-.botonEjercicios:hover {
-    color:rgb(100, 120, 198);
-}
-
+/*-------------------------------------------- DIV ENUNCIADO ---------------------------------------*/
 .contenedorEnunciado {
     border:1px solid black;
     padding: 10px;
@@ -106,6 +109,7 @@
     text-align: center;
 }
 
+/*-------------------------------------------- DIV CENTRADO (PRINCIPAL) ----------------------------*/
 .contenedorCentrado {
     border:1px solid black;
     margin-top: 40px;
@@ -122,6 +126,12 @@
     margin-bottom: auto;
 }
 
+#contieneLinkVolver {
+    width: 100%;
+    text-align: center;
+}
+
+/*-------------------------------------------- TABLA -----------------------------------------------*/
 .contenedorCentrado table {
     border-collapse: separate;
     border-spacing: 10px 10px; /* Ajusta el primer valor para el espacio vertical y el segundo valor para el espacio horizontal */
@@ -132,6 +142,7 @@
     margin-top: 10px;
 }
 
+/*-------------------------------------------- PIE DE PÁGINA ---------------------------------------*/
 #pieDePagina {
     height: 150px;
     background-color:  rgb(22, 48, 71);
