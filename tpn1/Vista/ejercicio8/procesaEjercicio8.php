@@ -22,7 +22,7 @@ include_once('../estructura/encabezado.php');
             } else if ($condicion == "no") {
                 echo "<h3>Precio para NO estudiantes: 300 Pesos.</h3><br/>";
             }
-} 
+            } 
 		}
     ?>
 
