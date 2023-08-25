@@ -157,9 +157,9 @@
 												<div class="">
 													<div class="row justify-content-center pb-3 align-items-center">
 														<div class="col-6">
-															<div class="formulario_grupo formulario_grupo-btn-enviar d-flex justify-content-between">
+															<div class="formulario_grupo formulario_grupo-btn-enviar d-flex justify-content-end">
 																<button type="submit" class="formulario_btn btn btn-primary" value="Enviar">Enviar</button>
-																<button type="reset" class="formulario_btn btn btn-secondary">Borrar</button>
+																<button type="reset" class="formulario_btn btn btn-secondary ms-2">Borrar</button>
 															</div>
 														</div>
 													</div>
