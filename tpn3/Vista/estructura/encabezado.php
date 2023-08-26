@@ -28,7 +28,7 @@
                 <div id="contenedorGeneral">
 
                     <!-- ____________________________________ BANNER ___________________________________ -->
-                    <div id="banner">
+                    <div id="banner0">
                         <div id="tituloMateria">Programación Web Dinámica</div>
                         <div id="tituloGrupo">GRUPO 2: Entrega 01</div>
                     </div>

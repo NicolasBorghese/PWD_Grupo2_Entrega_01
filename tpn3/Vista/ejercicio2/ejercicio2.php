@@ -5,10 +5,9 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-           <div class="contenedorEnunciado">
-                <p>Cargue un archivo para visualizarlo en un tex area</p>
+            <div class="contenedorEnunciado">
+                Cargue un archivo para visualizarlo en un text area
             </div>
-            
             <div class="contenedorCentrado">
             <form method="post" action="upload.php" enctype="multipart/form-data" >
                     <table>

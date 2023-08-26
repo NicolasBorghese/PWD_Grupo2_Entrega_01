@@ -13,6 +13,10 @@
                 respuesta, que permita volver a la página anterior.
             -->
 
+            <div class="contenedorEnunciado">
+                Ingrese un número para saber si es positivo, negativo o cero
+            </div>
+
             <div class="contenedorCentrado" class="contenedorCentradoChico">
                 <form name="form_ejercicio1" method="post" action="vernumero.php">
                     Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>

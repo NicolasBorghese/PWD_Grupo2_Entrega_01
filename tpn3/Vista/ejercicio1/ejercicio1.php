@@ -7,7 +7,7 @@
 ?>
 
             <div class="contenedorEnunciado">
-                <p>Cargue un archivo para visualizarlo</p>
+                Cargue un archivo para visualizarlo
             </div>
             
             <div class="contenedorCentrado">

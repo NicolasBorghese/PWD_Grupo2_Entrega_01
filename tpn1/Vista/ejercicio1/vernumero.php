@@ -16,6 +16,9 @@
     include_once('../estructura/encabezado.php');
 ?>
 
+            <div class="contenedorEnunciado">
+                Ingrese un número para saber si es positivo, negativo o cero
+            </div>
             <div class="contenedorCentrado">
 
                 <?php
