@@ -13,7 +13,7 @@ include_once('../estructura/encabezado.php');
                         Calcular tarifa para entrada de cine
                     </div>
                     <div class="contenedorCentrado">
-                        <form id="form8" name="form8" method="post" action="procesaEjercicio8.php">
+                        <form id="form8" name="form8" method="post" action="formAccion8.php">
                             <table>
                                 <tr>
                                     <td colspan="2">
@@ -30,18 +30,18 @@ include_once('../estructura/encabezado.php');
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="condicion">Estudia</label>
+                                        <label for="estudia">Estudia</label>
                                     </td>
                                     <td>
-                                        <input type="radio" name="condicion" value="si" required>
+                                        <input type="radio" name="estudia" value="si" required>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="condicion">No estudia</label>
+                                        <label for="estudia">No estudia</label>
                                     </td>
                                     <td>
-                                        <input type="radio" name="condicion" value="no">
+                                        <input type="radio" name="estudia" value="no">
                                     </td>
                                 </tr>
                                 <tr>

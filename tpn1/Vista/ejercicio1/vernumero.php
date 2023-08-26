@@ -1,8 +1,9 @@
 <?php
-    include_once("../../Control/controlEjercicio1/PositividadNumero.php");
+    include_once("../../Control/control1/PositividadNumero.php");
 
     if ($_POST){
         $numero = $_POST['numero'] ;
+
         $obj = new PositividadNumero();
         $respuesta = $obj->clasificarNumero($numero);
     } else {

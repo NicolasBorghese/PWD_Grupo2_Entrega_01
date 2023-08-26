@@ -19,7 +19,7 @@
             </div>
 
             <div class="contenedorCentrado">
-                <form name="form_ejercicio2" method="get" action="procesaEjercicio2.php">
+                <form name="form_ejercicio2" method="get" action="formAccion2.php">
                     <table>
                         <tr>
                             <td>Lunes</td>
