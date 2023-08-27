@@ -221,3 +221,19 @@
     text-align:left;
     color: rgb(18, 111, 161);
 }
+
+/*-------------------------------------------- VARIOS TP2-------------------------------------------*/
+.nom td{
+    padding: 5%;
+}
+#boton{
+    margin-left: 5%;
+}
+
+#texto{
+    border: 1px solid black;
+    margin: 5%;
+    padding: 5%;
+    padding-left: 27%;
+    font-size: larger;
+}

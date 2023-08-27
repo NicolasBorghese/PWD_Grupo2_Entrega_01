@@ -1,6 +1,6 @@
 <?php
-    include_once("../../Control/controlEjercicio3/SaludoPersonalizado.php");
-
+    include_once("../../../Control/control2/control2.3/SaludoPersonalizado.php");
+    
     $obj = new SaludoPersonalizado();
 
     if ($_GET){

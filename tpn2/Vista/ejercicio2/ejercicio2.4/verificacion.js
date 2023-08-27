@@ -1,6 +1,7 @@
 $(function(){
 
     $("#form").validate({
+        
         rules:{
             nombre:{
                 required: true,

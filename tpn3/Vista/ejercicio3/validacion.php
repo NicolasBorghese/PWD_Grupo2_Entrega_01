@@ -3,8 +3,8 @@
     $tp = "botonTP3";
     $ejercicio = "botonEjer2";
     
+    include_once('../../control/control3/vArchivo.php');
     include_once('../estructura/encabezado.php');
-    include_once('../../control/controlEjercio3/vArchivo.php');
 ?>
 
     <div class="contenedorForCine">
@@ -69,7 +69,7 @@ echo"
     <div class='col-md-12'>
     <h4 id='textPeli'>La pelìcula introducida es</h4>
     <p><strong>$mensaje</strong></<p>
-    <img src='../../archivos/$nombreArchivo' height='70px' width='70px' border='2px' alt='Pelicula'/>
+    <img src='../../Archivos/$nombreArchivo' height='70px' width='70px' border='2px' alt='Pelicula'/>
     <br/>
     <p ><strong>Titulo:</strong> $titulo <br/>
        <strong>Actores:</strong>$actores <br/>

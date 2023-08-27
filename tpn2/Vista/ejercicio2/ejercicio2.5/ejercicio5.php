@@ -16,11 +16,11 @@
             -->
 
             <div class="contenedorEnunciado">
-                <p>Complete los datos del formulario</p>
+                Complete los datos del formulario
             </div>
 
             <div class="contenedorCentrado">
-                <form name="form_ejercicio5" method="get" action="procesaEjercicio5.php">
+                <form name="form_ejercicio5" method="get" action="formAccion5.php">
                     <table>
                         <tr>
                             <td>Nombre:</td>

@@ -1,36 +1,32 @@
 <?php
-    $tituloPagina = "Ejercicio 2.8 del TP2";
-    $tp = "botonTP2";
-    $ejercicio = "botonEjer2";
-    $tp2ej2Ejercicio = "TP2EJ2botonEjer8";
+include_once '../control/Tarifa.php';
 
-include_once('../estructura/encabezado.php');
+if ($_POST) {
+    $edad = $_POST['edad'];
+    $condicion = $_POST['condicion'];
+
+    $obj = new Tarifa();
+    $monto = $obj->calcularMonto($edad, $condicion);
+}
 ?>
 
-<div class="contenedorCentrado">
-    <?php
-/*desca*/
-    if ($_POST) {
-        $edad = $_POST['edad'];
-        $condicion = $_POST['condicion'];
-        $tarifa = 300;
+<!DOCTYPE html>
+<html lang="en">
 
-        if ($edad < 12) {
-            echo "<h3>Precio de la entrada menores de 12 años: 160 Pesos.</h3><br/>";
-        } else {
-            if ($condicion == "si") {
-                echo "<h3>Precio para estudiantes mayores a 12 años: 180 Pesos.</h3><br/>";
-            } else if ($condicion == "no") {
-                echo "<h3>Precio para NO estudiantes: 300 Pesos.</h3><br/>";
-            }
-            } 
-		}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <?php
+    echo "<h5>Total a pagar:</h5>" . "$" . $monto;
     ?>
 
     </br>
-    <a href="ejercicio8.php"> Volver </a>
-</div>
+    <a href="../vista/vista.php">Volver</a>
+</body>
 
-<?php
-include_once('../estructura/pie.php');
-?>
+</html>

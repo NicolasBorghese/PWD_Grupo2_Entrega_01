@@ -13,7 +13,6 @@ include_once('../estructura/encabezado.php');
                     </div>
                     <div class="contenedorCentrado">
                         <form id="form7" name="form7" method="post" action="formAccion7.php">
-
                             <table>
                                 <tr>
                                     <td colspan="2">Ingrese dos números para operar con ellos</td>

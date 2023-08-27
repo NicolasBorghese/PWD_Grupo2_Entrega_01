@@ -1,6 +1,6 @@
 <?php
-    include_once("../../Control/controlEjercicio2/CuentaHoras.php");
-
+    include_once("../../../Control/control2/control2.2/CuentaHoras.php");
+    
     $obj = new CuentaHoras();
 
     if ($_GET){

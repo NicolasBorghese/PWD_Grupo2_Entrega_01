@@ -13,7 +13,7 @@
                     <table>
                         <tr>
                             <td>Cargar archivo tex</td>
-                            <td> <input id="archivo" name="miArchivo"  type="file" required /></td>
+                            <td> <input id="archivo" name="miArchivo" type="file" required /></td>
                         </tr>
                       
                     </table>

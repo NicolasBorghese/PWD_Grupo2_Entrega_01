@@ -15,7 +15,7 @@
 							<div class="row justify-content-center">
 								<div class="col-md-12">
 
-									<form class="formulario needs-validation row g-3" id="formulario" method="post" action="../Control/ejercicio4.php" novalidate>
+									<form class="formulario needs-validation row g-3" id="formulario" method="post" action="formAction4.php" novalidate>
 											
 										<div class="titulo  pl-0 mt-4">
 											<h5 class="bg-gray text-blue p-2"><i class="bi bi-pencil-square"></i>Cinem@s</h5>

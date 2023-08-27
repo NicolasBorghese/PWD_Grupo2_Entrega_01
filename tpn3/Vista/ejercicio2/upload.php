@@ -4,7 +4,7 @@
     $ejercicio = "botonEjer2";
     
     include_once('../estructura/encabezado.php');
-    include_once('../../control/controlEjercio2/cargaText.php');
+    include_once('../../control/control2/cargaText.php');
     ?>
 
     <div class="contenedorCentrado">
@@ -20,7 +20,7 @@
  }
  else{
     //convertir el contenido en un text area
-    $archivo = file_get_contents('../../archivos/'.$nombreArchivo);
+    $archivo = file_get_contents('../../Archivos/'.$nombreArchivo);
 
             
     echo "<div class='contenedorEnunciado'>

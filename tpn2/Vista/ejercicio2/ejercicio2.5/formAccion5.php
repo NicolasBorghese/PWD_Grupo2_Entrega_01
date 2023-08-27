@@ -1,6 +1,6 @@
 <?php
-    include_once("../../Control/controlEjercicio5/DatosPersonaE5.php");
-
+    include_once("../../../Control/control2/control2.5/DatosPersonaE5.php");
+    
     $objDatos = new DatosPersonaE5();
 
     if ($_GET){

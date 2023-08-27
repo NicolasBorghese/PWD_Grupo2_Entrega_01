@@ -4,7 +4,7 @@
     $ejercicio = "botonEjer1";
     
     include_once('../estructura/encabezado.php');
-    include_once('../../control/controlEjercio1/cargaPdf.php');
+    include_once('../../control/control1/cargaPdf.php');
 ?>
 
     <div class="contenedorCentrado">
@@ -24,7 +24,7 @@
     }
     else if($mensaje == 3){
       echo "El archivo ".$nombreArchivo." se ha sido subido con Éxito <br />";
-      echo '<a href="../../archivos/">Ver archivo</a>';
+      echo '<a href="../../Archivos/">Ver archivo</a>';
     }
     else{
       echo "Lo siento, hubo un error al cargar su archivo.";
