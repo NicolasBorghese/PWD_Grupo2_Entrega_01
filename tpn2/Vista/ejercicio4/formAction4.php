@@ -1,7 +1,7 @@
 <?php 
-    $tituloPagina = "Ejercicio 1 del TP2";
+    $tituloPagina = "Ejercicio 4 del TP2";
     $tp = "botonTP2";
-    $ejercicio = "botonEjer1";
+    $ejercicio = "botonEjer4";
     
     include_once('../estructura/encabezado.php');
 ?>
@@ -28,6 +28,9 @@
                     <span class='texto'>Sinopsis: </span><span class='descripcion'><?php echo $sinopsis = $_POST['sinopsis']; ?></span></br>
                 </div>  
             </div>
+        <div id="contieneLinkVolver">
+            <a href="ejercicio4.php" id="linkVolver"><br> Volver <a>
+        </div>
 </div>
 <?php
     include_once('../estructura/pie.php');

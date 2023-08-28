@@ -6,6 +6,7 @@
     include_once('../estructura/encabezado.php');
 ?>
 
+<div class="contenedorCentrado3">
 <div class="contenedorEj3">
  <div class="container border">
  <div class="bg-light">
@@ -177,6 +178,8 @@
 </script>
 
             </div>
+</div>
+
 
 <?php
     include_once('../estructura/pie.php');

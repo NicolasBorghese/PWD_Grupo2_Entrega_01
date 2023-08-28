@@ -1,7 +1,7 @@
 <?php
-$tituloPagina = "Ejercicio 1 del TP2";
+$tituloPagina = "Ejercicio 3 del TP2";
 $tp = "botonTP2";
-$ejercicio = "botonEjer1";
+$ejercicio = "botonEjer3";
 
 include_once('../estructura/encabezado.php');
 ?>
@@ -45,6 +45,10 @@ include_once('../estructura/encabezado.php');
         echo "Error";
     }
     ?>
+
+        <div id="contieneLinkVolver">
+            <a href="ejercicio3.php" id="linkVolver"><br> Volver <a>
+        </div>
 </div>
 
 <?php
