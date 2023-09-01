@@ -20,7 +20,7 @@
             </div>
 
             <div class="contenedorCentrado">
-                <form name="form_ejercicio5" method="get" action="formAccion5.php">
+                <form name="form" id="form" method="get" action="formAccion5.php" novalidate>
                     <table>
                         <tr>
                             <td>Nombre:</td>

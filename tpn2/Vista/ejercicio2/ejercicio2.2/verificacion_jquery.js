@@ -25,11 +25,11 @@ $(function(){
     $("#boton").click(function(){
         
         if($("#form").valid()==false){
-            $("#lunes").css("border-color","red")
-            $("#martes").css("border-color","red")
-            $("#miercoles").css("border-color","red")
-            $("#jueves").css("border-color","red")
-            $("#viernes").css("border-color","red")
+            $("#hsLunes").css("border-color","red")
+            $("#hsMartes").css("border-color","red")
+            $("#hsMiercoles").css("border-color","red")
+            $("#hsJueves").css("border-color","red")
+            $("#hsViernes").css("border-color","red")
         }
     });
 

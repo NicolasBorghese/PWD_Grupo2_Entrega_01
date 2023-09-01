@@ -21,10 +21,10 @@ $(function(){
 
     $("#boton").click(function(){
         if($("#form").valid()==false){
-            $("#nombre").css("border-color","red")
-            $("#apellido").css("border-color","red")
-            $("#edad").css("border-color","red")
-            $("#direccion").css("border-color","red")
+            $("#nombreForm").css("border-color","red")
+            $("#apellidoForm").css("border-color","red")
+            $("#edadForm").css("border-color","red")
+            $("#direccionForm").css("border-color","red")
 
         }
     });
