@@ -46,9 +46,9 @@ include_once('../estructura/encabezado.php');
     }
     ?>
 
-        <div id="contieneLinkVolver">
-            <a href="ejercicio3.php" id="linkVolver"><br> Volver <a>
-        </div>
+    <div id="contieneLinkVolver">
+        <a href="ejercicio3.php" id="linkVolver"><br> Volver <a>
+    </div>
 </div>
 
 <?php
