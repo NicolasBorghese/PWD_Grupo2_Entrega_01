@@ -20,11 +20,11 @@
             </div>
 
             <div class="contenedorCentrado">
-                <form name="form_ejercicio3" method="get" action="formAccion3.php">
+                <form name="form" id="form" method="get" action="formAccion3.php" novalidate>
                     <table>
                         <tr>
                             <td>Nombre:</td>
-                            <td><input type="text" name="nombreForm" id="nombreForm" minlength="3"  required></td>
+                            <td><input type="text" name="nombreForm" id="nombreForm" minlength="3" required></td>
                         </tr>
                         <tr>
                             <td>Apellido:</td>

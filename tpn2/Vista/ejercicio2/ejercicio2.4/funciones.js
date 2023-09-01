@@ -1,5 +1,5 @@
 function esMayor(){
-    var edad=document.getElementById("edad");
+    var edad=document.getElementById("edadForm");
     var mensaje=document.getElementById();
     var esEdad=edad.value
     if(esEdad>=18){

@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../control/texto.php" method="get" id="form" >
+    <form action="../control/texto.php" method="get" id="form" novalidate>
         <table  class="nom">
        <tr><td>Nombre:</td><td><input type="text" name="nombre" id="nombre"></td></tr>  
         <tr><td>Apellido:</td><td><input type="text" name="apellido" id="apellido"></td></tr>
