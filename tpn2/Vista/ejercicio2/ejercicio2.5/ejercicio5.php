@@ -24,19 +24,19 @@
                     <table>
                         <tr>
                             <td>Nombre:</td>
-                            <td><input type="text" name="nombreForm" id="nombreForm"  minlength="3" required></td>
+                            <td><input type="text" name="nombreForm" id="nombreForm"  minlength="3"></td>
                         </tr>
                         <tr>
                             <td>Apellido:</td>
-                            <td><input type="text" name="apellidoForm" id="apellidoForm"  minlength="3" required></td>
+                            <td><input type="text" name="apellidoForm" id="apellidoForm"  minlength="3"></td>
                         </tr>
                         <tr>
                             <td>Edad:</td>
-                            <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
+                            <td><input type="number" name="edadForm" id="edadForm" min="0"></td>
                         </tr>
                         <tr>
                             <td>Dirección:</td>
-                            <td><input type="text" name="direccionForm" id="direccionForm" required></td>
+                            <td><input type="text" name="direccionForm" id="direccionForm"></td>
                         </tr>
                         <tr>
                             <td colspan="2">
@@ -45,7 +45,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="radio" name="estudios" id="estudios1" value="noTiene" required> No tiene estudios
+                                <input type="radio" name="estudios" id="estudios1" value="noTiene"> No tiene estudios
                             </td>
                         </tr>
                         <tr>
@@ -70,7 +70,7 @@
                             </td>
                         </tr>
                     </table>
-                    <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+                    <input type="submit" name="submit" value="Enviar" class="botonFormulario">
                 </form>
             </div>
 

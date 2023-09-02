@@ -18,9 +18,9 @@ $(function(){
         }
     });
 
-    ($("#form").submit())
+    //($("#form").submit())
 
-    $("#boton").click(function(){
+    $("#submit").click(function(){
         if($("#form").valid()==false && (function () {
         
             var radio = $("input[type='radio']:checked").length;

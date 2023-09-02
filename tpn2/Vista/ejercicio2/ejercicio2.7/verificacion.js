@@ -2,20 +2,20 @@ $(function(){
 
     $("#form").validate({
         rules:{
-            valor1:{
+            num1:{
                 required: true,
             },
-            valor2:{
+            num2:{
                 required: true,
             }
             
         }
     });
 
-    $("#boton").click(function(){
+    $("#submit").click(function(){
         if($("#form").valid()==false){
-            $("#valor1").css("border-color","red")
-            $("#valor2").css("border-color","red")
+            $("#num1").css("border-color","red")
+            $("#num2").css("border-color","red")
             
             
         }
