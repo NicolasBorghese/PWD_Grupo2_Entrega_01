@@ -13,14 +13,14 @@ include_once('../estructura/encabezado.php');
     Operaciones matematicas
 </div>
 <div class="contenedorCentrado">
-    <form id="form7" name="form7" method="post" action="formAccion7.php">
+    <form id="form" name="form" method="post" action="formAccion7.php" novalidate>
         <table>
             <tr>
                 <td colspan="2">Ingrese dos números para operar con ellos</td>
             </tr>
             <tr>
                 <td><input type="number" id="num1" name="num1" required></td>
-                <td> <input type="number" id="num2" name="num2" required></td>
+                <td><input type="number" id="num2" name="num2" required></td>
             </tr>
             <tr>
                 <td>Seleccione una <br> operación matemática</td>
