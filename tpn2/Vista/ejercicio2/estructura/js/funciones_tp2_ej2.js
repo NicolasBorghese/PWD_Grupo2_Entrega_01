@@ -33,7 +33,7 @@ function irATP2EJ2Ejercicio4() {
 }
 
 function irATP2EJ2Ejercicio5() {
-    window.location.href = "../ejercicio2.5/ejercicio5.php";
+    window.location.href = "../ejercicio2.5/formulario.php";
 }
 
 function irATP2EJ2Ejercicio6() {
