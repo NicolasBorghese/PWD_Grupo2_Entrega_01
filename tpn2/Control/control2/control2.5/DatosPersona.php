@@ -19,7 +19,7 @@ class DatosPersona
 
     /**
      * Crea mensaje final concatenando cadenas de string
-     * @param string $nombre, $apellido, $direccion, $deportes, $estudios, $sexo, $textoEdad
+     * @param string $nombre, $apellido, $direccion, $estudios, $sexo, $textoEdad
      * @param int $edad
      * @return string
      */

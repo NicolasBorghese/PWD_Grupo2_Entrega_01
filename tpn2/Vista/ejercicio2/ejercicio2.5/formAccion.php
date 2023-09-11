@@ -22,7 +22,9 @@ include_once('../estructura/encabezado.php');
     <?php
     echo $cadenaDatos;
     ?>
-    <a href="formulario.php">Volver</a>
+    <div id="contieneLinkVolver">
+        <a href="formulario.php" id="linkVolver">Volver</a>
+    </div>
 </div>
 
 <?php
