@@ -17,19 +17,19 @@ function actualizarCurrent(tp, ejercicio, tp2ej2Ejercicio) {
 /*/=======================================================================================/*/
 
 function irATP2EJ2Ejercicio1() {
-    window.location.href = "../ejercicio2.1/ejercicio1.php";
+    window.location.href = "../ejercicio2.1/formulario.php";
 }
 
 function irATP2EJ2Ejercicio2() {
-    window.location.href = "../ejercicio2.2/ejercicio2.php";
+    window.location.href = "../ejercicio2.2/formulario.php";
 }
 
 function irATP2EJ2Ejercicio3() {
-    window.location.href = "../ejercicio2.3/ejercicio3.php";
+    window.location.href = "../ejercicio2.3/formulario.php";
 }
 
 function irATP2EJ2Ejercicio4() {
-    window.location.href = "../ejercicio2.4/ejercicio4.php";
+    window.location.href = "../ejercicio2.4/formulario.php";
 }
 
 function irATP2EJ2Ejercicio5() {
@@ -41,11 +41,11 @@ function irATP2EJ2Ejercicio6() {
 }
 
 function irATP2EJ2Ejercicio7() {
-    window.location.href = "../ejercicio2.7/ejercicio7.php";
+    window.location.href = "../ejercicio2.7/formulario.php";
 }
 
 function irATP2EJ2Ejercicio8() {
-    window.location.href = "../ejercicio2.8/ejercicio8.php";
+    window.location.href = "../ejercicio2.8/formulario.php";
 }
 
 /*/=======================================================================================/*/

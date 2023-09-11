@@ -3,7 +3,7 @@
  * Lee elementos que corresponden al ejercicio en el que se está actualmente y los remarca en el navegador
  * 
  */
-function actualizarCurrent(tp, ejercicio){
+function actualizarCurrent(tp, ejercicio) {
 
     tp.classList.add("botonActual");
     ejercicio.classList.add("botonActual");
@@ -13,26 +13,26 @@ function actualizarCurrent(tp, ejercicio){
 ||                                    Links del navegador                                  ||
 \*\=======================================================================================/*/
 
-function irATP2Ejercicio1(){
+function irATP2Ejercicio1() {
     window.location.href = "../ejercicio1/ejercicio1.php";
 }
 
-function irATP2Ejercicio2(){
+function irATP2Ejercicio2() {
     window.location.href = "../ejercicio2/ejercicio2.1/ejercicio1.php";
 }
 
-function irATP2Ejercicio3(){
+function irATP2Ejercicio3() {
     window.location.href = "../ejercicio3/ejercicio3.php";
 }
 
-function irATP2Ejercicio4(){
+function irATP2Ejercicio4() {
     window.location.href = "../ejercicio4/ejercicio4.php";
 }
 
-function irATP1Ejercicio1(){
+function irATP1Ejercicio1() {
     window.location.href = "../../../tpn1/Vista/ejercicio1/ejercicio1.php";
 }
 
-function irATP3Ejercicio1(){
+function irATP3Ejercicio1() {
     window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
 }
