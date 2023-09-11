@@ -1,23 +1,106 @@
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vista.css">
-    <script type="text/javascript" src="../control/funciones.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <form action="../control/texto.php" method="get"  >
-        <table  class="nom">
-       <tr><td>Nombre:</td><td><input type="text" name="nombre" id="nombre"></td></tr>  
-        <tr><td>Apellido:</td><td><input type="text" name="apellido" id="apellido"></td></tr>
-        <tr><td>Edad:</td><td> <input type="number" name="edad" id="edad"></td></tr> 
-        <tr><td>Direccion:</td><td><input type="text" name="direccion" id="direccion"></td></tr>
-        <tr><td>Nivel de estudio:</td><td> <input type="radio" name="estudios" id="estudios" value="sinestudio">Sin Estudios <input type="radio" name="estudios" id="estudios" value="primaria">Estudios Primarios <input type="radio" name="estudios" id="estudios" value="secundaria">Estudios Secundarios</td></tr>
-        <tr><td>Sexo:</td><td><input type="radio" name="sexo" id="sexo" value="f">Femenino <input type="radio" name="sexo" id="sexo" value="m">Masculino </td></tr>
-        <tr><td>Deportes:</td><td><input type="checkbox" name="futbol" id="futbol">Futbol <input type="checkbox" name="basquet" id="basquet">Basquet <input type="checkbox" name="tennis" id="tennis">Tennis <input type="checkbox" name="voley" id="voley">Voley</td></tr>
-        </table>
-        <input type="submit" value="Enviar" id="boton" onclick="esMayor()" >
+<?php
+$tituloPagina = "Ejercicio 2.6 del TP2";
+$tp = "botonTP2";
+$ejercicio = "botonEjer2";
+$tp2ej2Ejercicio = "TP2EJ2botonEjer6";
+
+include_once('../estructura/encabezado.php');
+?>
+
+<div class="contenedorCentrado">
+    <form id="form3" name="form3" method="post" action="formAccion.php">
+
+        <div class="datosPersonales">
+            <h2>Datos personales</h2>
+
+            <table>
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input type="text" id="nombre" name="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Apellido:
+                    </td>
+                    <td>
+                        <input type="text" id="apellido" name="apellido">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Edad:
+                    </td>
+                    <td>
+                        <input type="text" id="edad" name="edad">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Direcci&oacute;n:
+                    </td>
+                    <td>
+                        <input type="text" id="direccion" name="direccion">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="estudios">
+            <h2>Nivel de estudios</h2>
+
+            <label for="estudios">No tiene estudios<input type="radio" name="estudios" value="ninguno"></label>
+            <br>
+            <label for="estudios">Estudios primarios<input type="radio" name="estudios" value="primarios"></label>
+            <br>
+            <label for="estudios">Estudios secundarios<input type="radio" name="estudios" value="secundarios"></label>
+
+            <label id="estudios-error" class="error" for="estudios"></label>
+        </div>
+
+        <div class="sexo">
+            <h2>Sexo</h2>
+
+            <label for="sexo">Indique uno</label>
+            <select id="sexo" name="sexo">
+                <option value="femenino">femenino</option>
+                <option value="masculino">masculino</option>
+            </select>
+        </div>
+
+        <div class="deportes">
+            <h2>Deportes que practica</h2>
+
+            <div class="tipo">
+                <label for="futbol">Fútbol:</label>
+                <input type="checkbox" id="futbol" name="deporte[]" value="fútbol">
+            </div>
+            <div class="tipo">
+                <label for="basket">Básquet:</label>
+                <input type="checkbox" id="basket" name="deporte[]" value="básket">
+            </div>
+            <div class="tipo">
+                <label for="tennis">Tennis:</label>
+                <input type="checkbox" id="tennis" name="deporte[]" value="tennis">
+            </div>
+            <div class="tipo">
+                <label for="voley">Voley:</label>
+                <input type="checkbox" id="voley" name="deporte[]" value="voley">
+            </div>
+        </div>
+
+        <div class="botonEnviar">
+            <input type="submit" id="submit" name="submit" value="Enviar">
+        </div>
     </form>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+</div>
+
+<?php
+include_once('../estructura/pie.php');
+?>
