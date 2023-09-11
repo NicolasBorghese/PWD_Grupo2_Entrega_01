@@ -3,7 +3,7 @@
  * Lee elementos que corresponden al ejercicio en el que se está actualmente y los remarca en el navegador
  * 
  */
-function actualizarCurrent(tp, ejercicio, tp2ej2Ejercicio){
+function actualizarCurrent(tp, ejercicio, tp2ej2Ejercicio) {
 
     tp.classList.add("botonActual");
     ejercicio.classList.add("botonActual");
@@ -16,56 +16,56 @@ function actualizarCurrent(tp, ejercicio, tp2ej2Ejercicio){
 
 /*/=======================================================================================/*/
 
-function irATP2EJ2Ejercicio1(){
+function irATP2EJ2Ejercicio1() {
     window.location.href = "../ejercicio2.1/ejercicio1.php";
 }
 
-function irATP2EJ2Ejercicio2(){
+function irATP2EJ2Ejercicio2() {
     window.location.href = "../ejercicio2.2/ejercicio2.php";
 }
 
-function irATP2EJ2Ejercicio3(){
+function irATP2EJ2Ejercicio3() {
     window.location.href = "../ejercicio2.3/ejercicio3.php";
 }
 
-function irATP2EJ2Ejercicio4(){
+function irATP2EJ2Ejercicio4() {
     window.location.href = "../ejercicio2.4/ejercicio4.php";
 }
 
-function irATP2EJ2Ejercicio5(){
+function irATP2EJ2Ejercicio5() {
     window.location.href = "../ejercicio2.5/ejercicio5.php";
 }
 
-function irATP2EJ2Ejercicio6(){
-    window.location.href = "../ejercicio2.6/ejercicio6.php";
+function irATP2EJ2Ejercicio6() {
+    window.location.href = "../ejercicio2.6/formulario.php";
 }
 
-function irATP2EJ2Ejercicio7(){
+function irATP2EJ2Ejercicio7() {
     window.location.href = "../ejercicio2.7/ejercicio7.php";
 }
 
-function irATP2EJ2Ejercicio8(){
+function irATP2EJ2Ejercicio8() {
     window.location.href = "../ejercicio2.8/ejercicio8.php";
 }
 
 /*/=======================================================================================/*/
 
-function irATP2Ejercicio1(){
+function irATP2Ejercicio1() {
     window.location.href = "../../ejercicio1/ejercicio1.php";
 }
 
-function irATP2Ejercicio3(){
+function irATP2Ejercicio3() {
     window.location.href = "../../ejercicio3/ejercicio3.php";
 }
 
-function irATP2Ejercicio4(){
+function irATP2Ejercicio4() {
     window.location.href = "../../ejercicio4/ejercicio4.php";
 }
 
-function irATP1Ejercicio1(){
+function irATP1Ejercicio1() {
     window.location.href = "../../../../tpn1/Vista/ejercicio1/ejercicio1.php";
 }
 
-function irATP3Ejercicio1(){
+function irATP3Ejercicio1() {
     window.location.href = "../../../../tpn3/Vista/ejercicio1/ejercicio1.php";
 }

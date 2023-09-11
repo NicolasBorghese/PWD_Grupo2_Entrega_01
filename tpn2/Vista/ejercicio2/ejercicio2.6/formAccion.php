@@ -37,7 +37,7 @@ include_once('../estructura/encabezado.php');
     <?php
     echo $cadenaDatos;
     ?>
-    <a href="../vista/vista.php">Volver</a>
+    <a href="formulario.php">Volver</a>
 </div>
 
 <?php
