@@ -3,47 +3,37 @@
 class DatosPersona
 {
     /**
-     * Determina si una persona es mayor de edad o no
-     * @param int $edad
+     * Recibe array con datos, retorna cadena de string con ellos
+     * @param array $datos
      * @return string
      */
-    public function textoEdad($edad)
+    public function datosPersonales($datos)
     {
+        $nombre = $datos['nombre'];
+        $apellido = $datos['apellido'];
+        $edad = $datos['edad'];
+        $direccion = $datos['direccion'];
+        $estudios = $datos['estudios'];
+        $sexo = $datos['sexo'];
+
         if ($edad >= 18) {
             $textoEdad = "</br>Es mayor de edad";
         } else {
             $textoEdad = "</br>Es menor de edad";
         }
-        return $textoEdad;
-    }
 
-    /**
-     * Genera mensaje con los deportes que practica una persona
-     * @param array $deportes
-     * @return string
-     */
-    public function textoDeportes($deportes)
-    {
-        if (count($deportes) != 0) {
-            $colDeportes = $deportes;
+        //Verifico si el array con deportes no está vacío
+        if (isset($datos['deporte'])) {
+            $colDeportes = $datos['deporte'];
             $cadena = implode(", ", $colDeportes);
             $textoDeportes = "</br>Practica los siguientes deportes: " . $cadena;
         } else {
             $textoDeportes = "</br>No practica ningún deporte. ";
         }
-        return $textoDeportes;
-    }
 
-    /**
-     * Crea mensaje final concatenando cadenas de string
-     * @param string $nombre, $apellido, $direccion, $deportes, $estudios, $sexo, $textoEdad
-     * @param int $edad
-     * @return string
-     */
-    public function datosPersonales($nombre, $apellido, $edad, $direccion, $deportes, $estudios, $sexo, $textoEdad)
-    {
         $mensaje = "Nombre: " . $nombre . "</br>Apellido: " . $apellido . "</br>Edad: " . $edad . "</br>Dirección: " . $direccion .
-            "</br>Estudios: " . $estudios . "</br>Sexo: " . $sexo . $deportes . "</br>" . $textoEdad . "</br>";
+            "</br>Estudios: " . $estudios . "</br>Sexo: " . $sexo . "</br>" . $textoEdad . "</br>" . $textoDeportes;
+
         return $mensaje;
     }
 }

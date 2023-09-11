@@ -1,28 +1,11 @@
 <?php
 
 include_once '../../../Control/control2/control2.6/DatosPersona.php';
+include_once '../../../Utiles/funciones.php';
 
-if ($_POST) {
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $edad = $_POST['edad'];
-    $direccion = $_POST['direccion'];
-    $estudios = $_POST['estudios'];
-    $sexo = $_POST['sexo'];
-}
-
+$datos = data_submitted();
 $obj = new DatosPersona();
-$textoEdad = $obj->textoEdad($edad);
-
-//Compruebo si existe la clave 'deportes'
-if (key_exists('deporte', $_POST)) {
-    $deportes =  $_POST['deporte'];
-} else {
-    $deportes = [];
-}
-
-$textoDeportes = $obj->textoDeportes($deportes);
-$cadenaDatos = $obj->datosPersonales($nombre, $apellido, $edad, $direccion, $textoDeportes, $estudios, $sexo, $textoEdad);
+$cadenaDatos = $obj->datosPersonales($datos);
 
 $tituloPagina = "Ejercicio 2.6 del TP2";
 $tp = "botonTP2";

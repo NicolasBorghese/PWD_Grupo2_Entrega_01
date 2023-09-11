@@ -6,6 +6,11 @@ $datos = data_submitted();
 $obj = new DatosPersona();
 $cadenaDatos = $obj->datosPersonales($datos);
 
+$tituloPagina = "Ejercicio 2.5 del TP2";
+$tp = "botonTP2";
+$ejercicio = "botonEjer2";
+$tp2ej2Ejercicio = "TP2EJ2botonEjer5";
+
 include_once('../estructura/encabezado.php');
 ?>
 
