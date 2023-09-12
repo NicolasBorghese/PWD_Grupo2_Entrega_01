@@ -54,6 +54,7 @@ include_once('../estructura/encabezado.php');
             </tr>
         </table>
     </form>
+    <script type="text/javascript" src="funciones.js"></script>
 </div>
 
 <?php

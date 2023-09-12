@@ -8,7 +8,7 @@ $(document).ready(function () {
                 number: true,
                 maxlength: 3
             },
-            condicion: {
+            estudia: {
                 required: true
             }
         },
@@ -18,7 +18,7 @@ $(document).ready(function () {
                 number: "La edad no puede contener letras.",
                 maxlength: "Máximo 3 números."
             },
-            condicion: {
+            estudia: {
                 required: "Elija una opción"
             }
         },
