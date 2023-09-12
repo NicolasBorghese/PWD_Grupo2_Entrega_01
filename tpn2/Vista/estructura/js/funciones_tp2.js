@@ -22,7 +22,7 @@ function irATP2Ejercicio2() {
 }
 
 function irATP2Ejercicio3() {
-    window.location.href = "../ejercicio3/ejercicio3.php";
+    window.location.href = "../ejercicio3/formulario.php";
 }
 
 function irATP2Ejercicio4() {
