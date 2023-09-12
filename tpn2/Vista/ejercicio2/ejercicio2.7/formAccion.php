@@ -1,16 +1,10 @@
 <?php
 
-include_once("../../../Control/control2/control2.7/Calculadora.php");
+include_once '../../../configuracion.php';
 
-if ($_POST) {
-
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $operacion = $_POST['operacion'];
-
-    $obj = new Calculadora();
-    $resultado = $obj->calcular($num1, $num2, $operacion);
-}
+$datos = data_submitted();
+$obj = new Calculadora();
+$resultado = $obj->calcular($datos);
 
 $tituloPagina = "Ejercicio 2.7 del TP2";
 $tp = "botonTP2";
@@ -21,12 +15,12 @@ include_once('../estructura/encabezado.php');
 ?>
 
 <div class="contenedorEnunciado">
-    Operaciones matematicas
+    Operaciones matemáticas
 </div>
 <div class="contenedorCentrado">
 
     <?php
-    echo "El resultado es: " . $resultado;
+    echo $resultado;
     ?>
 
     <div id="contieneLinkVolver">

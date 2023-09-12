@@ -1,33 +1,9 @@
 <?php
-include_once("../../../Control/control2/control2.4/DatosPersonaE4.php");
+include_once '../../../configuracion.php';
 
-$objDatos = new DatosPersonaE4();
-
-if ($_GET) {
-    $nombre = $_GET['nombreForm'];
-    $apellido = $_GET['apellidoForm'];
-    $edad = $_GET['edadForm'];
-    $direccion = $_GET['direccionForm'];
-
-    $resultado = $objDatos->verificarDatos($nombre, $apellido, $edad, $direccion);
-
-    if ($resultado) {
-
-        $respuestaEdad = $objDatos->indicaMayoriaEdad($edad);
-
-        $respuesta =
-            "Nombre: " . $nombre . "<br>
-            Apellido: " . $apellido . "<br>
-            Edad: " . $edad . "<br>
-            Dirección: " . $direccion . "<br>
-            <br>" . $respuestaEdad;
-    } else {
-
-        $respuesta = "Se ingresaron mal los datos";
-    }
-} else {
-    $respuesta = "No se recibieron datos";
-}
+$datos = data_submitted();
+$obj = new DatosPersona();
+$resultado = $obj->datosPersonales($datos);
 
 $tituloPagina = "Ejercicio 2.4 del TP2";
 $tp = "botonTP2";
@@ -40,7 +16,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorCentrado">
 
     <?php
-    echo $respuesta;
+    echo $resultado;
     ?>
 
     <div id="contieneLinkVolver">

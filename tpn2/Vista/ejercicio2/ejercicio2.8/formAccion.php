@@ -17,15 +17,11 @@ include_once('../estructura/encabezado.php');
     Calcular tarifa para entrada de cine
 </div>
 <div class="contenedorCentrado">
+
     <?php
-
-    if ($tarifa != "error") {
-        echo "El precio de la entrada es de: $" . $tarifa;
-    } else {
-        echo "error al ingresar los datos";
-    }
-
+    echo $tarifa;
     ?>
+
     <div id="contieneLinkVolver">
         <a href="formulario.php" id="linkVolver"><br> Volver <a>
     </div>

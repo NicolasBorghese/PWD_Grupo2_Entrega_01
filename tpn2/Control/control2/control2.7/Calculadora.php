@@ -2,8 +2,17 @@
 
 class Calculadora
 {
-    public function calcular($num1, $num2, $operacion)
+    /**
+     * Recibe un array con dos números y un tipo de operación, 
+     * retorna resultado de la misma
+     * @param array $datos
+     * @return string
+     */
+    public function calcular($datos)
     {
+        $num1 = $datos['num1'];
+        $num2 = $datos['num2'];
+        $operacion = $datos['operacion'];
         switch ($operacion) {
             case "suma":
                 $resultado = $num1 + $num2;
@@ -18,6 +27,7 @@ class Calculadora
                 $resultado = $num1 / $num2;
                 break;
         }
-        return $resultado;
+        $mensaje = "El resultado es: " . $resultado;
+        return $mensaje;
     }
 }
