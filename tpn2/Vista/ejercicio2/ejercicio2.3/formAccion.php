@@ -1,7 +1,9 @@
 <?php
-include_once("../../../Control/control2/control2.3/SaludoPersonalizado.php");
+include_once '../../../configuracion.php';
 
+$datos = data_submitted();
 $obj = new SaludoPersonalizado();
+$respuesta = $obj->crearSaludo($datos);
 
 if ($_GET) {
     $nombre = $_GET['nombreForm'];

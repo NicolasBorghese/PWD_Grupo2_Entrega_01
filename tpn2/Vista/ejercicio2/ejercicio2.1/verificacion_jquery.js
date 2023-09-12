@@ -1,22 +1,22 @@
-$(function(){
+$(function () {
 
     $("#formulario").validate({
-        rules:{
-            numero:{
+        rules: {
+            numero: {
                 required: true,
             },
         },
-        messages:{
-            numero:{
-                required:"Numero Requerido"
+        messages: {
+            numero: {
+                required: "Número requerido."
             }
         }
     });
 
-    $("#boton").click(function(){
-        
-        if($("formulario").valid()==false){
-            $("#numero").css("border-color","red")
+    $("#boton").click(function () {
+
+        if ($("formulario").valid() == false) {
+            $("#numero").css("border-color", "red")
         }
     })
 });

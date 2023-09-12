@@ -21,8 +21,8 @@ include_once('../estructura/encabezado.php');
     <form name="formulario" id="formulario" method="post" action="formAccion.php" novalidate>
         Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>
         <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
-
     </form>
+    <script type="text/javascript" src="verificacion_jquery.js"></script>
 </div>
 
 

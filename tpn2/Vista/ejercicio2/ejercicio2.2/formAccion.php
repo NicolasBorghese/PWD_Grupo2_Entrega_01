@@ -1,21 +1,9 @@
 <?php
-include_once("../../../Control/control2/control2.2/CuentaHoras.php");
+include_once '../../../configuracion.php';
 
+$datos = data_submitted();
 $obj = new CuentaHoras();
-
-if ($_GET) {
-    $hsLunes = $_GET['hsLunes'];
-    $hsMartes = $_GET['hsMartes'];
-    $hsMiercoles = $_GET['hsMiercoles'];
-    $hsJueves = $_GET['hsJueves'];
-    $hsViernes = $_GET['hsViernes'];
-
-    $arregloHoras = [$hsLunes, $hsMartes, $hsMiercoles, $hsJueves, $hsViernes];
-
-    $respuesta = $obj->sumarHoras($arregloHoras);
-} else {
-    $respuesta = "No se recibieron datos";
-}
+$resultado = $obj->sumarHoras($datos);
 
 $tituloPagina = "Ejercicio 2.2 del TP2";
 $tp = "botonTP2";
@@ -28,13 +16,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorCentrado">
 
     <?php
-    if ($respuesta == -1) {
-        echo "Se ingresaron datos incorrectos";
-    } else if (is_numeric($respuesta)) {
-        echo "La cantidad de horas de cursada por semana son: " . $respuesta . " HS";
-    } else {
-        echo $respuesta;
-    }
+    echo $resultado;
     ?>
 
     <div id="contieneLinkVolver">

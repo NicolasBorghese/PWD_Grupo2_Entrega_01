@@ -1,13 +1,9 @@
 <?php
-include_once("../../../Control/control2/control2.1/PositividadNumero.php");
+include_once '../../../configuracion.php';
 
-if ($_POST) {
-    $numero = $_POST['numero'];
-    $obj = new PositividadNumero();
-    $respuesta = $obj->clasificarNumero($numero);
-} else {
-    $respuesta = "No se recibieron datos<br>";
-}
+$dato = data_submitted();
+$obj = new PositividadNumero();
+$respuesta = $obj->clasificarNumero($numero);
 
 $tituloPagina = "Ejercicio 2.1 del TP2";
 $tp = "botonTP2";
