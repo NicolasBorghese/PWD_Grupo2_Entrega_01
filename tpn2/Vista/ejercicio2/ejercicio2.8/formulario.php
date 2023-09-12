@@ -26,7 +26,7 @@ include_once('../estructura/encabezado.php');
                     <label for="edad">Edad:</label>
                 </td>
                 <td>
-                    <input type="number" id="edad" name="edad" required>
+                    <input type="number" id="edad" name="edad">
                 </td>
             </tr>
             <tr>
@@ -34,7 +34,7 @@ include_once('../estructura/encabezado.php');
                     <label for="estudia">Estudia</label>
                 </td>
                 <td>
-                    <input type="radio" name="estudia" value="si" required>
+                    <input type="radio" name="estudia" value="si">
                 </td>
             </tr>
             <tr>

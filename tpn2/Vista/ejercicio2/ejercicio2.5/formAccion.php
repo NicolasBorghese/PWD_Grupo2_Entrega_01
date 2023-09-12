@@ -1,6 +1,5 @@
 <?php
-include_once '../../../Control/control2/control2.5/DatosPersona.php';
-include_once '../../../Utiles/funciones.php';
+include_once '../../../configuracion.php';
 
 $datos = data_submitted();
 $obj = new DatosPersona();

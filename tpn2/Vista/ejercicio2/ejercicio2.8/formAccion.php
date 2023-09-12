@@ -1,14 +1,10 @@
 <?php
 
-include_once("../../../Control/control2/control2.8/CalculaTarifa.php");
+include_once '../../../configuracion.php';
 
-if ($_POST) {
-    $edad = $_POST['edad'];
-    $estudia = $_POST['estudia'];
-
-    $obj = new CalculaTarifa;
-    $tarifa = $obj->calcularTarifa($edad, $estudia);
-}
+$datos = data_submitted();
+$obj = new CalculaTarifa();
+$tarifa = $obj->calcularTarifa($datos);
 
 $tituloPagina = "Ejercicio 8 del TP1";
 $tp = "botonTP1";
