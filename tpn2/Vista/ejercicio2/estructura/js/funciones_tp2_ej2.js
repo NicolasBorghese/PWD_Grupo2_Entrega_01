@@ -55,11 +55,11 @@ function irATP2Ejercicio1() {
 }
 
 function irATP2Ejercicio3() {
-    window.location.href = "../../ejercicio3/ejercicio3.php";
+    window.location.href = "../../ejercicio3/formulario.php";
 }
 
 function irATP2Ejercicio4() {
-    window.location.href = "../../ejercicio4/ejercicio4.php";
+    window.location.href = "../../ejercicio4/formulario.php";
 }
 
 function irATP1Ejercicio1() {

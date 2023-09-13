@@ -3,7 +3,7 @@ include_once '../../../configuracion.php';
 
 $dato = data_submitted();
 $obj = new PositividadNumero();
-$respuesta = $obj->clasificarNumero($numero);
+$respuesta = $obj->clasificarNumero($dato);
 
 $tituloPagina = "Ejercicio 2.1 del TP2";
 $tp = "botonTP2";

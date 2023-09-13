@@ -2,7 +2,7 @@
 include_once '../../../configuracion.php';
 
 $datos = data_submitted();
-$obj = new DatosPersona();
+$obj = new DatosPersona1();
 $resultado = $obj->datosPersonales($datos);
 
 $tituloPagina = "Ejercicio 2.4 del TP2";

@@ -5,17 +5,6 @@ $datos = data_submitted();
 $obj = new SaludoPersonalizado();
 $respuesta = $obj->crearSaludo($datos);
 
-if ($_GET) {
-    $nombre = $_GET['nombreForm'];
-    $apellido = $_GET['apellidoForm'];
-    $edad = $_GET['edadForm'];
-    $direccion = $_GET['direccionForm'];
-
-    $respuesta = $obj->crearSaludo($nombre, $apellido, $edad, $direccion);
-} else {
-    $respuesta = "No se recibieron datos";
-}
-
 $tituloPagina = "Ejercicio 2.3 del TP2";
 $tp = "botonTP2";
 $ejercicio = "botonEjer2";

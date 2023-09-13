@@ -1,6 +1,6 @@
 <?php
 
-class DatosPersonaE4
+class DatosPersona1
 {
     /**
      * Recibe array con datos, retorna cadena de string con ellos

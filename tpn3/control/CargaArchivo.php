@@ -1,5 +1,5 @@
 <?php
-class cargaArchivo{
+class CargaArchivo{
 
  function analizarArchivo( $nombreArchivo){
     
@@ -24,5 +24,3 @@ class cargaArchivo{
 }
 
  }
-
-?>
