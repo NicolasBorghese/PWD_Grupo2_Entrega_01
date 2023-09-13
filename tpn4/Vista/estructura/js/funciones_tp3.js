@@ -13,15 +13,15 @@ function actualizarCurrent(tp, ejercicio){
 ||                                    Links del navegador                                  ||
 \*\=======================================================================================/*/
 
-function irATP3Ejercicio1(){
+function irATP4Ejercicio1(){
     window.location.href = "../ejercicio1/ejercicio1.php";
 }
 
-function irATP3Ejercicio2(){
+function irATP4Ejercicio2(){
     window.location.href = "../ejercicio2/ejercicio2.php";
 }
 
-function irATP3Ejercicio3(){
+function irATP4Ejercicio3(){
     window.location.href = "../ejercicio3/ejercicio3.php";
 }
 
@@ -35,6 +35,6 @@ function irATP2Ejercicio1(){
     window.location.href = "../../../tpn2/Vista/ejercicio1/ejercicio1.php";
 }
 
-function irATP4Ejercicio1(){
-    window.location.href = "../../../tpn4/Vista/ejercicio1/ejercicio1.php";
+function irATP3Ejercicio1(){
+    window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
 }

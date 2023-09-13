@@ -29,10 +29,16 @@ function irATP2Ejercicio4() {
     window.location.href = "../ejercicio4/formulario.php";
 }
 
+/*/=======================================================================================/*/
+
 function irATP1Ejercicio1() {
     window.location.href = "../../../tpn1/Vista/ejercicio1/ejercicio1.php";
 }
 
 function irATP3Ejercicio1() {
     window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
+}
+
+function irATP4Ejercicio1() {
+    window.location.href = "../../../tpn4/Vista/ejercicio1/ejercicio1.php";
 }

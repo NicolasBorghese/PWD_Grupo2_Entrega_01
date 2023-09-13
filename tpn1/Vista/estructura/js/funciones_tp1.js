@@ -45,10 +45,16 @@ function irATP1Ejercicio8(){
     window.location.href = "../ejercicio8/ejercicio8.php";
 }
 
+/*/=======================================================================================/*/
+
 function irATP2Ejercicio1(){
     window.location.href = "../../../tpn2/Vista/ejercicio1/ejercicio1.php";
 }
 
 function irATP3Ejercicio1(){
     window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
+}
+
+function irATP4Ejercicio1(){
+    window.location.href = "../../../tpn4/Vista/ejercicio1/ejercicio1.php";
 }
