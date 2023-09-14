@@ -6,14 +6,16 @@
     include_once('../estructura/encabezado.php');
 ?>
                     <!-- 
-                        tp2 ejercicio 1
+                        tp4 ejercicio 1
                     -->
 
                     <div class="contenedorCentrado">
                         <p>
-                            Investigar y probar la validación de formularios usando alguna librería o framework <br> 
-                            javaScript (JQuery, Mootools, Dojo, Prototype, etc).<br><br>
-                            Para este proyecto se decidió en conjunto por el uso de JQuery
+                       <strong> Ejercicio 1-</strong> Crear la capa de los datos, implementando el ORM (Modelo de datos) <br> para la base de datos<br> 
+                        entregada. Recordar que se debe generar al menos,<br>  un clase php por cada tabla. Cada clase debe contener<br>
+                        las variables de instancia y sus metodos get y set;<br>  ademas de los metodos que nos permitan seleccionar,<br>
+                        ingresar, modificar y eliminar los datos de cada tabla
+                          
                         </p>
                     </div>
 
