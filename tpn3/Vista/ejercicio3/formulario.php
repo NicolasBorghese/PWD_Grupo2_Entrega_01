@@ -10,7 +10,7 @@ include_once('../estructura/encabezado.php');
   <div class="contenedorEj3">
     <div class="container border">
       <div class="bg-light">
-        <i class="bi bi-box-arrow-in-down-left bg-gray text-blue p-2">Cinem@s</i>
+        <h5 class="bi bi-box-arrow-in-down-left bg-gray text-blue p-2">Cinem@s</h5>
       </div>
 
       <form class="row mt-3 g-3 needs-validation" method="post" action="upload.php" novalidate enctype="multipart/form-data">

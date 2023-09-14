@@ -1,7 +1,7 @@
 <?php
 include_once '../../configuracion.php';
 
-$nombreArchivo = strtolower($_FILES['miArchivo']['name']);
+$nombreArchivo = strtolower($_FILES['archivoSubido']['name']);
 
 $objetoPdf = new CargaPdf();
 
@@ -20,6 +20,10 @@ include_once('../estructura/encabezado.php');
   <?php
   echo $mensaje;
   ?>
+
+  <div id="contieneLinkVolver">
+        <a href="formulario.php" id="linkVolver"><br> Volver <a>
+  </div>
 
 </div>
 

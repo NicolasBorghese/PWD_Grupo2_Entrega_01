@@ -6,14 +6,14 @@ $ejercicio = "botonEjer2";
 include_once('../estructura/encabezado.php');
 ?>
 <div class="contenedorEnunciado">
-    Cargue un archivo para visualizarlo en un textarea
+    Cargue un archivo .txt para visualizarlo en un textarea
 </div>
 <div class="contenedorCentrado">
     <form method="post" action="upload.php" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>Cargar archivo txt</td>
-                <td> <input id="archivo" name="miArchivo" type="file" required /></td>
+                <td> <input id="archivoSubido" name="archivoSubido" type="file" class="form-control" required /></td>
             </tr>
 
         </table>

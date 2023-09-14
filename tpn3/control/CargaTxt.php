@@ -16,7 +16,7 @@ class CargaTxt
     //controlar formatos
     if ($pos === false) {
       $mensaje = 0;
-    } else if (move_uploaded_file($_FILES['miArchivo']['tmp_name'], '../../archivos/' . $nombreArchivo)) {
+    } else if (move_uploaded_file($_FILES['archivoSubido']['tmp_name'], '../../archivos/' . $nombreArchivo)) {
       $mensaje = 1;
     }
     return $mensaje;

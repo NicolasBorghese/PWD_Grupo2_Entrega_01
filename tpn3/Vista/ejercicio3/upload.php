@@ -18,6 +18,10 @@ include_once('../estructura/encabezado.php');
   echo $cartelera;
   ?>
 
+  <div id="contieneLinkVolver">
+        <a href="formulario.php" id="linkVolver"><br> Volver <a>
+  </div>
+
 </div>
 <?php
 include_once('../estructura/pie.php');

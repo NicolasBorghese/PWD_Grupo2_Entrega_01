@@ -14,8 +14,8 @@ include_once('../estructura/encabezado.php');
     <form method="post" action="upload.php" enctype="multipart/form-data">
         <table>
             <tr>
-                <td>Cargar archivo pdf</td>
-                <td> <input id="miArchivo" name="miArchivo" type="file" required /></td>
+                <td>Cargar archivo pdf o doc</td>
+                <td><input id="archivoSubido" name="archivoSubido" type="file" class="form-control" required /></td>
             </tr>
 
         </table>

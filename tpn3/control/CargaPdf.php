@@ -26,7 +26,7 @@ class CargaPdf
     }
 
     //Chequear tamaño
-    if ($_FILES['miArchivo']["size"] > 2000000) {
+    if ($_FILES['archivoSubido']["size"] > 2000000) {
       echo "El tamano supera el limite. max 2mb";
       $subirOk = false;
       $mensaje = 2;
@@ -35,7 +35,7 @@ class CargaPdf
     if ($subirOk == false) {
       $mensaje = 0;
     } else {
-      if (move_uploaded_file($_FILES['miArchivo']['tmp_name'], '../../Archivos/' . $nombreArchivo)) {
+      if (move_uploaded_file($_FILES['archivoSubido']['tmp_name'], '../../Archivos/' . $nombreArchivo)) {
         $mensaje = 3;
       } else {
         $mensaje = 0;
@@ -64,7 +64,7 @@ class CargaPdf
         break;
       case 3:
         $mensaje = "El archivo " . $nombreArchivo . " se ha subido con éxito <br />";
-        $mensaje .= '<a href= "../../Archivos/'.$nombreArchivo.'">Ver archivo</a>';
+        $mensaje .= '<div class = "textoCentrado" ><a href= "../../Archivos/'.$nombreArchivo.'">Ver archivo</a></div>';
         break;
     }
     return $mensaje;

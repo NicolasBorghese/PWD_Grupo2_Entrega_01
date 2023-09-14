@@ -1,7 +1,7 @@
 <?php
 include_once '../../configuracion.php';
 
-$nombreArchivo = strtolower($_FILES['miArchivo']['name']);
+$nombreArchivo = strtolower($_FILES['archivoSubido']['name']);
 $objetoTxt = new CargaTxt();
 $pudo = $objetoTxt->analizarArchivoTxt($nombreArchivo);
 $mensaje = $objetoTxt->mostrarMensaje($nombreArchivo, $pudo);
@@ -18,6 +18,10 @@ include_once('../estructura/encabezado.php');
     <?php
     echo $mensaje;
     ?>
+
+    <div id="contieneLinkVolver">
+        <a href="formulario.php" id="linkVolver"><br> Volver <a>
+    </div>
 
 </div>
 <?php
