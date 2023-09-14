@@ -36,7 +36,7 @@ function irATP1Ejercicio1() {
 }
 
 function irATP3Ejercicio1() {
-    window.location.href = "../../../tpn3/Vista/ejercicio1/forumulario.php";
+    window.location.href = "../../../tpn3/Vista/ejercicio1/formulario.php";
 }
 
 function irATP4Ejercicio1() {
