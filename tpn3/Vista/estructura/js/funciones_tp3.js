@@ -28,7 +28,7 @@ function irATP3Ejercicio3() {
 /*/=======================================================================================/*/
 
 function irATP1Ejercicio1() {
-    window.location.href = "../../../tpn1/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../tpn1/Vista/ejercicio1/formulario.php";
 }
 
 function irATP2Ejercicio1() {

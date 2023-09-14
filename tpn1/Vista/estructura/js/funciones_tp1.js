@@ -52,7 +52,7 @@ function irATP2Ejercicio1() {
 }
 
 function irATP3Ejercicio1() {
-    window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../tpn3/Vista/ejercicio1/formulario.php";
 }
 
 function irATP4Ejercicio1() {

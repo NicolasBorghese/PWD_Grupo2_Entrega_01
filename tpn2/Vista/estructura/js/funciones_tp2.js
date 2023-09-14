@@ -32,11 +32,11 @@ function irATP2Ejercicio4() {
 /*/=======================================================================================/*/
 
 function irATP1Ejercicio1() {
-    window.location.href = "../../../tpn1/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../tpn1/Vista/ejercicio1/formulario.php";
 }
 
 function irATP3Ejercicio1() {
-    window.location.href = "../../../tpn3/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../tpn3/Vista/ejercicio1/forumulario.php";
 }
 
 function irATP4Ejercicio1() {
