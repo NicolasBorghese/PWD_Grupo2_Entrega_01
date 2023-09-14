@@ -28,19 +28,9 @@ class Auto {
      * @param string $patente
      * @param string $marca
      * @param int $modelo
-     * @param string $dniPersona
+     * @param Persona $objPersona
      */
-    public function setear($patente, $marca, $modelo, $dniPersona){
-    
-        $sqlPersona = "NroDni = '".$dniPersona."'";
-        $objPersona = new Persona();
-        $arregloPersonas = $objPersona->listar($sqlPersona);
-
-        if(count($arregloPersonas) == 1){
-            $objPersona = $arregloPersonas[0];
-        } else {
-            $objPersona = null;
-        }
+    public function setear($patente, $marca, $modelo, $objPersona){
 
         $this->setPatente($patente);
         $this->setMarca($marca);
@@ -130,7 +120,16 @@ class Auto {
                     esos valores al objeto Auto actual*/
                     $row = $base->Registro();
 
-                    $this->setear($row['Patente'], $row['Marca'], $row['Modelo'], $row['DniDuenio']);
+                    $objPersona = new Persona();
+
+                    if ($row['DniDuenio'] != "null"){
+                        $objPersona->setNroDni($row['DniDuenio']);
+                        $objPersona->cargar();
+                    } else {
+                        $objPersona = null;
+                    }
+
+                    $this->setear($row['Patente'], $row['Marca'], $row['Modelo'], $objPersona);
                     $exito = true;
                 }
             }
@@ -267,8 +266,17 @@ class Auto {
                 
                 while ($row = $base->Registro()){
 
+                    $objPersona = new Persona();
+
+                    if ($row['DniDuenio'] != "null"){
+                        $objPersona->setNroDni($row['DniDuenio']);
+                        $objPersona->cargar();
+                    } else {
+                        $objPersona = null;
+                    }
+
                     $obj = new Auto();
-                    $obj->setear($row['Patente'], $row['Marca'], $row['Modelo'], $row['DniDuenio']);
+                    $obj->setear($row['Patente'], $row['Marca'], $row['Modelo'], $objPersona);
                     array_push($arreglo, $obj);
 
                 }

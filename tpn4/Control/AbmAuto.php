@@ -9,7 +9,7 @@ class AbmAuto{
      * @return Auto
      */
     private function cargarObjeto($param){
-        $obj = null;
+        $objAuto = null;
            
         if( 
         array_key_exists('Patente', $param) &&
@@ -17,16 +17,20 @@ class AbmAuto{
         array_key_exists('Modelo', $param) &&
         array_key_exists('DniDuenio', $param)
         ){
-            $obj = new Auto();
+            $objPersona = new Persona();
+            $objPersona->setNroDni($param['DniDuenio']);
+            $objPersona->cargar();
 
-            $obj->setear(
+            $objAuto = new Auto();
+
+            $objAuto->setear(
                 $param['Patente'],
                 $param['Parca'],
                 $param['Modelo'],
-                $param['DniDuenio']
+                $objPersona
             );
         }
-        return $obj;
+        return $objAuto;
     }
     
     /**
