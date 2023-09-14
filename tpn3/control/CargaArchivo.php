@@ -20,7 +20,7 @@ class CargaArchivo
     $pos2 = strpos($mystring, $encontrar2);
 
     //Controlo formatos
-    if ($pos1 === false || $pos2 === false) {
+    if ($pos1 === false && $pos2 === false) {
       $subirOk = false;
     } else if (move_uploaded_file($_FILES['imagenPeli']['tmp_name'], '../../Archivos/' . $nombreArchivo)) {
       $subirOk = true;
