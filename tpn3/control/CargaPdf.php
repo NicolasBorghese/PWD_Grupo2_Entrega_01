@@ -2,14 +2,16 @@
 class CargaPdf
 {
 
-  function analizarArchivo($nombreArchivo)
+  /**
+   * Analiza si el archivo subido es de tipo texto (.pdf, .doc), retorna entero
+   * @param string $nombreArchivo
+   * @return int
+   */
+  function analizarArchivoPdf($nombreArchivo)
   {
-
-
     $subirOk = true;
 
     //Busco en el nombre si aparece pdf o doc
-
     $mystring = $nombreArchivo;
     $encontrar   = '.pdf';
     $encontrar2   = '.doc';
@@ -21,6 +23,7 @@ class CargaPdf
       $mensaje = 1;
       $subirOk = false;
     }
+
     //Chequear tamaño
     if ($_FILES['miArchivo']["size"] > 2000000) {
       echo "El tamano supera el limite. max 2mb";
@@ -38,5 +41,31 @@ class CargaPdf
       }
     }
     return $mensaje;
+  }
+
+  /**
+   * Recibe nombre de un archivo y un entero, retorna mensaje de éxito o fracaso 
+   * sobre su respectiva subida
+   * @param string $nombreArchivo
+   * @param int $pudo
+   * @return string
+   */
+  public function mostrarMensaje($nombreArchivo, $pudo)
+  {
+    switch ($pudo) {
+      case 1:
+        echo "Lo siento solo se permiten archivos PDF o DOC. \n";
+        break;
+      case 2:
+        echo "El tamaño supera el límite. Máx. 2MB";
+        break;
+      case 3:
+        echo "El archivo " . $nombreArchivo . " se ha subido con éxito <br />";
+        echo '<a href="../../Archivos/">Ver archivo</a>';
+        break;
+      default:
+        echo "Lo siento, hubo un error al cargar su archivo.";
+        break;
+    }
   }
 }
