@@ -10,7 +10,7 @@ $PROYECTO = 'PWD_Grupo2_Entrega_01/tpn1/';
 //variable que almacena el directorio del proyecto
 $ROOT = $_SERVER['DOCUMENT_ROOT'] . "/$PROYECTO/";
 
-include_once($ROOT . '../../Utiles/funciones.php');
+include_once($ROOT . 'Utiles/funciones.php');
 
 
 // Variable que define la pagina de autenticacion del proyecto

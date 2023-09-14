@@ -13,10 +13,14 @@ class CuentaHoras
      */
     public function sumarHoras($datos)
     {
-        $total = 0;
-        foreach ($datos as $cantHoras) {
-            $total += $cantHoras;
-        }
+        $lunes = $datos['hsLunes'];
+        $martes = $datos['hsMartes'];
+        $miercoles = $datos['hsMiercoles'];
+        $jueves = $datos['hsJueves'];
+        $viernes = $datos['hsViernes'];
+
+        $total = $lunes + $martes + $miercoles + $jueves + $viernes;
+
         $mensaje = "Cantidad total de horas en la cursada de Programación Web: " . $total;
 
         return $mensaje;

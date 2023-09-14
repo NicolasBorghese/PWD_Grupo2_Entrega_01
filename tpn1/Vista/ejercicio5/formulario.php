@@ -44,7 +44,7 @@ include_once('../estructura/encabezado.php');
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="radio" name="estudios" id="estudios1" value="noTiene" required> No tiene estudios
+                    <input type="radio" name="estudios" id="estudios1" value="no tiene" required> No tiene estudios
                 </td>
             </tr>
             <tr>
@@ -61,7 +61,6 @@ include_once('../estructura/encabezado.php');
                 <td>Sexo:</td>
                 <td>
                     <select id="sexoForm" name="sexoForm">
-                        <option value=""></option>
                         <option value="masculino">Masculino</option>
                         <option value="femenino">Femenino</option>
                         <option value="otro">Otro</option>

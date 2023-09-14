@@ -52,20 +52,20 @@ class CargaPdf
    */
   public function mostrarMensaje($nombreArchivo, $pudo)
   {
+    $mensaje = "Lo siento, hubo un error al cargar su archivo.";
+
     switch ($pudo) {
       case 1:
-        echo "Lo siento solo se permiten archivos PDF o DOC. \n";
+        $mensaje = "Lo siento solo se permiten archivos PDF o DOC. \n";
         break;
       case 2:
-        echo "El tamaño supera el límite. Máx. 2MB";
+        $mensaje = "El tamaño supera el límite. Máx. 2MB";
         break;
       case 3:
-        echo "El archivo " . $nombreArchivo . " se ha subido con éxito <br />";
-        echo '<a href="../../Archivos/">Ver archivo</a>';
-        break;
-      default:
-        echo "Lo siento, hubo un error al cargar su archivo.";
+        $mensaje = "El archivo " . $nombreArchivo . " se ha subido con éxito <br />";
+        $mensaje .= '<a href="../../Archivos/">Ver archivo</a>';
         break;
     }
+    return $mensaje;
   }
 }

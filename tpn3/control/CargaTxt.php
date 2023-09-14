@@ -31,18 +31,17 @@ class CargaTxt
    */
   public function mostrarMensaje($nombreArchivo, $pudo)
   {
-    switch ($pudo) {
-      case 0:
-        echo "<h3>Lo siento solo se permiten archivos txt.</h3>\n";
-        break;
-      default:
-        //Convertir el contenido en un textarea
-        $archivo = file_get_contents('../../Archivos/' . $nombreArchivo);
-        echo "<div class='contenedorEnunciado'>
-                 <p>Este es el contenido de su archivo de texto cargado</p>
-              </div>
-              <textarea rows='30' cols='50'>$archivo</textarea>";
-        break;
+    if ($pudo == 0) {
+      $mensaje = "<h3>Lo siento, solo se permiten archivos txt.</h3>\n";
+    } else {
+      //Convertir el contenido en un textarea
+      $archivo = file_get_contents('../../Archivos/' . $nombreArchivo);
+      $mensaje = "<div class='contenedorEnunciado'>
+                       <p>Este es el contenido de su archivo de texto cargado</p>
+                 </div>
+                 <textarea rows='30' cols='50'>$archivo</textarea>";
     }
+
+    return $mensaje;
   }
 }

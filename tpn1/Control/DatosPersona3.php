@@ -8,12 +8,12 @@ class DatosPersona3
      */
     public function datosPersonales($datos)
     {
-        $nombre = $datos['nombre'];
-        $apellido = $datos['apellido'];
-        $edad = $datos['edad'];
-        $direccion = $datos['direccion'];
+        $nombre = $datos['nombreForm'];
+        $apellido = $datos['apellidoForm'];
+        $edad = $datos['edadForm'];
+        $direccion = $datos['direccionForm'];
         $estudios = $datos['estudios'];
-        $sexo = $datos['sexo'];
+        $sexo = $datos['sexoForm'];
 
         if ($edad >= 18) {
             $textoEdad = "</br>Es mayor de edad";
