@@ -1,37 +1,31 @@
 <?php
-class PositividadNumero {
-
-    //ATRIBUTOS
+class PositividadNumero
+{
 
     //CONSTRUCTOR
-    public function __construct(){
+    public function __construct()
+    {
     }
-
-    //MÉTODOS PROPIOS
 
     /**
-     * Lee un valor recibido, si es un número indica si es positivo, negativo o cero.
-     * 
-     * @param float $numero
+     * Recibe arreglo con un número, retorna si es positivo, negativo o igual a 0
+     * @param array $dato
      * @return string
      */
-    public function clasificarNumero($numero){
+    public function clasificarNumero($dato)
+    {
+        $numero = $dato['numero'];
 
-        if (is_numeric($numero)){
-
-            if ($numero > 0){
-                $respuesta = "El número ingresado es positivo<br>";
-            } else if ($numero < 0){
-                $respuesta = "El número ingresado es negativo<br>";
-            } else {
-                $respuesta = "El número ingresado es cero<br>";
-            }
-            
-        } else {
-            $respuesta = "ERROR: el valor ingresado no es un número<br>";
+        switch ($numero) {
+            case $numero > 0:
+                $tipoNumero = "El número es positivo<br>";
+                break;
+            case $numero < 0:
+                $tipoNumero = "El número es negativo<br>";
+                break;
+            case $numero == 0:
+                $tipoNumero = "El número es igual a 0<br>";
         }
-
-        return $respuesta;
+        return $tipoNumero;
     }
-
 }

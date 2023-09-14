@@ -1,49 +1,24 @@
 <?php
-class CuentaHoras {
-
-    //ATRIBUTOS
-
+class CuentaHoras
+{
     //CONSTRUCTOR
-    public function __construct(){
+    public function __construct()
+    {
     }
-
-    //MÉTODOS PROPIOS
 
     /**
-     * Lee un arreglo que cada indice guarda las horas por día que tiene una materia.
-     * Si los datos son correctos se suman, retorna un número con el resultado.
-     * 
-     * @param array $arregloHoras
-     * @return float
+     * Recibe arreglo con horas, retorna la suma de todas ellas
+     * @param array $datos
+     * @return string
      */
-    public function sumarHoras($arregloHoras){
-        $cantHoras = 0;
-        $iter = 0;
-        $error = false;
-
-        do {
-
-            if(is_numeric($arregloHoras[$iter])){
-                $cantHoras += $arregloHoras[$iter];
-
-            } else if ($arregloHoras[$iter] == ""){
-                $cantHoras += 0;
-
-            } else {
-                $error = true;
-
-            }
-            $iter++;
-
-        } while ($iter < 5 && !$error);
-
-        if(!$error){
-            $respuesta = $cantHoras;
-        } else {
-            $respuesta = -1;
+    public function sumarHoras($datos)
+    {
+        $total = 0;
+        foreach ($datos as $cantHoras) {
+            $total += $cantHoras;
         }
+        $mensaje = "Cantidad total de horas en la cursada de Programación Web: " . $total;
 
-        return $respuesta;
+        return $mensaje;
     }
-
 }

@@ -1,14 +1,9 @@
 <?php
+include_once '../../configuracion.php';
 
-include_once("../../Control/control8/CalculaTarifa.php");
-
-if ($_POST) {
-    $edad = $_POST['edad'];
-    $estudia = $_POST['estudia'];
-
-    $obj = new CalculaTarifa;
-    $tarifa = $obj->calcularTarifa($edad, $estudia);
-}
+$datos = data_submitted();
+$obj = new CalculaTarifa();
+$tarifa = $obj->calcularTarifa($datos);
 
 $tituloPagina = "Ejercicio 8 del TP1";
 $tp = "botonTP1";
@@ -21,15 +16,11 @@ include_once('../estructura/encabezado.php');
     Calcular tarifa para entrada de cine
 </div>
 <div class="contenedorCentrado">
+
     <?php
-
-    if ($tarifa != "error") {
-        echo "El precio de la entrada es de: $" . $tarifa;
-    } else {
-        echo "error al ingresar los datos";
-    }
-
+    echo $tarifa;
     ?>
+
     <div id="contieneLinkVolver">
         <a href="ejercicio8.php" id="linkVolver"><br> Volver <a>
     </div>

@@ -1,8 +1,6 @@
 <?php
 class CalculaTarifa
 {
-    //ATRIBUTOS
-
     //CONSTRUCTOR
     public function __construct()
     {

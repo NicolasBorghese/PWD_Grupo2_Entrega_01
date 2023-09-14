@@ -3,7 +3,7 @@ include_once '../../../configuracion.php';
 
 $datos = data_submitted();
 $obj = new DatosPersona1();
-$resultado = $obj->datosPersonales($datos);
+$cadenaDatos = $obj->datosPersonales($datos);
 
 $tituloPagina = "Ejercicio 2.4 del TP2";
 $tp = "botonTP2";
@@ -16,7 +16,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorCentrado">
 
     <?php
-    echo $resultado;
+    echo $cadenaDatos;
     ?>
 
     <div id="contieneLinkVolver">

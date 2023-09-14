@@ -1,50 +1,31 @@
 <?php
-    include_once("../../Control/control2/CuentaHoras.php");
+include_once '../../configuracion.php';
 
-    $obj = new CuentaHoras();
+$datos = data_submitted();
+$obj = new CuentaHoras();
+$resultado = $obj->sumarHoras($datos);
 
-    if ($_GET){
-        $hsLunes = $_GET['hsLunes'];
-        $hsMartes = $_GET['hsMartes'];
-        $hsMiercoles = $_GET['hsMiercoles'];
-        $hsJueves = $_GET['hsJueves'];
-        $hsViernes = $_GET['hsViernes'];
+$tituloPagina = "Ejericio 2 del TP1";
+$tp = "botonTP1";
+$ejercicio = "botonEjer2";
 
-        $arregloHoras = [$hsLunes, $hsMartes, $hsMiercoles, $hsJueves, $hsViernes];
-
-        $respuesta = $obj->sumarHoras($arregloHoras);
-
-    } else {
-        $respuesta = "No se recibieron datos";
-    }
-
-    $tituloPagina = "Ejericio 2 del TP1";
-    $tp = "botonTP1";
-    $ejercicio = "botonEjer2";
-    
-    include_once('../estructura/encabezado.php');
+include_once('../estructura/encabezado.php');
 ?>
-     
-            <div class="contenedorEnunciado">
-                Resultado
-            </div>
-            <div class="contenedorCentrado">
 
-                <?php
-                    if ($respuesta == -1){
-                        echo "Se ingresaron datos incorrectos";
-                    } else if (is_numeric($respuesta)){
-                        echo "La cantidad de horas de cursada por semana son: ".$respuesta." HS";
-                    } else {
-                        echo $respuesta;
-                    }
-                ?>
-                
-                <div id="contieneLinkVolver">
-                    <a href="ejercicio2.php" id="linkVolver"><br> Volver <a>
-                </div>
-            </div>
-        
+<div class="contenedorEnunciado">
+    Resultado
+</div>
+<div class="contenedorCentrado">
+
+    <?php
+    echo $resultado;
+    ?>
+
+    <div id="contieneLinkVolver">
+        <a href="ejercicio2.php" id="linkVolver"><br> Volver <a>
+    </div>
+</div>
+
 <?php
-    include_once('../estructura/pie.php');
+include_once('../estructura/pie.php');
 ?>

@@ -1,46 +1,27 @@
 <?php
-class CalculaTarifa {
-
-    //ATRIBUTOS
-
+class CalculaTarifa
+{
     //CONSTRUCTOR
-    public function __construct(){
+    public function __construct()
+    {
     }
-
-    //MÉTODOS PROPIOS
 
     /**
-     * Lee un valor recibido, si es un número indica si es positivo, negativo o cero.
-     * 
-     * @param int $edad
-     * @param string $estudia
-     * @return string
+     * Recibe array con datos, retorna monto de tarifa
+     * @param array $datos
+     * @return mixed
      */
-    public function calcularTarifa($edad, $estudia){
+    public function calcularTarifa($datos)
+    {
+        $edad = $datos['edad'];
+        $estudios = $datos['estudia'];
 
-        if (ctype_digit($edad)) {
-
-            if ($estudia == "si" || $estudia == "no") {
-
-                if ($edad < 12 && $estudia == "si") {
-                    $respuesta = 160;
-
-                } else if ($edad >= 12 && $estudia == "si") {
-                    $respuesta = 180;
-
-                } else {
-                    $respuesta = 300;
-                }
-
-            } else {
-                $respuesta = "error";
-            }
-
-        } else {
-            $respuesta = "error";
+        $tarifa = 300;
+        if ($estudios == "si" || $edad < 12) {
+            $tarifa = 160;
+        } elseif ($estudios == "si" && $edad >= 12) {
+            $tarifa = 180;
         }
-
-        return $respuesta;
+        return $tarifa;
     }
-
 }
