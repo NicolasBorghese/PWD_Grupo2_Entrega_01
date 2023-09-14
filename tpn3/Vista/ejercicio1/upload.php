@@ -2,7 +2,9 @@
 include_once '../../configuracion.php';
 
 $nombreArchivo = strtolower($_FILES['miArchivo']['name']);
+
 $objetoPdf = new CargaPdf();
+
 $pudo = $objetoPdf->analizarArchivoPdf($nombreArchivo);
 $mensaje = $objetoPdf->mostrarMensaje($nombreArchivo, $pudo);
 
@@ -20,6 +22,7 @@ include_once('../estructura/encabezado.php');
   ?>
 
 </div>
+
 <?php
 include_once('../estructura/pie.php');
 ?>

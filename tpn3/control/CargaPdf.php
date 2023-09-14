@@ -19,7 +19,7 @@ class CargaPdf
     $pos2 = strpos($mystring, $encontrar2);
 
     //Controlar formatos
-    if ($pos1 === false || $pos2 === false) {
+    if ($pos1 === false && $pos2 === false) {
       $mensaje = 1;
       $subirOk = false;
     }
@@ -34,7 +34,7 @@ class CargaPdf
     if ($subirOk == false) {
       $mensaje = 0;
     } else {
-      if (move_uploaded_file($_FILES['miArchivo']['tmp_name'], '../../archivos/' . $nombreArchivo)) {
+      if (move_uploaded_file($_FILES['miArchivo']['tmp_name'], '../../Archivos/' . $nombreArchivo)) {
         $mensaje = 3;
       } else {
         $mensaje = 0;
@@ -63,7 +63,7 @@ class CargaPdf
         break;
       case 3:
         $mensaje = "El archivo " . $nombreArchivo . " se ha subido con éxito <br />";
-        $mensaje .= '<a href="../../Archivos/">Ver archivo</a>';
+        $mensaje .= '<a href= "../../Archivos/'.$nombreArchivo.'">Ver archivo</a>';
         break;
     }
     return $mensaje;

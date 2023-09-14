@@ -7,7 +7,7 @@ include_once('../estructura/encabezado.php');
 ?>
 
 <div class="contenedorEnunciado">
-    Cargue un archivo para visualizarlo
+    Cargue un archivo .doc o .pdf para visualizarlo
 </div>
 
 <div class="contenedorCentrado">
