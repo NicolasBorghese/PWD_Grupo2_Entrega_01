@@ -13,7 +13,7 @@ class Persona {
     
     //CONSTRUCTOR
     /**
-     * Crea un objeto de tipo Auto
+     * Crea un objeto de tipo Persona
      */
     public function __construct(){
         
