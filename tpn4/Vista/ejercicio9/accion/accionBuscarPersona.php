@@ -7,10 +7,13 @@
     
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
-    $datos= data_submitted();
+
+    $datos = data_submitted();
     $objPersona = new AbmPersona();
+
     $listaPersona=$objPersona->buscar($datos);
     $contListaP = count($listaPersona);
+
     if ($contListaP == 0){
         echo '<h4>NO existe persona cargada con ese DNI </h4>?';
     }
@@ -20,6 +23,8 @@
     -->
 
     <div class="contenedorCentrado">
+        <?php
+        ?>
     <strong>DATOS DE LA PERSONA BUSCADA <?php echo "DNI:".$datos['NroDni'];?></strong>
       <h4>Coloque los DATOS que desea modificar</h4>
    <form method="post" action="actualizarDatosPersona.php" class="needs-validation" novalidate>
@@ -27,7 +32,7 @@
             <tr>
                 <td>Dni:</td>
                 <td>
-                <input type="text"  id="NroDni" name="NroDni"  value=<?php echo $listaPersona[0]->getNroDni()?> placeholder="22985265" pattern="[0-9]{8}" maxlength="8" required>
+                <input type="text"  id="NroDni" name="NroDni"  value=<?php echo $listaPersona[0]->getNroDni()?> placeholder="22985265" pattern="[0-9]{8}" maxlength="8" required readonly>
                 <div class="valid-feedback">
                     Muy bien!
                 </div>
@@ -60,7 +65,7 @@
             </tr>
             <tr>
                 <td>Fecha Nacimiento:</td>
-                <td><input type="text" value='<?php echo $listaPersona[0]->getFechaNac() ?>' id="fechaNac" name="fechaNac" placeholder="1922-01-01" min="1922-01-01" max="2004-01-01" required>
+                <td><input type="date" value='<?php echo $listaPersona[0]->getFechaNac() ?>' id="fechaNac" name="fechaNac" placeholder="1922-01-01" min="1922-01-01" max="2004-01-01" required>
                 <div class="valid-feedback">
                     Muy bien!
                 </div>

@@ -51,7 +51,7 @@
             </tr>
             <tr>
                 <td>Fecha Nacimiento:</td>
-                <td><input type="text"  id="fechaNac" name="fechaNac" placeholder="1990-01-01" min="1917-01-01" max="2005-01-01" required>
+                <td><input type="date"  id="fechaNac" name="fechaNac" placeholder="1990-01-01" min="1917-01-01" max="2005-01-01" required>
                 <div class="valid-feedback">
                     Muy bien!
                 </div>

@@ -10,8 +10,9 @@
     
     $datos= data_submitted();
     $objPersona = new AbmPersona();
+    $arregloNuevo['NroDni'] = $datos['NroDni'];
     
-    $listaPersonas = $objPersona->buscar($datos);
+    $listaPersonas = $objPersona->buscar($arregloNuevo);
     if (count($listaPersonas) == 1 ){
         if ($objPersona-> modificacion($datos)){
             $mensaje = "Datos modificados correctamente";
