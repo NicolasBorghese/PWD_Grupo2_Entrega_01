@@ -264,7 +264,7 @@ class Persona {
                 }
             }
         } else {
-            $this->setmensajeoperacion("Auto->listar: ".$base->getError());
+            $this->setmensajeoperacion("Persona->listar: ".$base->getError());
         }
         return $arreglo;
     }

@@ -163,7 +163,7 @@ class AbmPersona{
                 $where.= " and Domicilio = '".$param['Domicilio']."'";
         }
 
-        /*$arreglo = Persona::listar($where);*/
+       /* $arreglo = Persona::listar($where);*/
         $obj = new Persona();
         $arreglo = $obj->listar($where);
 
