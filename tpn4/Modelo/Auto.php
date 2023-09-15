@@ -286,5 +286,27 @@ class Auto {
         }
         return $arreglo;
     }
+
+    /**
+     * Esta función lee todos los valores de todos los atributos del objeto y los devuelve
+     * en un arreglo asociativo
+     * 
+     * @return array
+     */
+    public function obtenerInfo(){
+
+        $info = [];
+        $info['patente'] = $this->getPatente();
+        $info['marca'] = $this->getMarca();
+        $info['modelo'] = $this->getModelo();
+
+        $objPersona = $this->getObjPersona();
+        $infoPersona = $objPersona->obtenerInfo();
+
+        $info['objPersona'] = $infoPersona;
+
+        return $info;
+    }
+    
 }
 ?>

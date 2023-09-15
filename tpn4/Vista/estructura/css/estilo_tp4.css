@@ -140,6 +140,11 @@
     text-align: center;
 }
 
+.titulosTabla {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
 /*-------------------------------------------- TABLA -----------------------------------------------*/
 .contenedorCentrado table {
     border-collapse: separate;

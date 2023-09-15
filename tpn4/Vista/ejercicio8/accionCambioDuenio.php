@@ -1,23 +1,22 @@
 <?php
-$tituloPagina = "Ejercicio 8 del TP4";
-$tp = "botonTP4";
-$ejercicio = "botonEjer8";
+    $tituloPagina = "Ejercicio 8 del TP4";
+    $tp = "botonTP4";
+    $ejercicio = "botonEjer8";
 
-include_once('../estructura/encabezado.php');
-include_once("../../configuracion.php");
+    include_once('../estructura/encabezado.php');
+    include_once("../../configuracion.php");
 
-$metodo = data_submitted();
+    $metodo = data_submitted();
 
-$objAuto = new AbmAuto();
-$objPersona = new AbmPersona();
+    $objAuto = new AbmAuto();
+    $objPersona = new AbmPersona();
 
-$busqueda['Patente'] = $metodo['Patente'];
+    $busqueda['Patente'] = $metodo['Patente'];
 
-$datosAuto = $objAuto->buscar($busqueda);
+    $datosAuto = $objAuto->buscar($busqueda);
 
-$nroDni["NroDni"] = $metodo["DniDuenio"];
-$datosPersona = $objPersona->buscar($nroDni);
-
+    $nroDni["NroDni"] = $metodo["DniDuenio"];
+    $datosPersona = $objPersona->buscar($nroDni);
 ?>
 
     <div class="contenedorCentrado">

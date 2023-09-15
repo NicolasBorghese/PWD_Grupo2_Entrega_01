@@ -268,5 +268,25 @@ class Persona {
         }
         return $arreglo;
     }
+
+    /**
+     * Esta función lee todos los valores de todos los atributos del objeto y los devuelve
+     * en un arreglo asociativo
+     * 
+     * @return array
+     */
+    public function obtenerInfo(){
+
+        $info = [];
+        $info['nroDni'] = $this->getNroDni();
+        $info['apellido'] = $this->getApellido();
+        $info['nombre'] = $this->getNombre();
+        $info['fechaNac'] = $this->getFechaNac();
+        $info['telefono'] = $this->getTelefono();
+        $info['domicilio'] = $this->getDomicilio();
+
+        return $info;
+    }
+
 }
 ?>
