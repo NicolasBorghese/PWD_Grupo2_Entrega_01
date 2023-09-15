@@ -7,7 +7,7 @@
     include_once('../../../configuracion.php');
 
 
-    $datos= data_submited();
+    $datos= data_submitted();
     $objPersona = new  AbmPersona();
     $param[0] = ["NroDni"=>$datos['NroDni']];
     $listaPersonas = $objPersona->buscar($param[0]);
