@@ -1,11 +1,13 @@
 <?php 
-    $tituloPagina = "Ejercicio 6 del TP4";
+    $tituloPagina = "Ejercicio 4 del TP4";
     $tp = "botonTP4";
-    $ejercicio = "botonEjer6";
-    $rutaEstructura = "../../";    
+    $ejercicio = "botonEjer4";
+    
     include_once('../../estructura/encabezado.php');
     include_once('../../../configuracion.php');
 
+
+ 
 
     $datos= data_submitted();
     $objPersona = new  AbmPersona();
@@ -38,6 +40,6 @@
 
     </div>
 
-    <?php
-    include_once('../../estructura/pie.php');
+<?php
+    include_once('../estructura/pie.php');
 ?>

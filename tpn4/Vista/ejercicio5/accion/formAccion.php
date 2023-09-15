@@ -7,46 +7,50 @@
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
     
-    $metodo = data_submitted();
-    $param['Patente'] = $metodo['Patente'];
-
-    $objAuto = new AbmAuto();
-    $colInfo = $objAuto->buscarColInfo($param);
-
-    $hayAutos = false;
-    
-    if (count($colInfo) > 0){
-        $hayAutos = true;
-    }
+    $datos= data_submitted();
+    $objPers = new AbmPersona();
+    $objAutos = new AbmAuto();
+    $autos = $objAutos->buscarDniDuenio($datos);
+    $listaPersonas = $objPers->buscar($datos);
 ?>
     <!-- 
         tp4 ejercicio 5
     -->
 
     <div class="contenedorCentrado">
-        <?php
-            if($hayAutos){
-                echo "<table>";
-                echo "<tr class='titulosTabla'>";
-                echo "<td>Patente</td><td>Marca</td><td>Modelo</td><td>DNI Dueño</td><td>Apellido y Nombre</td>";
-                echo "</tr>";
-                $patente = $colInfo[0]['patente'];
-                $marca = $colInfo[0]['marca'];
-                $modelo = $colInfo[0]['modelo'];
-                $dni = $colInfo[0]['objPersona']['nroDni'];
-                $apellido = $colInfo[0]['objPersona']['apellido'];
-                $nombre = $colInfo[0]['objPersona']['nombre'];
-                echo "<tr>";
-                echo "<td>".$patente."</td><td>".$marca."</td><td>".$modelo."</td><td>".$dni."</td><td>".$apellido." ".$nombre."</td>";
-                echo "<tr>";
-                echo "</table>";
-            } else {
-                echo "No se encontro la patente ingresada en la base de datos";
+    <p>LISTA DE AUTOS REGISTRADOS CON EL DNI: <?php echo $datos['NroDni'];?></p>
+    <?php
+    if(count($listaPersonas)==1){
+        echo '<table class="table">
+        <tr>
+            <th style="text-align: center" colspan="6">'.$listaPersonas[0]->getNombre().' '.$listaPersonas[0]->getApellido().'</th>
+        </tr>
+        <tr>
+              <th><strong>Patente</strong></th>
+              <th><strong>Marca</strong></th>
+              <th><strong>Modelo</strong></th>        
+        </tr>
+        </thead>
+        <tbody>';
+        if(count($autos)>0){
+            foreach($autos as $objAuto){
+                echo '<tr>';
+                echo '<td>'.$objAuto->getPatente().'</td>';
+                echo '<td>'.$objAuto->getMarca().'</td>';
+                echo '<td>'.$objAuto->getModelo().'</td>';
+                echo '</tr>'; 
             }
-        ?>
-        <div id="contieneLinkVolver">
-            <a href="../buscarAuto.php" id="linkVolver"><br> Volver <a>
-        </div>
+        }else{
+            echo '<h4>No se encontro ningun auto registrado con el dni ingresado </h4>';
+        }
+    }else{
+        echo '<h4>No se encontro ninguna persona con este dni. </h4>';
+    }
+    echo '</tbody>
+    </table>';
+    ?>
+    <a href="../autosPersona.php"> Ir a AutosPersona.php </a>
+
     </div>
 
 <?php
