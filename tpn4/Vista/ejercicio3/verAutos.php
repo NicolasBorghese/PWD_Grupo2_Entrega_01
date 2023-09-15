@@ -8,15 +8,11 @@
 
     $objAuto = new AbmAuto();
 
-    $colAutos = $objAuto->buscar("");
+    $colInfo = $objAuto->buscarColInfo("");
     $hayAutos = false;
     
-    if (count($colAutos) > 0){
+    if (count($colInfo) > 0){
         $hayAutos = true;
-        $colInfo = array();
-        for ($i = 0; $i < count($colAutos); $i++){
-            $colInfo[$i] = $colAutos[$i]->obtenerInfo();
-        }
     }
 ?>
 

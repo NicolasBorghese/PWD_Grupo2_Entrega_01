@@ -1,13 +1,12 @@
-<?php
-$tituloPagina = "Ejercicio 8 del TP4";
-$tp = "botonTP4";
-$ejercicio = "botonEjer8";
-
-include_once('../estructura/encabezado.php');
+<?php 
+    $tituloPagina = "Ejercicio 4 del TP4";
+    $tp = "botonTP4";
+    $ejercicio = "botonEjer4";
+    
+    include_once('../estructura/encabezado.php');
 ?>
-
     <!-- 
-        tp4 ejercicio 8
+        tp4 ejercicio 4
     -->
 
     <div class="contenedorCentrado">
@@ -35,5 +34,5 @@ include_once('../estructura/encabezado.php');
     </div>
 
 <?php
-include_once('../estructura/pie.php');
+    include_once('../estructura/pie.php');
 ?>

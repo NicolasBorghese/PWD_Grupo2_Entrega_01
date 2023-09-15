@@ -68,6 +68,7 @@
     background-color: rgb(86, 86, 86);
     font-weight: bold;
     font-size: large;
+    text-align: center;
 }
 
 .botonTrabajos:hover {
@@ -89,9 +90,19 @@
     border-radius: 0px;
     background-color: rgb(86, 86, 86);
     font-weight: bold;
+    text-align: center;
+}
+
+.botonEjercicios a {
+    text-decoration: none;
+    color:black;
 }
 
 .botonEjercicios:hover {
+    color:rgb(100, 120, 198);
+}
+
+.botonEjercicios:hover a {
     color:rgb(100, 120, 198);
 }
 
@@ -99,6 +110,11 @@
     color:rgb(138, 230, 135);
     text-shadow: -5px 4px 4px rgb(21, 49, 27);
     box-shadow: 0px 4px 4px rgb(21, 49, 27);
+}
+
+.botonActual a{
+    color:rgb(138, 230, 135);
+    text-shadow: -5px 4px 4px rgb(21, 49, 27);
 }
 
 /*-------------------------------------------- DIV ENUNCIADO ---------------------------------------*/

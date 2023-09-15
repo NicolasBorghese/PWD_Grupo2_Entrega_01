@@ -25,7 +25,7 @@ function irATP4Ejercicio3() {
     window.location.href = "../ejercicio3/verAutos.php";
 }
 function irATP4Ejercicio4() {
-    window.location.href = "../ejercicio4/ejercicio4.php";
+    window.location.href = "../ejercicio4/buscarAuto.php";
 }
 function irATP4Ejercicio5() {
     window.location.href = "../ejercicio5/ejercicio5.php";

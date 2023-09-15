@@ -1,3 +1,3 @@
 <?php
-    header('Location: tpn1/Vista/ejercicio1/formulario.php');
+    header('Location: tpn4/Vista/ejercicio3/verAutos.php');
 ?>

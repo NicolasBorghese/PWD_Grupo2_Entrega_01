@@ -40,5 +40,5 @@ function irATP3Ejercicio1() {
 }
 
 function irATP4Ejercicio1() {
-    window.location.href = "../../../tpn4/Vista/ejercicio1/ejercicio1.php";
+    window.location.href = "../../../tpn4/Vista/ejercicio3/verAutos.php";
 }

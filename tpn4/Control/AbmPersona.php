@@ -132,8 +132,10 @@ class AbmPersona{
     
     /**
      * Permite buscar un objeto según distintos criterios
+     * Recibe un arreglo indexado que contiene los criterios de busqueda.
+     * Retorna un arreglo compuesto por los objetos que cumplen el criterio indicado
      * @param array $param
-     * @return boolean
+     * @return array
      */
     public function buscar($param){
 
@@ -166,6 +168,29 @@ class AbmPersona{
         $arreglo = $obj->listar($where);
 
         return $arreglo;
+    }
+
+    /**
+     * Recibe un arreglo indexado que contiene los criterios de busqueda
+     * Devuelve un arreglo con la información de todos los objetos que cumplan la condición
+     * recibida por parámetro
+     * 
+     * @param array $param
+     * @return array
+     */
+    public function buscarColInfo($param){
+
+        $colInfo = array();
+        $arregloObj = $this->buscar($param);
+
+        if (count($arregloObj) > 0){
+
+            for ($i = 0; $i < count($arregloObj); $i++){
+                $colInfo[$i] = $arregloObj[$i]->obtenerInfo();
+            }
+        }
+
+        return $colInfo;
     }
 }  
 ?>

@@ -5,16 +5,13 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-                    <!-- 
-                        tp4 ejercicio 7
-                    -->
+    <!-- 
+        tp4 ejercicio 7
+    -->
 
-                    <div class="contenedorCentrado">
-                        <p>
-                       <strong> Ejercicio 7-</strong>
-                          
-                        </p>
-                    </div>
+    <div class="contenedorCentrado">
+
+    </div>
 
 <?php
     include_once('../estructura/pie.php');

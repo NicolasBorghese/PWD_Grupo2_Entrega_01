@@ -44,13 +44,13 @@
     </div>
 
     <div id="menuEjercicios">
-        <input type="button" name="botonEjer1" id="botonEjer1" value="Ejercicio 1" class="botonEjercicios" onclick="irATP4Ejercicio1();"><!--
-        --><input type="button" name="botonEjer2" id="botonEjer2" value="Ejercicio 2" class="botonEjercicios" onclick="irATP4Ejercicio2();"><!--
-        --><input type="button" name="botonEjer3" id="botonEjer3" value="Ver Autos" class="botonEjercicios" onclick="irATP4Ejercicio3();"><!--
-        --><input type="button" name="botonEjer4" id="botonEjer4" value="Ejercicio 4" class="botonEjercicios" onclick="irATP4Ejercicio4();"><!--
-        --><input type="button" name="botonEjer5" id="botonEjer5" value="Ejercicio 5" class="botonEjercicios" onclick="irATP4Ejercicio5();"><!--
-        --><input type="button" name="botonEjer6" id="botonEjer6" value="Ejercicio 6" class="botonEjercicios" onclick="irATP4Ejercicio6();"><!--
-        --><input type="button" name="botonEjer7" id="botonEjer7" value="Ejercicio 7" class="botonEjercicios" onclick="irATP4Ejercicio7();"><!--
-        --><input type="button" name="botonEjer8" id="botonEjer8" value="Ejercicio 8" class="botonEjercicios" onclick="irATP4Ejercicio8();"><!--
-        --><input type="button" name="botonEjer9" id="botonEjer9" value="Ejercicio 9" class="botonEjercicios" onclick="irATP4Ejercicio9();">
+        <!--<div id="botonEjer1" class="botonEjercicios" onclick="irATP4Ejercicio1();"><a href=#>Ejercicio 1</a></div>
+        <div id="botonEjer2" class="botonEjercicios" onclick="irATP4Ejercicio2();"><a href=#>Ejercicio 2</a></div>
+        --><div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3();"><a href=#>Ver<br>Autos</a></div><!--
+        --><div id="botonEjer4" class="botonEjercicios" onclick="irATP4Ejercicio4();"><a href=#>Buscar<br>Auto</a></div><!--
+        --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5();"><a href=#>Lista<br>Personas</a></div><!--
+        --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6();"><a href=#>Nueva<br>Persona</a></div><!--
+        --><div id="botonEjer7" class="botonEjercicios" onclick="irATP4Ejercicio7();"><a href=#>Nuevo<br>Auto</a></div><!--
+        --><div id="botonEjer8" class="botonEjercicios" onclick="irATP4Ejercicio8();"><a href=#>Cambio<br>Dueño</a></div><!--
+        --><div id="botonEjer9" class="botonEjercicios" onclick="irATP4Ejercicio9();"><a href=#>Buscar<br>Persona</a></div>
     </div>
