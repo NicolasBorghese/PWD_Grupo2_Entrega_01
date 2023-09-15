@@ -26,20 +26,29 @@ include_once('../estructura/encabezado.php');
                 <td><label for="nombreForm">Nombre:</label></td>
                 <td><input type="text" name="nombreForm" id="nombreForm" minlength="3" required></td>
             </tr>
+            <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="nombreForm"></label></td></tr>
             <tr>
                 <td><label for="apellidoForm">Apellido:</label></td>
                 <td><input type="text" name="apellidoForm" id="apellidoForm" minlength="3" required></td>
             </tr>
+            <tr><td></td><td><label id="apellidoForm-error" class="error manual-error" for="apellidoForm"></label></td></tr>
             <tr>
                 <td><label for="edadForm">Edad</label></td>
                 <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
             </tr>
+            <tr><td></td><td><label id="edadForm-error" class="error manual-error" for="edadForm"></label></td></tr>
             <tr>
                 <td><label for="direccionForm">Apellido:</label></td>
                 <td><input type="text" name="direccionForm" id="direccionForm" required></td>
             </tr>
+            <tr><td></td><td><label id="direccionForm-error" class="error manual-error" for="direccionForm"></label></td></tr>
         </table>
+<<<<<<< Updated upstream
         <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
+=======
+        
+        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+>>>>>>> Stashed changes
     </form>
 
 </div>
