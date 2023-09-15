@@ -1,5 +1,5 @@
 <?php
-include_once 'configuracion.php';
+include_once '../../configuracion.php';
 
 $datos = data_submitted();
 $obj = new Password();
@@ -19,7 +19,7 @@ include_once('../estructura/encabezado.php');
     ?>
 
     <div id="contieneLinkVolver">
-        <a href="ejercicio3.php" id="linkVolver"><br> Volver <a>
+        <a href="formulario.php" id="linkVolver"><br> Volver <a>
     </div>
 </div>
 

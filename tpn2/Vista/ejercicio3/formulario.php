@@ -6,8 +6,8 @@ $ejercicio = "botonEjer3";
 include_once('../estructura/encabezado.php');
 ?>
 <!-- 
-                        tp2 ejercicio 3
-                    -->
+    tp2 ejercicio 3
+-->
 
 <div class="contenedorCentrado2">
 
