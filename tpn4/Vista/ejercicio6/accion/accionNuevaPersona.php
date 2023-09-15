@@ -2,12 +2,10 @@
     $tituloPagina = "Ejercicio 4 del TP4";
     $tp = "botonTP4";
     $ejercicio = "botonEjer4";
+    $rutaEstructura = "../../";
     
     include_once('../../estructura/encabezado.php');
     include_once('../../../configuracion.php');
-
-
- 
 
     $datos= data_submitted();
     $objPersona = new  AbmPersona();
