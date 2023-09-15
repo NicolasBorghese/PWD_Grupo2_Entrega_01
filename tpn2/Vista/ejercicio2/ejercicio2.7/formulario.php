@@ -12,7 +12,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorEnunciado">
     Operaciones matematicas
 </div>
-<div class="contenedorCentrado col-5">
+<div class="contenedorCentrado">
     <form id="form" name="form" method="post" action="formAccion.php">
         <table>
             <tr>
@@ -20,8 +20,12 @@ include_once('../estructura/encabezado.php');
             </tr>
             <tr>
                 <td><input type="number" id="num1" name="num1"></td>
+            </tr>
+            <tr><td><label id="num-error" class="error manual-error" for="num1"></label></td></tr>
+            <tr>
                 <td><input type="number" id="num2" name="num2"></td>
             </tr>
+            <tr><td><label id="num-error" class="error manual-error" for="num2"></label></td></tr>
             <tr>
                 <td>Seleccione una <br> operación matemática</td>
                 <td>
@@ -33,12 +37,8 @@ include_once('../estructura/encabezado.php');
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" name="submit" value="Enviar" class="botonFormulario">
-                </td>
-            </tr>
         </table>
+        <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
     </form>
     <script type="text/javascript" src="verificacion.js"></script>
 </div>

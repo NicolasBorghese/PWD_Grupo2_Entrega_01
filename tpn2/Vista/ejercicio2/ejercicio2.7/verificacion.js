@@ -7,19 +7,25 @@ $(function(){
             },
             num2:{
                 required: true,
-            }
+            } 
+        },
+        messages: {
             
-        }
+            num1:{
+                required: "<p class='text-danger'>campo requerido, ingrese un numero</p>"
+            },
+            num2: {
+               required:"<p class='text-danger'>campo requerido, ingrese un numero</p>" 
+          },
+    }
     });
 
     $("#submit").click(function(){
         if($("#form").valid()==false){
             $("#num1").css("border-color","red")
-            $("#num2").css("border-color","red")
-            
-            
+            $("#num2").css("border-color","red")       
         }
         
     });
 
-})
+});

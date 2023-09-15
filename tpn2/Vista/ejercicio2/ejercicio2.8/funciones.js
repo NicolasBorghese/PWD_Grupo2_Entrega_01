@@ -13,14 +13,13 @@ $(document).ready(function () {
             }
         },
         messages: {
-            edad: {
-                required: "Campo obligatorio.",
-                number: "La edad no puede contener letras.",
-                maxlength: "Máximo 3 números."
+            
+            edad:{
+                required: "<p class='text-danger'>edad requerida,La edad no puede contener letras.</p>"
             },
             estudia: {
-                required: "Elija una opción"
-            }
-        },
+            required:"<p class='text-danger'>Seleccione una opción..</p>" 
+        }
+    }
     });
 });

@@ -22,7 +22,7 @@ $(function(){
 
     });
 
-    $("#boton").click(function(){
+    $("#Submit").click(function(){
         
         if($("#form").valid()==false){
             $("#hsLunes").css("border-color","red")

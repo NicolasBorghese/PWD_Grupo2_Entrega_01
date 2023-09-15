@@ -27,23 +27,38 @@ include_once('../estructura/encabezado.php');
                 <td><input type="number" step="any" name="hsLunes" id="hsLunes" min=0 max=24></td>
             </tr>
             <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="hsLunes"></label> </td>
+            </tr>
+            <tr>
                 <td>Martes</td>
                 <td><input type="number" step="any" name="hsMartes" id="hsMartes" min=0 max=24></td>
+            </tr>
+            <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="hsMartes"></label> </td>
             </tr>
             <tr>
                 <td>Miercoles</td>
                 <td><input type="number" step="any" name="hsMiercoles" id="hsMiercoles" min=0 max=24></td>
             </tr>
             <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="hsMiercoles"></label> </td>
+            </tr>
+            <tr>
                 <td>Jueves</td>
                 <td><input type="number" step="any" name="hsJueves" id="hsJueves" min=0 max=24></td>
+            </tr>
+            <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="hsJueves"></label> </td>
             </tr>
             <tr>
                 <td>Viernes</td>
                 <td><input type="number" step="any" name="hsViernes" id="hsViernes" min=0 max=24></td>
             </tr>
+            <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="hsViernes"></label> </td>
+            </tr>
         </table>
-        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+        <input type="submit" name="Submit" id="submit"  value="Enviar" class="botonFormulario">
     </form>
     <script type="text/javascript" src="verificacion_jquery.js"></script>
 </div>

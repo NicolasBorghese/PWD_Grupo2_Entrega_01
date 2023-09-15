@@ -3,25 +3,38 @@ $(function(){
     $("#form").validate({
         
         rules:{
-            nombre:{
+            nombreForm:{
                 required: true,
             },
-            apellido:{
+            apellidoForm:{
                 required: true,
             },
-            edad:{
+            edadForm:{
                 required: true,
             },
-            direccion:{
+            direccionForm:{
                 required: true,
-                email: true,
+            }
+        },
+        messages: {
+            nombreForm:{
+                required: "<p class='text-danger'>Campo requerido.</p>"
+            },
+            apellidoForm:{
+                required: "<p class='text-danger'>Campo requerido.</p>"
+            },
+            edadForm:{
+                required: "<p class='text-danger'>Campo requerido.</p>"
+            },
+            direccionForm:{
+                required: "<p class='text-danger'>Campo requerido.</p>"
             }
         }
     });
 
-    $("#boton").click(function(){
+    $("#submit").click(function(){
         if($("#form").valid()==false){
-            $("#nombreFom").css("border-color","red")
+            $("#nombreForm").css("border-color","red")
             $("#apellidoForm").css("border-color","red")
             $("#edadForm").css("border-color","red")
             $("#direccionForm").css("border-color","red")

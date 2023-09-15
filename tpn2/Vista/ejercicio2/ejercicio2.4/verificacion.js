@@ -14,17 +14,30 @@ $(function(){
             },
             direccion:{
                 required: true,
-                email: true,
+            }
+        },
+        messages: {
+            nombre:{
+                required: "<p class='text-danger'>Nombre requerido.</p>"
+            },
+            apellido:{
+                required: "<p class='text-danger'>Apellido requerido.</p>"
+            },
+            edad:{
+                required: "<p class='text-danger'>edad requerida.</p>"
+            },
+            direccion:{
+                required: "<p class='text-danger'> requerida.</p>"
             }
         }
     });
 
     $("#submit").click(function(){
         if($("#form").valid()==false){
-            $("#nombreForm").css("border-color","red")
-            $("#apellidoForm").css("border-color","red")
-            $("#edadForm").css("border-color","red")
-            $("#direccionForm").css("border-color","red")
+            $("#nombre").css("border-color","red")
+            $("#apellido").css("border-color","red")
+            $("#edad").css("border-color","red")
+            $("#direccion").css("border-color","red")
 
         }
     });

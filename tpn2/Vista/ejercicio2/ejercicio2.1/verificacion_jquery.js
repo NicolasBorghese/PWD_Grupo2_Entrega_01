@@ -8,14 +8,14 @@ $(function () {
         },
         messages: {
             numero: {
-                required: "Número requerido."
+                required: "<p class='text-danger'>Número requerido.</p>"
             }
         }
     });
 
-    $("#boton").click(function () {
+    $("#submit").click(function () {
 
-        if ($("formulario").valid() == false) {
+        if ($("#formulario").valid() == false) {
             $("#numero").css("border-color", "red")
         }
     })

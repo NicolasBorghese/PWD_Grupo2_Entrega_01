@@ -7,11 +7,11 @@ $tp2ej2Ejercicio = "TP2EJ2botonEjer6";
 include_once('../estructura/encabezado.php');
 ?>
 
-<div class="contenedorCentrado col-5">
+<div class="contenedorCentrado">
     <form id="form3" name="form3" method="post" action="formAccion.php">
 
         <div class="datosPersonales">
-            <h2>Datos personales</h2>
+            <h5>Datos personales</h5>
 
             <table>
                 <tr>
@@ -22,6 +22,7 @@ include_once('../estructura/encabezado.php');
                         <input type="text" id="nombre" name="nombre">
                     </td>
                 </tr>
+                <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="nombre"></label></td></tr>
                 <tr>
                     <td>
                         Apellido:
@@ -30,6 +31,7 @@ include_once('../estructura/encabezado.php');
                         <input type="text" id="apellido" name="apellido">
                     </td>
                 </tr>
+                <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="apellido"></label></td></tr>
                 <tr>
                     <td>
                         Edad:
@@ -38,6 +40,7 @@ include_once('../estructura/encabezado.php');
                         <input type="text" id="edad" name="edad">
                     </td>
                 </tr>
+                <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="edad"></label></td></tr>
                 <tr>
                     <td>
                         Direcci&oacute;n:
@@ -46,23 +49,24 @@ include_once('../estructura/encabezado.php');
                         <input type="text" id="direccion" name="direccion">
                     </td>
                 </tr>
+                <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="direccion"></label></td></tr>
             </table>
         </div>
 
         <div class="estudios">
-            <h2>Nivel de estudios</h2>
+            <h5>Nivel de estudios</h5>
 
             <label for="estudios">No tiene estudios<input type="radio" name="estudios" value="ninguno"></label>
             <br>
             <label for="estudios">Estudios primarios<input type="radio" name="estudios" value="primarios"></label>
             <br>
             <label for="estudios">Estudios secundarios<input type="radio" name="estudios" value="secundarios"></label>
-
+            <br>
             <label id="estudios-error" class="error" for="estudios"></label>
         </div>
 
         <div class="sexo">
-            <h2>Sexo</h2>
+            <h5>Sexo</h5>
 
             <label for="sexo">Indique uno</label>
             <select id="sexo" name="sexo">
@@ -72,7 +76,7 @@ include_once('../estructura/encabezado.php');
         </div>
 
         <div class="deportes">
-            <h2>Deportes que practica</h2>
+            <h5>Deportes que practica</h5>
 
             <div class="tipo">
                 <label for="futbol">Fútbol:</label>
@@ -90,6 +94,8 @@ include_once('../estructura/encabezado.php');
                 <label for="voley">Voley:</label>
                 <input type="checkbox" id="voley" name="deporte[]" value="voley">
             </div>
+            <br>
+            <label id="estudios-error" class="error" for="deporte"></label>
         </div>
 
         <div class="botonEnviar">
@@ -99,6 +105,7 @@ include_once('../estructura/encabezado.php');
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="verificacion.js"></script>
 </div>
 
 <?php

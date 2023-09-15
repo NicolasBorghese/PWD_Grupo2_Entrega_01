@@ -19,29 +19,36 @@ include_once('../estructura/encabezado.php');
     Complete los datos para crear un saludo personalizado
 </div>
 
-<div class="contenedorCentrado col-5">
-    <form name="form" id="form" method="get" action="formAccion.php" novalidate>
+<div class="contenedorCentrado ">
+<form name="form" id="form" method="get" action="formAccion.php" novalidate>
         <table>
             <tr>
-                <td>Nombre:</td>
+                <td><label>Nombre:</label></td>
                 <td><input type="text" name="nombreForm" id="nombreForm" minlength="3" required></td>
             </tr>
+            <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="nombreForm"></label></td></tr>
             <tr>
-                <td>Apellido:</td>
+                <td><label >Apellido:</label></td>
                 <td><input type="text" name="apellidoForm" id="apellidoForm" minlength="3" required></td>
             </tr>
+            <tr><td></td><td><label id="apellidoForm-error" class="error manual-error" for="apellidoForm"></label></td></tr>
             <tr>
-                <td>Edad:</td>
+                <td><label >Edad</label></td>
                 <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
             </tr>
+            <tr><td></td><td><label id="edadForm-error" class="error manual-error" for="edadForm"></label></td></tr>
             <tr>
-                <td>Dirección:</td>
+                <td><label >Direccion:</label></td>
                 <td><input type="text" name="direccionForm" id="direccionForm" required></td>
             </tr>
+            <tr><td></td><td><label id="direccionForm-error" class="error manual-error" for="direccionForm"></label></td></tr>
         </table>
-        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+        <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
     </form>
+    <script type="text/javascript" src="verificacion.js"></script>
 </div>
+
+
 
 <?php
 include_once('../estructura/pie.php');

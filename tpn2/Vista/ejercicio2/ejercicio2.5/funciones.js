@@ -32,27 +32,21 @@ $(document).ready(function () {
             }
 
         },
-        messages: {
-            nombre: {
-                required: "Campo obligatorio.",
-                minlength: "El nombre no puede tener menos de 3 letras.",
-                number: "El nombre no puede contener números."
-            },
-            apellido: {
-                required: "Campo obligatorio.",
-                minlength: "El apellido no puede tener menos de 3 letras.",
-            },
-            edad: {
-                required: "Campo obligatorio.",
-                maxlength: "Ingrese una edad válida.",
-                number: "La edad no puede contener letras."
-            },
-            direccion: {
-                required: "Campo obligatorio."
-            }
-            ,
-            estudios: {
-                required: "Seleccione una opción."
+            messages: {
+                nombre:{
+                    required: "<p class='text-danger'>Nombre requerido.</p>"
+                },
+                apellido:{
+                    required: "<p class='text-danger'>Apellido requerido.</p>"
+                },
+                edad:{
+                    required: "<p class='text-danger'>edad requerida.</p>"
+                },
+                direccion:{
+                    required: "<p class='text-danger'>Direccion requerida.</p>"
+                },
+                estudios: {
+                required:"<p class='text-danger'>Seleccione una opción..</p>" 
             }
         }
     });

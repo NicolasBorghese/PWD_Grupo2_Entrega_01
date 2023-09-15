@@ -17,10 +17,20 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorEnunciado">
     Ingrese un número para saber si es positivo, negativo o cero
 </div>
-<div class="contenedorCentrado col-5">
+<div class="contenedorCentrado ">
     <form name="formulario" id="formulario" method="post" action="formAccion.php" novalidate>
-        Ingrese un número: <input type="number" name="numero" id="numero" step="any" required><br>
-        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+    <table>
+            <tr>
+               <td> <label>Ingrese un número:</label></label>
+            </tr>
+            <tr>
+                <td> <input type="number" name="numero" id="numero" step="any" required></td>
+            </tr>
+            <tr>
+               <td><label id="nombreForm-error" class="error manual-error" for="numero"></label>
+            </td></tr>
+        </table>
+        <input type="submit" name="Submit" id="submit"  value="Enviar" class="botonFormulario">
     </form>
     <script type="text/javascript" src="verificacion_jquery.js"></script>
 </div>

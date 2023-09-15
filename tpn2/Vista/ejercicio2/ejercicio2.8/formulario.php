@@ -13,7 +13,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorEnunciado">
     Calcular tarifa para entrada de cine
 </div>
-<div class="contenedorCentrado col-5">
+<div class="contenedorCentrado ">
     <form id="form8" name="form8" method="post" action="formAccion.php">
         <table>
             <tr>
@@ -29,6 +29,7 @@ include_once('../estructura/encabezado.php');
                     <input type="number" id="edad" name="edad">
                 </td>
             </tr>
+            <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="edad"></label></td></tr>
             <tr>
                 <td>
                     <label for="estudia">Estudia</label>
@@ -45,16 +46,18 @@ include_once('../estructura/encabezado.php');
                     <input type="radio" name="estudia" value="no">
                 </td>
             </tr>
+            <tr><td></td><td><label id="nombreForm-error" class="error manual-error" for="estudia"></label></td></tr>
             <tr>
                 <td colspan="2">
                     <div>
-                        <input type="submit" name="submit" value="Enviar" class="botonFormulario">
+                        <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
                     </div>
                 </td>
             </tr>
         </table>
     </form>
     <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="verificacion.js"></script>
 </div>
 
 <?php
