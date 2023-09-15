@@ -24,6 +24,7 @@
     if($buscarDuenio!=null and $autoDuplicado==null){
         if($objAuto->alta($datos)){
         $resp =true;
+        $mensaje = "Auto creado con éxito capo!";
         }
     }else{
 
