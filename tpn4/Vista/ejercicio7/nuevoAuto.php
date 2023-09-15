@@ -13,7 +13,7 @@
 
     <div class="contenedorCentrado">
 
-    <strong> Nueva Auto</strong>
+    <strong>Nuevo Auto</strong>
     <form name="form_ejercicio6" method="post" action="accion/accionNuevoAuto.php"  class="needs-validation" novalidate>
         <table>
             <tr>

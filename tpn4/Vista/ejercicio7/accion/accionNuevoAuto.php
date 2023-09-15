@@ -27,9 +27,9 @@
     }
 
     if($resp){
-        $mensaje =  "Se agrego el vehiculo correctamente.";
+        $mensaje = "Se agrego el vehiculo correctamente.";
     }else {
-        $mensaje = "Dueño inexistente. <a href='../../ejercicio6/nuevaPersona.php'>Por Favor agregelo a la BD</a>";
+        $mensaje = "Dueño inexistente. <a href='../../ejercicio6/nuevaPersona.php'>Por Favor agreguelo a la BD</a>";
     }
 
 
