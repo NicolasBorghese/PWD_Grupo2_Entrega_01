@@ -31,7 +31,7 @@ function irATP4Ejercicio5() {
     window.location.href = "../ejercicio5/ejercicio5.php";
 }
 function irATP4Ejercicio6() {
-    window.location.href = "../ejercicio6/ejercicio6.php";
+    window.location.href = "../ejercicio6/NuevaPersona.php";
 }
 function irATP4Ejercicio7() {
     window.location.href = "../ejercicio7/ejercicio7.php";
