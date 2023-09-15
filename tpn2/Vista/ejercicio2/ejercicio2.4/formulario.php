@@ -19,7 +19,7 @@ include_once('../estructura/encabezado.php');
     Complete los datos del formulario
 </div>
 
-<div class="contenedorCentrado col-5">
+<div class="contenedorCentrado">
     <form name="form" id="form" method="get" action="formAccion.php" novalidate>
         <table>
             <tr>
