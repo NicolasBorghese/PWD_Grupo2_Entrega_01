@@ -16,17 +16,24 @@
             <form action="accion/accionBuscarAuto.php" method="post" class="needs-validation row-md-4" novalidate>
                 <div>
                     <table>
-                        <tr>
-                            <td><label>Patente:</label></td>
-                            <td><input type="text" pattern="[A-Z]{3}\s[0-9]{3}" name="Patente" id="input_nombre" class="form-control text" required></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <div class="invalid-feedback">
-                                    Porfavor ingrese una patente valida! 3 Letras Mayusculas, un espacio y 3 numeros.
-                                </div>
-                            </td>
-                        </tr>
+                        <div>
+                            <tr>
+                                <td ><label>Patente:</label></td>
+                                <td>
+                                    <div>
+                                        <input type="text" pattern="[A-Z]{3}\s[0-9]{3}" name="Patente" id="input_nombre" class="form-control text" required>
+                                        <div class="invalid-feedback">
+                                            Porfavor ingrese una patente valida! 3 Letras Mayusculas, un espacio y 3 numeros.
+                                        </div>
+                                    </div>
+                                </td>        
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+                                </td>
+                            </tr>
+                        </div>
                         <tr>
                             <td colspan="2"><input type="submit" name="boton_enviar" class="btn btn-dark mt-2" id="boton_enviar" value="Cargar"></td>
                         </tr>

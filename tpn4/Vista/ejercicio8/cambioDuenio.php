@@ -20,7 +20,6 @@ include_once('../estructura/encabezado.php');
                     <div class="invalid-feedback">
                         Porfavor ingrese una patente valida! 3 Letras Mayusculas, un espacio y 3 numeros.
                     </div>
-
                 </div>
                 <div>
                     <label>Documento del nuevo dueño: </label><input type="number" min="1000000" name="DniDuenio" id="input_apellido" class="form-control text" required>
