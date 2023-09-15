@@ -7,14 +7,12 @@
     
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
-    include_once('../../estructura/encabezado.php');
-    include_once("../../../configuracion.php");
     $datos= data_submitted();
     $objPersona = new AbmPersona();
     $listaPersona=$objPersona->buscar($datos);
     $contListaP = count($listaPersona);
     if ($contListaP == 0){
-        echo '<h4>NO exiSte persona cargada con ese DNI </h4>?';
+        echo '<h4>NO existe persona cargada con ese DNI </h4>?';
     }
 ?>
     <!-- 
