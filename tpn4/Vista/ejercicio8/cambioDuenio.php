@@ -3,6 +3,7 @@ $tituloPagina = "Ejercicio 8 del TP4";
 $tp = "botonTP4";
 $ejercicio = "botonEjer8";
 $rutaEstructura = "../";
+$correccionRuta = "1";
 
 include_once('../estructura/encabezado.php');
 ?>
@@ -14,7 +15,7 @@ include_once('../estructura/encabezado.php');
     <div class="contenedorCentrado">
         <strong> Cambio de Dueño</strong>
         <div class="container col-md-8">
-            <form action="accionCambioDuenio.php" method="post" class="needs-validation row-md-4" novalidate>
+            <form action="accion/accionCambioDuenio.php" method="post" class="needs-validation row-md-4" novalidate>
                 <div>
                     <label>Patente del auto: </label><input type="text" pattern="[A-Z]{3}\s[0-9]{3}" name="Patente" id="input_nombre" class="form-control text" required>
                     <div class="invalid-feedback">

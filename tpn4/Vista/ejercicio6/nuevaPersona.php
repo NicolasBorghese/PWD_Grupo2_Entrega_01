@@ -3,6 +3,7 @@
     $tp = "botonTP4";
     $ejercicio = "botonEjer6";
     $rutaEstructura = "../";
+    $correccionRuta = "1";
 
     include_once('../estructura/encabezado.php');
 ?>
@@ -12,7 +13,7 @@
 
     <div class="contenedorCentrado">
     <strong> Nueva Persona</strong>
-    <form name="form_ejercicio6" method="post" action="accion/AccionNuevaPersona.php"  class="needs-validation" novalidate>
+    <form name="form_ejercicio6" method="post" action="accion/accionNuevaPersona.php"  class="needs-validation" novalidate>
         <table>
             <tr>
                 <td>Dni:</td>

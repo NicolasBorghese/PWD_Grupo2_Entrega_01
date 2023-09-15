@@ -3,6 +3,7 @@
     $tp = "botonTP4";
     $ejercicio = "botonEjer1";
     $rutaEstructura = "../";
+    $correccionRuta = "1";
     
     include_once('../estructura/encabezado.php');
 ?>
