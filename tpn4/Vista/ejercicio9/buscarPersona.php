@@ -22,7 +22,7 @@
                 </div>
                 <input type="submit" name="boton_enviar" class="btn btn-dark mt-2" id="boton_enviar" value="Buscar">
                 </form>
-                <a href="../ejercicio5/ListaPersona.php"> Ir a ListaPersona.php </a>
+                <a href="../ejercicio5/listaPersonas.php"> Ir a ListaPersona.php </a>
     <script src="../estructura/js/validarCamposVacios.js"></script>
     </div>
 
