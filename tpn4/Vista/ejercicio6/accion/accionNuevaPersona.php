@@ -30,13 +30,11 @@
 
     <div class="contenedorCentrado">
         <h4><?php echo $mensaje ?> </h4>
-        <a href="../nuevaPersona.php"> Ir a NuevaPersona.php </a>
+        <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php </a>
         </br>
         <a href="../../ejercicio7/nuevoAuto.php"> Ir a NuevoAuto.php </a>
         </br>
-        <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php </a>
-    </div>
-
+        <a href="../nuevaPersona.php"> Volver </a>
     </div>
 
 <?php
