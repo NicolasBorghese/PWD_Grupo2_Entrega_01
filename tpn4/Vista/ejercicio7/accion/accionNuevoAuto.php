@@ -48,14 +48,12 @@
     -->
 
     <div class="contenedorCentrado">
-    <h4><?php echo $mensaje ?><br></h4>
-        <div>
-            <a href="../NuevaPersona.php"> Ir a NuevaPersona.php </a>
+        <h4><?php echo $mensaje ?> <br></h4>
+            <a href="../../ejercicio6/nuevaPersona.php"> Ir a NuevaPersona.php </a>
             </br>
-            <a href="../NuevoAuto.php"> Ir a NuevoAuto.php </a>
+            <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php </a>
             </br>
-            <a href="../ListaPersonas.php">Ir a ListaPersonas.php </a>
-        </div>
+            <a href="../nuevoAuto.php"> Volver </a>
     </div>
 
 <?php
