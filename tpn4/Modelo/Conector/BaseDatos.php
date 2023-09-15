@@ -116,6 +116,8 @@ class BaseDatos extends PDO {
      */
     public function Ejecutar($sql){
 
+        //echo "<br><br>$sql<br><br>";
+
         $this->setError("");
         $this->setSQL($sql);
 

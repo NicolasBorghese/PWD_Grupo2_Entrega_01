@@ -5,7 +5,7 @@ header ("Cache-Control: no-cache, must-revalidate ");
 // CONFIGURACION APP//
 /////////////////////////////
 
-$PROYECTO ='VSC PHP\PWD_Grupo2_Entrega_01/tpn4/';
+$PROYECTO ='PWD_Grupo2_Entrega_01/tpn4/';
 
 //variable que almacena el directorio del proyecto
 $ROOT =$_SERVER['DOCUMENT_ROOT']."/$PROYECTO/";

@@ -3,9 +3,14 @@ include_once("../../configuracion.php");
 include_once('../estructura/encabezado.php');
 
 $metodo = data_submitted();
+
 $objAuto = new AbmAuto();
 $objPersona = new AbmPersona();
-$datosAuto = $objAuto->buscar($metodo);
+
+$busqueda['Patente'] = $metodo['Patente'];
+
+$datosAuto = $objAuto->buscar($busqueda);
+
 $nroDni["NroDni"] = $metodo["DniDuenio"];
 $datosPersona = $objPersona->buscar($nroDni);
 ?>

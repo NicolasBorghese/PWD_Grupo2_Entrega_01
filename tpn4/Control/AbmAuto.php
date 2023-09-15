@@ -142,6 +142,7 @@ class AbmAuto{
         $where = " true ";
 
         if ($param <> NULL){
+
             if  (isset($param['Patente']))
                 $where .= " and Patente = '".$param['Patente']."'";
 
