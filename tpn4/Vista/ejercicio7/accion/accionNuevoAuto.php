@@ -24,13 +24,11 @@
     if($buscarDuenio!=null and $autoDuplicado==null){
         if($objAuto->alta($datos)){
         $resp =true;
-        $mensaje = "Auto creado con éxito capo!";
+        $mensaje = "Auto creado con éxito!";
         }
     }else{
 
-        if($resp){
-            $mensaje = "Se agrego el vehiculo correctamente.";
-        }else {
+        if(!$resp){
             $mensaje = "No se pudo concretar la operacion.<br>";
         }
 

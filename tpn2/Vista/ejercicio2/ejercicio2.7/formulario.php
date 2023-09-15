@@ -12,7 +12,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorEnunciado">
     Operaciones matematicas
 </div>
-<div class="contenedorCentrado">
+<div class="contenedorCentrado col-5">
     <form id="form" name="form" method="post" action="formAccion.php">
         <table>
             <tr>

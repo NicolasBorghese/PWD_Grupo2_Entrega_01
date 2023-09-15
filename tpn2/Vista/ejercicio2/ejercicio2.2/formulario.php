@@ -19,7 +19,7 @@ include_once('../estructura/encabezado.php');
     Ingrese las horas de cursada por día de la materia programación web dinámica
 </div>
 
-<div class="contenedorCentrado">
+<div class="contenedorCentrado col-5">
     <form name="form" id="form" method="get" action="formAccion.php" novalidate>
         <table>
             <tr>

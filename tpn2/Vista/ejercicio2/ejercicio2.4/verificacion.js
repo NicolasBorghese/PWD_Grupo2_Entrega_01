@@ -19,7 +19,7 @@ $(function(){
         }
     });
 
-    $("#boton").click(function(){
+    $("#submit").click(function(){
         if($("#form").valid()==false){
             $("#nombreForm").css("border-color","red")
             $("#apellidoForm").css("border-color","red")

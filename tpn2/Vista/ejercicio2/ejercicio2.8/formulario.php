@@ -13,7 +13,7 @@ include_once('../estructura/encabezado.php');
 <div class="contenedorEnunciado">
     Calcular tarifa para entrada de cine
 </div>
-<div class="contenedorCentrado">
+<div class="contenedorCentrado col-5">
     <form id="form8" name="form8" method="post" action="formAccion.php">
         <table>
             <tr>

@@ -19,28 +19,29 @@ include_once('../estructura/encabezado.php');
     Complete los datos del formulario
 </div>
 
-<div class="contenedorCentrado">
+<div class="contenedorCentrado col-5">
     <form name="form" id="form" method="get" action="formAccion.php" novalidate>
         <table>
             <tr>
-                <td>Nombre:</td>
+                <td><label for="nombreForm">Nombre:</label></td>
                 <td><input type="text" name="nombreForm" id="nombreForm" minlength="3" required></td>
             </tr>
             <tr>
-                <td>Apellido:</td>
+                <td><label for="apellidoForm">Apellido:</label></td>
                 <td><input type="text" name="apellidoForm" id="apellidoForm" minlength="3" required></td>
             </tr>
             <tr>
-                <td>Edad:</td>
+                <td><label for="edadForm">Edad</label></td>
                 <td><input type="number" name="edadForm" id="edadForm" min="0" required></td>
             </tr>
             <tr>
-                <td>Dirección:</td>
+                <td><label for="direccionForm">Apellido:</label></td>
                 <td><input type="text" name="direccionForm" id="direccionForm" required></td>
             </tr>
         </table>
-        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
+        <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
     </form>
+
 </div>
 
 <?php

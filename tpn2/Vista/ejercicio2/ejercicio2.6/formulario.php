@@ -7,7 +7,7 @@ $tp2ej2Ejercicio = "TP2EJ2botonEjer6";
 include_once('../estructura/encabezado.php');
 ?>
 
-<div class="contenedorCentrado">
+<div class="contenedorCentrado col-5">
     <form id="form3" name="form3" method="post" action="formAccion.php">
 
         <div class="datosPersonales">
