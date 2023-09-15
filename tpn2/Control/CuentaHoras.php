@@ -19,7 +19,7 @@ class CuentaHoras
         $jueves = $datos['hsJueves'];
         $viernes = $datos['hsViernes'];
 
-        $total = $lunes + $martes + $miercoles + $jueves + $viernes;
+        $total = (float)$lunes + (float)$martes + (float)$miercoles + (float)$jueves + (float)$viernes;
 
         $mensaje = "Cantidad total de horas en la cursada de Programación Web: " . $total;
 
