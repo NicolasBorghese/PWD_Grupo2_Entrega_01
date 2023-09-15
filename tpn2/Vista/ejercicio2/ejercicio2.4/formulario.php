@@ -43,12 +43,7 @@ include_once('../estructura/encabezado.php');
             </tr>
             <tr><td></td><td><label id="direccionForm-error" class="error manual-error" for="direccionForm"></label></td></tr>
         </table>
-<<<<<<< Updated upstream
         <input type="submit" name="submit" id="submit" value="Enviar" class="botonFormulario">
-=======
-        
-        <input type="submit" name="Submit" value="Enviar" class="botonFormulario">
->>>>>>> Stashed changes
     </form>
 
 </div>
