@@ -1,12 +1,13 @@
 <?php 
-    $tituloPagina = "Ejercicio 6 del TP4";
+    $tituloPagina = "Ejercicio 5 del TP4";
     $tp = "botonTP4";
-    $ejercicio = "botonEjer6";
+    $ejercicio = "botonEjer5";
+    $rutaEstructura = "../";
     
     include_once('../estructura/encabezado.php');
 ?>
     <!-- 
-        tp4 ejercicio 6
+        tp4 ejercicio 5
     -->
 
     <div class="contenedorCentrado">

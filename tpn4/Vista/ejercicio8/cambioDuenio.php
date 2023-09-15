@@ -2,6 +2,7 @@
 $tituloPagina = "Ejercicio 8 del TP4";
 $tp = "botonTP4";
 $ejercicio = "botonEjer8";
+$rutaEstructura = "../";
 
 include_once('../estructura/encabezado.php');
 ?>

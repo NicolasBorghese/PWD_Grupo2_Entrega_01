@@ -2,9 +2,10 @@
     $tituloPagina = "Ejercicio 8 del TP4";
     $tp = "botonTP4";
     $ejercicio = "botonEjer8";
+    $rutaEstructura = "../../";
 
-    include_once('../estructura/encabezado.php');
-    include_once("../../configuracion.php");
+    include_once('../../estructura/encabezado.php');
+    include_once("../../../configuracion.php");
 
     $metodo = data_submitted();
 
@@ -52,5 +53,5 @@
     </div>
 
 <?php
-    include_once('../estructura/pie.php');
+    include_once('../../pie.php');
 ?>

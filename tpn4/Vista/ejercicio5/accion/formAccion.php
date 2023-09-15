@@ -1,7 +1,7 @@
 <?php 
-    $tituloPagina = "Ejercicio 4 del TP4";
+    $tituloPagina = "Ejercicio 5 del TP4";
     $tp = "botonTP4";
-    $ejercicio = "botonEjer4";
+    $ejercicio = "botonEjer5";
     $rutaEstructura = "../../";
     
     include_once('../../estructura/encabezado.php');
@@ -20,7 +20,7 @@
     }
 ?>
     <!-- 
-        tp4 ejercicio 4
+        tp4 ejercicio 5
     -->
 
     <div class="contenedorCentrado">

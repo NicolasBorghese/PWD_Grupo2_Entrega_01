@@ -4,8 +4,8 @@
 
     <title><?php echo $tituloPagina ?></title>
 
-    <link rel="stylesheet" type="text/css" href="../estructura/css/estilo_tp4.css">
-    <script src="../estructura/js/funciones_tp4.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo $rutaEstructura ?>estructura/css/estilo_tp4.css">
+    <script src="<?php echo $rutaEstructura ?>estructura/js/funciones_tp4.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

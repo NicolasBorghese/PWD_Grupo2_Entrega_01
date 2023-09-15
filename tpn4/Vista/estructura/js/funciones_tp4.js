@@ -28,19 +28,19 @@ function irATP4Ejercicio4() {
     window.location.href = "../ejercicio4/buscarAuto.php";
 }
 function irATP4Ejercicio5() {
-    window.location.href = "../ejercicio5/ejercicio5.php";
+    window.location.href = "../ejercicio5/listaPersonas.php";
 }
 function irATP4Ejercicio6() {
-    window.location.href = "../ejercicio6/ejercicio6.php";
+    window.location.href = "../ejercicio6/nuevaPersona.php";
 }
 function irATP4Ejercicio7() {
-    window.location.href = "../ejercicio7/ejercicio7.php";
+    window.location.href = "../ejercicio7/nuevoAuto.php";
 }
 function irATP4Ejercicio8() {
     window.location.href = "../ejercicio8/cambioDuenio.php";
 }
 function irATP4Ejercicio9() {
-    window.location.href = "../ejercicio9/ejercicio9.php";
+    window.location.href = "../ejercicio9/buscarPersona.php";
 }
 
 /*/=======================================================================================/*/

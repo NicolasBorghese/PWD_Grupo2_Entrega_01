@@ -156,9 +156,20 @@
     text-align: center;
 }
 
+.textoCentrado {
+    width: 100%;
+    text-align: center;
+}
+
 .titulosTabla {
     font-weight: bold;
     font-size: 1.3em;
+}
+
+.titulosDiv {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 /*-------------------------------------------- TABLA -----------------------------------------------*/
