@@ -37,20 +37,20 @@
 
     <!-- ____________________________________ CABEZAL __________________________________ -->
     <div id="menuTrabajos">
-        <input type="button" name="botonTP1" id="botonTP1" value="TP1" class="botonTrabajos" onclick="irATP1Ejercicio1();"><!--
-        --><input type="button" name="botonTP2" id="botonTP2" value="TP2" class="botonTrabajos" onclick="irATP2Ejercicio1();"><!--
-        --><input type="button" name="botonTP3" id="botonTP3" value="TP3" class="botonTrabajos" onclick="irATP3Ejercicio1();"><!--
-        --><input type="button" name="botonTP4" id="botonTP4" value="TP4" class="botonTrabajos" onclick="irATP4Ejercicio3();">
+        <input type="button" name="botonTP1" id="botonTP1" value="TP1" class="botonTrabajos" onclick="irATP1Ejercicio1(<?php echo $correccionRuta ?>);"><!--
+        --><input type="button" name="botonTP2" id="botonTP2" value="TP2" class="botonTrabajos" onclick="irATP2Ejercicio1(<?php echo $correccionRuta ?>);"><!--
+        --><input type="button" name="botonTP3" id="botonTP3" value="TP3" class="botonTrabajos" onclick="irATP3Ejercicio1(<?php echo $correccionRuta ?>);"><!--
+        --><input type="button" name="botonTP4" id="botonTP4" value="TP4" class="botonTrabajos" onclick="irATP4Ejercicio3(<?php echo $correccionRuta ?>);">
     </div>
 
     <div id="menuEjercicios">
         <!--<div id="botonEjer1" class="botonEjercicios" onclick="irATP4Ejercicio1();"><a href=#>Ejercicio 1</a></div>
         <div id="botonEjer2" class="botonEjercicios" onclick="irATP4Ejercicio2();"><a href=#>Ejercicio 2</a></div>
-        --><div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3();"><a href=#>Ver<br>Autos</a></div><!--
-        --><div id="botonEjer4" class="botonEjercicios" onclick="irATP4Ejercicio4();"><a href=#>Buscar<br>Auto</a></div><!--
-        --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5();"><a href=#>Lista<br>Personas</a></div><!--
-        --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6();"><a href=#>Nueva<br>Persona</a></div><!--
-        --><div id="botonEjer7" class="botonEjercicios" onclick="irATP4Ejercicio7();"><a href=#>Nuevo<br>Auto</a></div><!--
-        --><div id="botonEjer8" class="botonEjercicios" onclick="irATP4Ejercicio8();"><a href=#>Cambio<br>Dueño</a></div><!--
-        --><div id="botonEjer9" class="botonEjercicios" onclick="irATP4Ejercicio9();"><a href=#>Buscar<br>Persona</a></div>
+        --><div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3(<?php echo $correccionRuta ?>);"><a href=#>Ver<br>Autos</a></div><!--
+        --><div id="botonEjer4" class="botonEjercicios" onclick="irATP4Ejercicio4(<?php echo $correccionRuta ?>);"><a href=#>Buscar<br>Auto</a></div><!--
+        --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5(<?php echo $correccionRuta ?>);"><a href=#>Lista<br>Personas</a></div><!--
+        --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6(<?php echo $correccionRuta ?>);"><a href=#>Nueva<br>Persona</a></div><!--
+        --><div id="botonEjer7" class="botonEjercicios" onclick="irATP4Ejercicio7(<?php echo $correccionRuta ?>);"><a href=#>Nuevo<br>Auto</a></div><!--
+        --><div id="botonEjer8" class="botonEjercicios" onclick="irATP4Ejercicio8(<?php echo $correccionRuta ?>);"><a href=#>Cambio<br>Dueño</a></div><!--
+        --><div id="botonEjer9" class="botonEjercicios" onclick="irATP4Ejercicio9(<?php echo $correccionRuta ?>);"><a href=#>Buscar<br>Persona</a></div>
     </div>
