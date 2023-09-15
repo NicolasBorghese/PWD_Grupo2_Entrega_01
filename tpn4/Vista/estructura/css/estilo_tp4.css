@@ -30,9 +30,10 @@
 
 /*-------------------------------------------- CONTENIDO BANNER ------------------------------------*/
 #banner {
-    height: 120px;
+    height: 140px;
     background-color:  rgb(22, 48, 71);
     padding: 20px;
+    justify-content: center;
 }
 
 #tituloMateria {
@@ -42,6 +43,7 @@
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
+    width:100%;
 }
 
 #tituloGrupo {
@@ -50,6 +52,14 @@
     text-shadow: -5px 4px 4px rgb(15, 27, 36);
     font-size: 36px;
     margin-bottom: 10px;
+    width: 100%;
+}
+
+#version {
+    color:white;
+    float:right;
+    font-size: 0.5em;
+    width: 100%;
 }
 
 /*-------------------------------------------- MENU NAVEGACIÓN TPS ---------------------------------*/
