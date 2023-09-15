@@ -3,6 +3,7 @@
     $tp = "botonTP4";
     $ejercicio = "botonEjer4";
     $rutaEstructura = "../../";
+    $correccionRuta = "2";
     
     include_once('../../estructura/encabezado.php');
     include_once('../../../configuracion.php');
@@ -39,5 +40,5 @@
     </div>
 
 <?php
-    include_once('../estructura/pie.php');
+    include_once('../../estructura/pie.php');
 ?>

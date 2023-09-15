@@ -3,6 +3,7 @@
     $tp = "botonTP4";
     $ejercicio = "botonEjer8";
     $rutaEstructura = "../../";
+    $correccionRuta = "2";
 
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
@@ -45,7 +46,7 @@
                 </div>
                 <div>
                     <div class="mb-3">
-                        <a href="cambioDuenio.php" class="btn btn-dark">Volver</a>
+                        <a href="../cambioDuenio.php" class="btn btn-dark">Volver</a>
                     </div>
                 </div>
             </div>
@@ -53,5 +54,5 @@
     </div>
 
 <?php
-    include_once('../../pie.php');
+    include_once('../../estructura/pie.php');
 ?>
