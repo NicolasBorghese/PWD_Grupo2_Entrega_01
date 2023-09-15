@@ -5,17 +5,14 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-                    <!-- 
-                        tp4 ejercicio 2
-                    -->
+    <!-- 
+        tp4 ejercicio 2
+    -->
 
-                    <div class="contenedorCentrado">
-                        <p>
-                       <strong> Ejercicio 2 -</strong> Crear la capa de control, que nos permitan acceder al ORM  <br> 
-                       (Modelo de datos) y entregarle la informacion a las paginas de la interface. <br> 
-                          
-                        </p>
-                    </div>
+    <div class="contenedorCentrado">
+        <strong> Ejercicio 2 -</strong> Crear la capa de control, que nos permitan acceder al ORM  <br> 
+        (Modelo de datos) y entregarle la informacion a las paginas de la interface. <br>
+    </div>
 
 <?php
     include_once('../estructura/pie.php');
