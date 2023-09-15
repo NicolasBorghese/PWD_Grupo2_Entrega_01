@@ -37,7 +37,7 @@ function irATP4Ejercicio7() {
     window.location.href = "../ejercicio7/ejercicio7.php";
 }
 function irATP4Ejercicio8() {
-    window.location.href = "../ejercicio8/ejercicio8.php";
+    window.location.href = "../ejercicio8/cambioDuenio.php";
 }
 function irATP4Ejercicio9() {
     window.location.href = "../ejercicio9/ejercicio9.php";

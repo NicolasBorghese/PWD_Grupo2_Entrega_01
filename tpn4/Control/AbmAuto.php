@@ -25,7 +25,7 @@ class AbmAuto{
 
             $objAuto->setear(
                 $param['Patente'],
-                $param['Parca'],
+                $param['Marca'],
                 $param['Modelo'],
                 $objPersona
             );
