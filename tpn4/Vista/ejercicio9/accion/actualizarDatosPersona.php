@@ -31,7 +31,7 @@
         <h4><?php echo $mensaje ?> </h4>
         </br>
         <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php</a>
-        <a href="accionBuscarPersona.php">Ir a BuscarPersona.php</a>
+        <a href="../buscarPersona.php">Ir a BuscarPersona.php</a>
 
     </div>
 
