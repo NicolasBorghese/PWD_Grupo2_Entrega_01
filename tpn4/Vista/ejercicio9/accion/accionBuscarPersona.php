@@ -6,8 +6,6 @@
     
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
-    include_once('../../estructura/encabezado.php');
-    include_once("../../../configuracion.php");
     $datos= data_submitted();
     $objPersona = new AbmPersona();
     $listaPersona=$objPersona->buscar($datos);
