@@ -27,7 +27,6 @@
               <th><strong>Fecha Nacimiento</strong></th>
               <th><strong>Telefono</strong></th>
               <th><strong>Domicilio</strong></th>
-              
             </tr>
         </thead>
         <tbody>';

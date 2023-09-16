@@ -31,7 +31,8 @@
 /*-------------------------------------------- CONTENIDO BANNER ------------------------------------*/
 #banner {
     height: 140px;
-    background-color:  rgb(22, 48, 71);
+    background: linear-gradient(to right, rgb(22, 48, 71), rgb(61, 25, 9));
+    transition: background 0.5s ease;
     padding: 20px;
 }
 
@@ -105,7 +106,7 @@
 .contenedorEnunciado {
     border:1px solid black;
     padding: 10px;
-    background-color: lavender;
+    background-color: rgb(191, 192, 196);
     text-align: center;
 }
 
@@ -117,8 +118,17 @@
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: lavender;
+    background-color: rgb(191, 192, 196);
     float:left;
+}
+
+.contenedorCentrado a{
+    font-weight:bold;
+    color:rgb(33, 79, 159);
+}
+
+.contenedorCentrado a:hover{
+    color:rgb(9, 148, 190);
 }
 
 .contenedorCentrado2 {
@@ -154,7 +164,8 @@
 /*-------------------------------------------- PIE DE PÁGINA ---------------------------------------*/
 #pieDePagina {
     height: 150px;
-    background-color:  rgb(22, 48, 71);
+    background: linear-gradient(to right, rgb(22, 48, 71), rgb(61, 25, 9));
+    transition: background 0.5s ease;
     width:100%;
     padding: 10px;
 }

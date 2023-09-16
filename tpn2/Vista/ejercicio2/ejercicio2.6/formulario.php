@@ -7,6 +7,10 @@ $tp2ej2Ejercicio = "TP2EJ2botonEjer6";
 include_once('../estructura/encabezado.php');
 ?>
 
+<div class="contenedorEnunciado">
+    Complete los datos del formulario
+</div>
+
 <div class="contenedorCentrado">
     <form id="form3" name="form3" method="post" action="formAccion.php">
 

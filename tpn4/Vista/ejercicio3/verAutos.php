@@ -21,7 +21,7 @@
     <div class="contenedorCentrado">
         <?php
             if($hayAutos){
-                echo "<table>";
+                echo "<table class='table'>";
                 echo "<tr class='titulosTabla'>";
                 echo "<td>Patente</td><td>Marca</td><td>Modelo</td><td>DNI Dueño</td><td>Apellido y Nombre</td>";
                 echo "</tr>";

@@ -15,7 +15,7 @@ include_once('../estructura/encabezado.php');
             -->
 
 <div class="contenedorEnunciado">
-    <p>Complete los datos del formulario</p>
+    Complete los datos del formulario
 </div>
 
 <div class="contenedorCentrado">

@@ -15,7 +15,7 @@ include_once('../estructura/encabezado.php');
             -->
 
 <div class="contenedorEnunciado">
-    <p>Complete los datos para crear un saludo personalizado</p>
+    Complete los datos para crear un saludo personalizado
 </div>
 
 <div class="contenedorCentrado">

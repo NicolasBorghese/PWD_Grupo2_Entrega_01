@@ -7,11 +7,12 @@ $tp2ej2Ejercicio = "TP2EJ2botonEjer7";
 include_once('../estructura/encabezado.php');
 ?>
 <!-- 
-                tp1 ejercicio 7
-            -->
+    tp1 ejercicio 7
+-->
 <div class="contenedorEnunciado">
     Operaciones matematicas
 </div>
+
 <div class="contenedorCentrado">
     <form id="form" name="form" method="post" action="formAccion.php">
         <table>

@@ -15,7 +15,7 @@ include_once('../estructura/encabezado.php');
             -->
 
 <div class="contenedorEnunciado">
-    <p>Ingrese las horas de cursada por día de la materia programación web dinámica</p>
+    Ingrese las horas de cursada por día de la materia programación web dinámica
 </div>
 
 <div class="contenedorCentrado">
