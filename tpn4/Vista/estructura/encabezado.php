@@ -33,7 +33,7 @@
     <div id="banner">
         <div id="tituloMateria">Programación Web Dinámica</div>
         <div id="tituloGrupo">GRUPO 2: Entrega 02</div>
-        <div id="version">version v17.2</div>
+        <div id="version">version v23.3</div>
     </div>
 
     <!-- ____________________________________ CABEZAL __________________________________ -->
@@ -45,9 +45,7 @@
     </div>
 
     <div id="menuEjercicios">
-        <!--<div id="botonEjer1" class="botonEjercicios" onclick="irATP4Ejercicio1();"><a href=#>Ejercicio 1</a></div>
-        <div id="botonEjer2" class="botonEjercicios" onclick="irATP4Ejercicio2();"><a href=#>Ejercicio 2</a></div>
-        --><div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3(<?php echo $correccionRuta ?>);"><a href=#>Ver<br>Autos</a></div><!--
+        <div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3(<?php echo $correccionRuta ?>);"><a href=#>Ver<br>Autos</a></div><!--
         --><div id="botonEjer4" class="botonEjercicios" onclick="irATP4Ejercicio4(<?php echo $correccionRuta ?>);"><a href=#>Buscar<br>Auto</a></div><!--
         --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5(<?php echo $correccionRuta ?>);"><a href=#>Lista<br>Personas</a></div><!--
         --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6(<?php echo $correccionRuta ?>);"><a href=#>Nueva<br>Persona</a></div><!--

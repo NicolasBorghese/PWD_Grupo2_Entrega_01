@@ -29,16 +29,6 @@ function indicaRuta(correccionRuta){
     return ruta;
 }
 
-function irATP4Ejercicio1(correccionRuta) {
-    ruta = indicaRuta(correccionRuta);
-    window.location.href = ruta+"ejercicio1/ejercicio1.php";
-}
-
-function irATP4Ejercicio2(correccionRuta) {
-    ruta = indicaRuta(correccionRuta);
-    window.location.href = ruta+"ejercicio2/ejercicio2.php";
-}
-
 function irATP4Ejercicio3(correccionRuta) {
     ruta = indicaRuta(correccionRuta);
     window.location.href = ruta+"ejercicio3/verAutos.php";
