@@ -166,12 +166,23 @@
     float:left;
 }
 
+.excedeMargenLateral {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .contenedorCentradoChico {
     margin-top:auto;
     margin-bottom: auto;
 }
 
 #contieneLinkVolver {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.contieneLink{
     width: 100%;
     text-align: center;
 }
@@ -275,4 +286,30 @@
 #textPeli{
     text-align:left;
     color: rgb(18, 111, 161);
+}
+
+.hrDivisor{
+    margin: 0px;
+}
+
+.tablaCentrada {
+    width: 100%;
+    align-content: center;
+}
+
+table {
+    width: 100%;
+}
+
+.contenedorSeparado {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedorSeparadoAbajo {
+    margin-bottom: 20px;
+}
+
+.contenedorSeparadoArriba {
+    margin-top: 20px;
 }

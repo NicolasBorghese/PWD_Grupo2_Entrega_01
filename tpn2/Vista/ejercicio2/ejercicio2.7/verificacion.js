@@ -12,10 +12,10 @@ $(function(){
         messages: {
             
             num1:{
-                required: "<p class='text-danger'>campo requerido, ingrese un numero</p>"
+                required: "<p class='text-danger'>campo requerido <br> Ingrese un numero</p>"
             },
             num2: {
-               required:"<p class='text-danger'>campo requerido, ingrese un numero</p>" 
+               required:"<p class='text-danger'>campo requerido <br> ingrese un numero</p>" 
           },
     }
     });

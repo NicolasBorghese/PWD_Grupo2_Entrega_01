@@ -11,8 +11,12 @@
         tp4 ejercicio 6
     -->
 
+    <div class="contenedorEnunciado">
+        Ingrese los datos de una persona para cargarlos en la base de datos
+    </div>
+
     <div class="contenedorCentrado">
-    <strong> Nueva Persona</strong>
+    <div class="textoCentrado contenedorSeparadoAbajo titulosDiv">Nueva Persona</div>
     <form name="form_ejercicio6" method="post" action="accion/accionNuevaPersona.php"  class="needs-validation" novalidate>
         <table>
             <tr>

@@ -21,12 +21,11 @@ include_once('../estructura/encabezado.php');
             </tr>
             <tr>
                 <td><input type="number" id="num1" name="num1"></td>
-            </tr>
-            <tr><td><label id="num-error" class="error manual-error" for="num1"></label></td></tr>
-            <tr>
                 <td><input type="number" id="num2" name="num2"></td>
             </tr>
-            <tr><td><label id="num-error" class="error manual-error" for="num2"></label></td></tr>
+            <tr>
+                <td><label id="num-error" class="error manual-error" for="num1"></label></td>
+                <td><label id="num-error" class="error manual-error" for="num2"></label></td></tr>
             <tr>
                 <td>Seleccione una <br> operación matemática</td>
                 <td>

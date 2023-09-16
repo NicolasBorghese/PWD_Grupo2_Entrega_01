@@ -33,7 +33,7 @@
     <div id="banner">
         <div id="tituloMateria">Programación Web Dinámica</div>
         <div id="tituloGrupo">GRUPO 2: Entrega 02</div>
-        <div id="version">version S01.0</div>
+        <div id="version">version S18.0</div>
     </div>
 
     <!-- ____________________________________ CABEZAL __________________________________ -->
@@ -47,9 +47,9 @@
     <div id="menuEjercicios">
         <div id="botonEjer3" class="botonEjercicios" onclick="irATP4Ejercicio3(<?php echo $correccionRuta ?>);"><a href=#>Ver<br>Autos</a></div><!--
         --><div id="botonEjer4" class="botonEjercicios" onclick="irATP4Ejercicio4(<?php echo $correccionRuta ?>);"><a href=#>Buscar<br>Auto</a></div><!--
-        --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5(<?php echo $correccionRuta ?>);"><a href=#>Lista<br>Personas</a></div><!--
-        --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6(<?php echo $correccionRuta ?>);"><a href=#>Nueva<br>Persona</a></div><!--
-        --><div id="botonEjer7" class="botonEjercicios" onclick="irATP4Ejercicio7(<?php echo $correccionRuta ?>);"><a href=#>Nuevo<br>Auto</a></div><!--
-        --><div id="botonEjer8" class="botonEjercicios" onclick="irATP4Ejercicio8(<?php echo $correccionRuta ?>);"><a href=#>Cambio<br>Dueño</a></div><!--
+        --><div id="botonEjer5" class="botonEjercicios" onclick="irATP4Ejercicio5(<?php echo $correccionRuta ?>);"><a href=#>Ver<br>Personas</a></div><!--
+        --><div id="botonEjer6" class="botonEjercicios" onclick="irATP4Ejercicio6(<?php echo $correccionRuta ?>);"><a href=#>Cargar<br>Persona</a></div><!--
+        --><div id="botonEjer7" class="botonEjercicios" onclick="irATP4Ejercicio7(<?php echo $correccionRuta ?>);"><a href=#>Cargar<br>Auto</a></div><!--
+        --><div id="botonEjer8" class="botonEjercicios" onclick="irATP4Ejercicio8(<?php echo $correccionRuta ?>);"><a href=#>Cambiar<br>Dueño</a></div><!--
         --><div id="botonEjer9" class="botonEjercicios" onclick="irATP4Ejercicio9(<?php echo $correccionRuta ?>);"><a href=#>Buscar<br>Persona</a></div>
     </div>

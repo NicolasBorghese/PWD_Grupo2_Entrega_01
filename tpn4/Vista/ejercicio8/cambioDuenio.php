@@ -8,12 +8,12 @@ $correccionRuta = "1";
 include_once('../estructura/encabezado.php');
 ?>
 
-    <!-- 
-        tp4 ejercicio 8
-    -->
+    <div class="contenedorEnunciado">
+        Ingrese una patente y un número de documento para realizar el cambio de dueño de ese vehículo
+    </div>
 
     <div class="contenedorCentrado">
-        <strong> Cambio de Dueño</strong>
+        <div class="textoCentrado contenedorSeparadoAbajo titulosDiv">Cambio de Dueño</div>
         <div class="container col-md-8">
             <form action="accion/accionCambioDuenio.php" method="post" class="needs-validation row-md-4" novalidate>
                 <div>

@@ -20,9 +20,9 @@
         $hayAutos = true;
     }
 ?>
-    <!-- 
-        tp4 ejercicio 4
-    -->
+    <div class="contenedorEnunciado">
+        Ingrese el dato de una patente para buscarlo en la base de datos
+    </div>
 
     <div class="contenedorCentrado">
         <?php
@@ -46,7 +46,7 @@
             }
         ?>
         <div id="contieneLinkVolver">
-            <a href="../buscarAuto.php" id="linkVolver"><br> Volver <a>
+            <a href="../buscarAuto.php" id="linkVolver">Volver<a>
         </div>
     </div>
 

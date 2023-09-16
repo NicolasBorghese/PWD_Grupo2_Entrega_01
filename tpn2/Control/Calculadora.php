@@ -27,7 +27,7 @@ class Calculadora
                 $resultado = $num1 / $num2;
                 break;
         }
-        $mensaje = "El resultado es: " . $resultado;
+        $mensaje = "El resultado de la operación es: " . $resultado;
         return $mensaje;
     }
 }

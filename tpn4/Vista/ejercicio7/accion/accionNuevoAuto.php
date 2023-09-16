@@ -8,8 +8,6 @@
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
 
-   
-
     $datos = data_submitted();
     //verEstructura($datos);
     $resp = false;
@@ -24,16 +22,16 @@
     if($buscarDuenio!=null and $autoDuplicado==null){
         if($objAuto->alta($datos)){
         $resp =true;
-        $mensaje = "Auto creado con éxito!";
+        $mensaje = "<div class='textoCentrado'>Auto cargado con éxito!</div>";
         }
     }else{
 
         if(!$resp){
-            $mensaje = "No se pudo concretar la operacion.<br>";
+            $mensaje = "<div class='textoCentrado'> No se pudo concretar la operación.</div><br>";
         }
 
         if($buscarDuenio==null){
-            $mensaje .= "Dueño inexistente.<br> <a href='../../ejercicio6/nuevaPersona.php'>Por Favor agreguelo a la BD</a><br>";
+            $mensaje .= "El dni ingresado no se encuentra en la base de datos.<br>";
         }
 
         if($autoDuplicado!=null){
@@ -42,17 +40,20 @@
     }
 
 ?>
-    <!-- 
-        tp4 ejercicio 7
-    -->
+    <div class="contenedorEnunciado">
+        Ingrese los datos de un auto para cargarlos en la base de datos
+    </div>
 
     <div class="contenedorCentrado">
-        <h4><?php echo $mensaje ?> <br></h4>
-            <a href="../../ejercicio6/nuevaPersona.php"> Ir a NuevaPersona.php </a>
-            </br>
-            <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php </a>
-            </br>
-            <a href="../nuevoAuto.php"> Volver </a>
+        <?php echo $mensaje ?> <br>
+        <div class="contieneLink">
+            <a href='../../ejercicio6/nuevaPersona.php'>Haga click aquí para cargar una nueva persona</a><br>
+            <a href='../../ejercicio5/listaPersonas.php'>Ver lista de personas cargadas</a>
+        </div>
+        <div id="contieneLinkVolver">
+            <a href="../nuevoAuto.php">Volver</a>
+        </div>
+
     </div>
 
 <?php

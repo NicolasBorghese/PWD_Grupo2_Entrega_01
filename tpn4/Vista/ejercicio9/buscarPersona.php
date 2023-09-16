@@ -7,13 +7,15 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-   <!-- 
-        tp4 ejercicio 7
-    -->
+
+    <div class="contenedorEnunciado">
+        Ingrese un número de documento para buscar los datos de esa persona
+    </div>
 
     <div class="contenedorCentrado">
+    <div class="textoCentrado contenedorSeparadoAbajo titulosDiv">Buscar persona por DNI</div>
     <form name="form_ejercicio9" method="get" action="accion/AccionBuscarPersona.php" class="needs-validation " novalidate>
-                 INGRESE UN DNI A BUSCAR:<input type="text" id="NroDni" name="NroDni" placeholder="22985265" pattern="[0-9]{8}" maxlength="9" required><br>
+                 DNI persona:<input type="text" id="NroDni" name="NroDni" placeholder="22985265" pattern="[0-9]{8}" maxlength="9" required><br>
                  <div class="valid-feedback">
                    Muy bien!
                 </div>
@@ -22,7 +24,10 @@
                 </div>
                 <input type="submit" name="boton_enviar" class="btn btn-dark mt-2" id="boton_enviar" value="Buscar">
                 </form>
-                <a href="../ejercicio5/listaPersonas.php"> Ir a ListaPersona.php </a>
+                <div class="contieneLink contenedorSeparadoArriba">
+                    <a href="../ejercicio5/listaPersonas.php">Lista de personas cargadas</a>
+                </div>
+                
     <script src="../estructura/js/validarCamposVacios.js"></script>
     </div>
 

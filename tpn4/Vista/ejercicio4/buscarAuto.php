@@ -7,12 +7,12 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-    <!-- 
-        tp4 ejercicio 4
-    -->
+    <div class="contenedorEnunciado">
+        Ingrese el dato de una patente para buscarlo en la base de datos
+    </div>
 
     <div class="contenedorCentrado">
-        <div class='titulosDiv' class="textoCentrado">Buscar Auto por patente</div>
+        <div class='titulosDiv' class="textoCentrado">Buscar auto por patente</div>
         <div class="container col-md-8">
             <form action="accion/accionBuscarAuto.php" method="post" class="needs-validation row-md-4" novalidate>
                 <div>
@@ -22,7 +22,7 @@
                                 <td ><label>Patente:</label></td>
                                 <td>
                                     <div>
-                                        <input type="text" pattern="[A-Z]{3}\s[0-9]{3}" name="Patente" id="input_nombre" class="form-control text" required>
+                                        <input type="text" pattern="[A-Z]{3}\s[0-9]{3}" name="Patente" id="input_nombre" class="form-control" required>
                                         <div class="invalid-feedback">
                                             Porfavor ingrese una patente valida! 3 Letras Mayusculas, un espacio y 3 numeros.
                                         </div>

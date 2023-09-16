@@ -14,44 +14,56 @@
     $autos = $objAutos->buscarDniDuenio($datos);
     $listaPersonas = $objPers->buscar($datos);
 ?>
-    <!-- 
-        tp4 ejercicio 5
-    -->
+    <div class ="contenedorEnunciado">
+        Ingrese un DNI para listar todos los autos que estan registrados a el
+    </div>
 
     <div class="contenedorCentrado">
-    <p>LISTA DE AUTOS REGISTRADOS CON EL DNI: <?php echo $datos['NroDni'];?></p>
-    <?php
-    if(count($listaPersonas)==1){
-        echo '<table class="table">
-        <tr>
-            <th style="text-align: center" colspan="6">'.$listaPersonas[0]->getNombre().' '.$listaPersonas[0]->getApellido().'</th>
-        </tr>
-        <tr>
-              <th><strong>Patente</strong></th>
-              <th><strong>Marca</strong></th>
-              <th><strong>Modelo</strong></th>        
-        </tr>
-        </thead>
-        <tbody>';
-        if(count($autos)>0){
-            foreach($autos as $objAuto){
-                echo '<tr>';
-                echo '<td>'.$objAuto->getPatente().'</td>';
-                echo '<td>'.$objAuto->getMarca().'</td>';
-                echo '<td>'.$objAuto->getModelo().'</td>';
-                echo '</tr>'; 
+    <div class="textoCentrado">Lista de autos registrados con el DNI: <?php echo $datos['NroDni'];?></div>
+        <div class="tablaCentrada">
+        <?php
+        if(count($listaPersonas)==1){
+            echo '<table>
+            <tr>
+                <th style="text-align:center" colspan="3">'.$listaPersonas[0]->getNombre().' '.$listaPersonas[0]->getApellido().'</th>
+            </tr>';
+            echo "<tr><td colspan='3'><hr class='hrDivisor'></td></tr>";
+            if(count($autos)>0){
+                echo "<tr>
+                <th><strong>Patente</strong></th>
+                <th><strong>Marca</strong></th>
+                <th><strong>Modelo</strong></th>        
+                </tr>
+                <tr><td colspan='3'><hr class='hrDivisor'></td></tr>
+                </thead>
+                
+                <tbody>";
+                foreach($autos as $objAuto){
+                    echo '<tr>';
+                    echo '<td>'.$objAuto->getPatente().'</td>';
+                    echo '<td>'.$objAuto->getMarca().'</td>';
+                    echo '<td>'.$objAuto->getModelo().'</td>';
+                    echo '</tr>';
+                    echo "<tr><td colspan='3'><hr class='hrDivisor'></td></tr>";
+                }
+                echo '</tbody>
+                </table>';
+            }else{
+                echo '</tbody>
+                </table>';
+                echo '<h4>No hay autos registrados con el dni ingresado </h4>';
             }
         }else{
-            echo '<h4>No se encontro ningun auto registrado con el dni ingresado </h4>';
+            echo '</tbody>
+            </table>';
+            echo '<h4>No se encontro ninguna persona con el dni ingresado. </h4>';
         }
-    }else{
-        echo '<h4>No se encontro ninguna persona con este dni. </h4>';
-    }
-    echo '</tbody>
-    </table>';
-    ?>
-    <a href="../autosPersona.php"> Ir a AutosPersona.php </a>
 
+        ?>
+        <div id="contieneLinkVolver">
+            <a href="../autosPersona.php">Volver</a>
+        </div>
+    </div>
     </div>
 
 <?php

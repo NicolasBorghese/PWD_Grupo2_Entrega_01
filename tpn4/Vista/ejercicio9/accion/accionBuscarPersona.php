@@ -14,17 +14,21 @@
     $listaPersona=$objPersona->buscar($datos);
     $contListaP = count($listaPersona);
 ?>
-    <!-- 
-        tp4 ejercicio 9
-    -->
+
+    <div class="contenedorEnunciado">
+        Datos de la persona encontrada. Los datos pueden ser modificados y actualizados
+    </div>
 
     <div class="contenedorCentrado">
         <?php
             if ($contListaP == 0){
-                echo '<h4>NO existe persona cargada con ese DNI </h4>';
+                echo "No existe persona cargada con ese DNI en la base de datos
+                <div id='contieneLinkVolver'>
+                    <a href='../buscarPersona.php' id='linkVolver'>Volver<a>
+                </div>";
             } else {
-                echo "<strong>DATOS DE LA PERSONA BUSCADA DNI:".$datos['NroDni']."</strong>";
-                echo "<h4>Coloque los DATOS que desea modificar</h4>";
+                echo "<div class='textoCentrado contenedorSeparadoAbajo titulosDiv'>Datos de la persona buscada <br> DNI: ".$datos['NroDni']."</div>";
+                echo "<div class='textoCentrado contenedorSeparadoAbajo'> Modifique los datos que desee cambiar</div>";
                 echo "<form method='post' action='actualizarDatosPersona.php' class='needs-validation' novalidate>";
                 echo "<table>";
                 echo "<tr>";

@@ -17,14 +17,21 @@
         $hayAutos = true;
     }
 ?>
+    <div class="contenedorEnunciado">
+        Lista de autos cargados en la base de datos
+    </div>
 
     <div class="contenedorCentrado">
+    <div class="textoCentrado contenedorSeparado"><h4><strong>Lista de autos</strong></h4></div>
+    <hr class='hrDivisor'>
+    
         <?php
             if($hayAutos){
-                echo "<table class='table'>";
+                echo "<table>";
                 echo "<tr class='titulosTabla'>";
                 echo "<td>Patente</td><td>Marca</td><td>Modelo</td><td>DNI Dueño</td><td>Apellido y Nombre</td>";
                 echo "</tr>";
+                echo "<tr><td colspan='6'><hr></td></tr>";
                 for ($i = 0; $i < count($colInfo); $i++){
                     $patente = $colInfo[$i]['patente'];
                     $marca = $colInfo[$i]['marca'];
@@ -35,6 +42,7 @@
                     echo "<tr>";
                     echo "<td>".$patente."</td><td>".$marca."</td><td>".$modelo."</td><td>".$dni."</td><td>".$apellido." ".$nombre."</td>";
                     echo "<tr>";
+                    echo "<tr><td colspan='6'><hr class='hrDivisor'></td></tr>";
                 }
                 echo "</table>";
             } else {

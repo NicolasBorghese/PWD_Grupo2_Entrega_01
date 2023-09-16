@@ -7,13 +7,12 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-    <!-- 
-        tp4 ejercicio 7
-    -->
+    <div class="contenedorEnunciado">
+        Ingrese los datos de un auto para cargarlos en la base de datos
+    </div>
 
     <div class="contenedorCentrado">
-
-    <strong>Nuevo Auto</strong>
+    <div class="textoCentrado contenedorSeparadoAbajo titulosDiv">Nuevo Auto</div>
     <form name="form_ejercicio6" method="post" action="accion/accionNuevoAuto.php"  class="needs-validation" novalidate>
         <table>
             <tr>

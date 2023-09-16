@@ -10,31 +10,32 @@
     
     $datos= data_submitted();
     $objPersona = new AbmPersona();
-    $arregloNuevo['NroDni'] = $datos['NroDni'];
+    $soloDni['NroDni'] = $datos['NroDni'];
     
-    $listaPersonas = $objPersona->buscar($arregloNuevo);
+    $listaPersonas = $objPersona->buscar($soloDni);
     if (count($listaPersonas) == 1 ){
         if ($objPersona-> modificacion($datos)){
             $mensaje = "Datos modificados correctamente";
         }else{
-            $mensaje= "No fue posible modificar datos.";
+            $mensaje= "No se modificaron datos.";
         }
     
     }else{
-        $mensaje = "Datos NO modificados";
+        $mensaje = "El DNI ingresado no existe en la base de datos";
     }
 ?>
-    <!-- 
-        tp4 ejercicio 9
-    -->
+    <div class="contenedorEnunciado">
+        Resultado de la operación
+    </div>
 
     <div class="contenedorCentrado">
-    <strong>ACTUALIZACION DE DATOS</strong>
+    <div class="textoCentrado"><strong>ACTUALIZACION DE DATOS</strong></div>
         <h4><?php echo $mensaje ?> </h4>
         </br>
-        <a href="../../ejercicio5/listaPersonas.php">Ir a ListaPersonas.php</a>
-        <a href="../buscarPersona.php">Ir a BuscarPersona.php</a>
-
+        <div class="contieneLink">
+            <a href="../../ejercicio5/listaPersonas.php">Lista de personas cargadas</a><br>
+            <a href="../buscarPersona.php">Buscar persona</a>
+        </div>
     </div>
 
 <?php
