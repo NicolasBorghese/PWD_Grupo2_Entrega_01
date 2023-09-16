@@ -28,8 +28,8 @@
         <?php
             if($hayAutos){
                 echo "<table>";
-                echo "<tr class='titulosTabla'>";
-                echo "<td>Patente</td><td>Marca</td><td>Modelo</td><td>DNI Dueño</td><td>Apellido y Nombre</td>";
+                echo "<tr>";
+                echo "<td><strong>Patente</strong></td><td><strong>Marca</strong></td><td><strong>Modelo</strong></td><td><strong>DNI Dueño</strong></td><td><strong>Apellido y Nombre</strong></td>";
                 echo "</tr>";
                 echo "<tr><td colspan='6'><hr></td></tr>";
                 for ($i = 0; $i < count($colInfo); $i++){
