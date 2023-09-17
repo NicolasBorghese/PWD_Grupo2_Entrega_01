@@ -27,6 +27,7 @@ include_once('../estructura/encabezado.php');
                 <td><input type="number" step="any" name="hsLunes" id="hsLunes" min=0 max=24></td>
             </tr>
             <tr>
+               <td></td>
                <td><label id="hsLunes-error" class="error manual-error" for="hsLunes"></label> </td>
             </tr>
             <tr>
@@ -34,28 +35,32 @@ include_once('../estructura/encabezado.php');
                 <td><input type="number" step="any" name="hsMartes" id="hsMartes" min=0 max=24></td>
             </tr>
             <tr>
-               <td><label id="hsMartes-error" class="error manual-error" for="hsMartes"></label> </td>
+                <td></td>
+                <td><label id="hsMartes-error" class="error manual-error" for="hsMartes"></label> </td>
             </tr>
             <tr>
                 <td><label>Miercoles</label></td>
                 <td><input type="number" step="any" name="hsMiercoles" id="hsMiercoles" min=0 max=24></td>
             </tr>
             <tr>
-               <td><label id="hsMiercoles-error" class="error manual-error" for="hsMiercoles"></label> </td>
+                <td></td>
+                <td><label id="hsMiercoles-error" class="error manual-error" for="hsMiercoles"></label> </td>
             </tr>
             <tr>
                 <td><label>Jueves</label></td>
                 <td><input type="number" step="any" name="hsJueves" id="hsJueves" min=0 max=24></td>
             </tr>
             <tr>
-               <td><label id="hsJueves-error" class="error manual-error" for="hsJueves"></label> </td>
+                <td></td>
+                <td><label id="hsJueves-error" class="error manual-error" for="hsJueves"></label> </td>
             </tr>
             <tr>
                 <td><label>Viernes</label></td>
                 <td><input type="number" step="any" name="hsViernes" id="hsViernes" min=0 max=24></td>
             </tr>
             <tr>
-               <td><label id="hsViernes-error" class="error manual-error" for="hsViernes"></label> </td>
+                <td></td>
+                <td><label id="hsViernes-error" class="error manual-error" for="hsViernes"></label> </td>
             </tr>
         </table>
         <input type="submit" name="submit" id="submit"  value="Enviar" class="botonFormulario">
