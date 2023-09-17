@@ -8,12 +8,9 @@
     include_once('../estructura/encabezado.php');
     include_once('../../configuracion.php');
 
-    $objAbmPers = new  AbmPersona();
-    $listaPers = $objAbmPers->buscar(null);
+    $controlPersona = new AbmPersona();
+    $colInfoPersonas = $controlPersona->buscarColInfo([]);
 ?>
-    <!-- 
-        tp4 ejercicio 5
-    -->
 
     <div class="contenedorEnunciado">
         Lista de personas cargadas en la base de datos
@@ -24,7 +21,7 @@
     <div class="textoCentrado contenedorSeparado"><h4><strong>Lista de personas</strong></h4></div>
     <hr class='hrDivisor'>
     <?php
-    if(count($listaPers)>0){
+    if(count($colInfoPersonas)>0){
         echo '<table>
         <thead >
             <tr>  
@@ -38,14 +35,14 @@
         </thead>
         <tbody>';
         echo "<tr><td colspan='6'><hr class='hrDivisor'></td></tr>";
-        foreach($listaPers as $objPers){
+        for ($i = 0; $i < count($colInfoPersonas); $i++){
             echo '<tr>';
-            echo '<td>'.$objPers->getNroDni().'</td>';
-            echo '<td>'.$objPers->getApellido().'</td>';
-            echo '<td>'.$objPers->getNombre().'</td>';
-            echo '<td>'.$objPers->getFechaNac().'</td>';
-            echo '<td>'.$objPers->getTelefono().'</td>';
-            echo '<td>'.$objPers->getDomicilio().'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['nroDni'].'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['apellido'].'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['nombre'].'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['fechaNac'].'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['telefono'].'</td>';
+            echo '<td>'.$colInfoPersonas[$i]['domicilio'].'</td>';
             echo '</tr>'; 
             echo "<tr><td colspan='6'><hr class='hrDivisor'></td></tr>";
         }

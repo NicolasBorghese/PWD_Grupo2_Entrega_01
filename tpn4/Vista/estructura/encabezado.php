@@ -32,7 +32,7 @@
     <div id="banner">
         <div id="tituloMateria">Programación Web Dinámica</div>
         <div id="tituloGrupo">GRUPO 2: Entrega 02</div>
-        <div id="version">version S18.0</div>
+        <div id="version">version D18.0</div>
     </div>
 
     <!-- ____________________________________ CABEZAL __________________________________ -->

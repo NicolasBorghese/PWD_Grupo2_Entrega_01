@@ -8,11 +8,14 @@
     include_once('../../estructura/encabezado.php');
     include_once("../../../configuracion.php");
     
-    $datos= data_submitted();
-    $objPers = new AbmPersona();
-    $objAutos = new AbmAuto();
-    $autos = $objAutos->buscarDniDuenio($datos);
-    $listaPersonas = $objPers->buscar($datos);
+    $datos = data_submitted();
+    $controlAuto = new AbmAuto();
+    $controlPersona = new AbmPersona();
+
+    $dniAuto['DniDuenio'] = $datos['NroDni'];
+
+    $colAutos = $controlAuto->buscarColInfo($dniAuto);
+    $datosPersona = $controlPersona->buscarColInfo($datos);
 ?>
     <div class ="contenedorEnunciado">
         Ingrese un DNI para listar todos los autos que estan registrados a el
@@ -22,13 +25,13 @@
     <div class="textoCentrado">Lista de autos registrados con el DNI: <?php echo $datos['NroDni'];?></div>
         <div class="tablaCentrada">
         <?php
-        if(count($listaPersonas)==1){
+        if(count($datosPersona)==1){
             echo '<table>
             <tr>
-                <th style="text-align:center" colspan="3">'.$listaPersonas[0]->getNombre().' '.$listaPersonas[0]->getApellido().'</th>
+                <th style="text-align:center" colspan="3">'.$datosPersona[0]['nombre'].' '.$datosPersona[0]['apellido'].'</th>
             </tr>';
             echo "<tr><td colspan='3'><hr class='hrDivisor'></td></tr>";
-            if(count($autos)>0){
+            if(count($colAutos)>0){
                 echo "<tr>
                 <th><strong>Patente</strong></th>
                 <th><strong>Marca</strong></th>
@@ -38,11 +41,11 @@
                 </thead>
                 
                 <tbody>";
-                foreach($autos as $objAuto){
+                for ($i = 0; $i < count($colAutos); $i++){
                     echo '<tr>';
-                    echo '<td>'.$objAuto->getPatente().'</td>';
-                    echo '<td>'.$objAuto->getMarca().'</td>';
-                    echo '<td>'.$objAuto->getModelo().'</td>';
+                    echo '<td>'.$colAutos[$i]['patente'].'</td>';
+                    echo '<td>'.$colAutos[$i]['marca'].'</td>';
+                    echo '<td>'.$colAutos[$i]['modelo'].'</td>';
                     echo '</tr>';
                     echo "<tr><td colspan='3'><hr class='hrDivisor'></td></tr>";
                 }

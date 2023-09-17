@@ -187,22 +187,5 @@ class AbmAuto{
 
         return $colInfo;
     }
-
-    
-     /**
-     * funcion para buscar los autos con el dni de un duenio
-     * @param int $param
-     * @return array
-     */
-    public function buscarDniDuenio($param){
-        $where = " true ";
-        if ($param<>NULL) {
-            if (isset($param['NroDni']))
-            $where .= " and DniDuenio ='".$param['NroDni']."'";
-        }
-        $obj = new Auto();
-        $arreglo = $obj->listar($where);
-        return $arreglo;
-    }
 }
 ?>

@@ -7,14 +7,12 @@
     
     include_once('../estructura/encabezado.php');
 ?>
-    <!-- 
-        tp4 ejercicio 5
-    -->
+
     <div class ="contenedorEnunciado">
         Ingrese un DNI para listar todos los autos que estan registrados a el
     </div>
 
-    <div class="contenedorCentrado"  >
+    <div class="contenedorCentrado">
         <div class="textoCentrado contenedorSeparadoAbajo titulosDiv"><strong>Listar autos registrados por dni</strong></div>
 
         <form name="form_ejercicio4" method="get" action="accion/formAccion.php" class="needs-validation " novalidate>
@@ -27,6 +25,9 @@
         </div>
         <input type="submit" name="boton_enviar" class="btn btn-dark mt-2" id="boton_enviar" value="Buscar">
         </form>
+        <div id="contieneLinkVolver">
+            <a href="listaPersonas.php" id="linkVolver">Volver<a>
+        </div>
         <script src="../estructura/js/validarCamposVacios.js"></script>
     </div>
 

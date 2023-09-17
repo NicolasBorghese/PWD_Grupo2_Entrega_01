@@ -8,12 +8,13 @@
     include_once('../../estructura/encabezado.php');
     include_once('../../../configuracion.php');
 
-    $datos= data_submitted();
-    $objPersona = new  AbmPersona();
+    $datos = data_submitted();
+    $objPersona = new AbmPersona();
+
     $param[0] = ["NroDni"=>$datos['NroDni']];
+
     $listaPersonas = $objPersona->buscar($param[0]);
  
-
     if (count($listaPersonas) == 1 ){
         $mensaje= "Error. El número de dni ya se encuentra registrado.";
     } else {
