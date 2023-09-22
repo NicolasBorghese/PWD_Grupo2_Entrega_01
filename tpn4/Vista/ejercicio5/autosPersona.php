@@ -15,7 +15,7 @@
     <div class="contenedorCentrado">
         <div class="textoCentrado contenedorSeparadoAbajo titulosDiv"><strong>Listar autos registrados por dni</strong></div>
 
-        <form name="form_ejercicio4" method="get" action="accion/formAccion.php" class="needs-validation " novalidate>
+        <form name="form_ejercicio4" method="post" action="accion/formAccion.php" class="needs-validation " novalidate>
         DNI Dueño: <input type="text"  pattern="[0-9]{8}" id="NroDni" name="NroDni" placeholder="25456875" maxlength="8" required><br>
         <div class="valid-feedback">
         Muy bien!

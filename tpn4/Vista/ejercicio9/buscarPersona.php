@@ -14,7 +14,7 @@
 
     <div class="contenedorCentrado">
     <div class="textoCentrado contenedorSeparadoAbajo titulosDiv">Buscar persona por DNI</div>
-    <form name="form_ejercicio9" method="get" action="accion/AccionBuscarPersona.php" class="needs-validation " novalidate>
+    <form name="form_ejercicio9" method="post" action="accion/AccionBuscarPersona.php" class="needs-validation " novalidate>
                  DNI persona:<input type="text" id="NroDni" name="NroDni" placeholder="22985265" pattern="[0-9]{8}" maxlength="9" required><br>
                  <div class="valid-feedback">
                    Muy bien!
